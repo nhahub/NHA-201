@@ -16,8 +16,9 @@ public class ValidLogin {
         this.driver = driver;
     }
 
+
     public void navigateToLoginPage() {
-        driver.get("https://www.saucedemo.com/");
+        driver.navigate().to("https://www.saucedemo.com/");
     }
 
     public void login(String username, String password) {
