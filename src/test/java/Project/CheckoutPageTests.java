@@ -37,9 +37,9 @@ public class CheckoutPageTests {
 
     @Test(priority = 1)
     public void Checkout_TC1_proceedToFinishOrder_withValidData() {
-        checkoutPage.fillFirstName("TestUser");
-        checkoutPage.fillLastName("Automation");
-        checkoutPage.fillZipCode("11111");
+        checkoutPage.fillFirstName("First Name");
+        checkoutPage.fillLastName("Last Name");
+        checkoutPage.fillZipCode("10000");
         checkoutPage.clickContinue();
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-two.html");
@@ -48,8 +48,8 @@ public class CheckoutPageTests {
     @Test(priority = 2)
     public void Checkout_TC2_FirstNameEmpty() {
         checkoutPage.fillFirstName(""); // First name empty
-        checkoutPage.fillLastName("Automation");
-        checkoutPage.fillZipCode("11111");
+        checkoutPage.fillLastName("Last Name");
+        checkoutPage.fillZipCode("10000");
         checkoutPage.clickContinue();
 
         Assert.assertNotEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-two.html");
