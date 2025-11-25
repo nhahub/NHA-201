@@ -67,7 +67,7 @@ public class CheckoutPageTests {
         checkoutPage.clickContinue();
 
         try {
-            Thread.sleep(500);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
