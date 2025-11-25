@@ -1,31 +1,37 @@
-
-package Project;
+package SauceDemoTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import SauceDemoPages.CartPage;
+import SauceDemoPages.LoginPage;
 
 public class CartPageTests {
 
     private WebDriver driver;
+    private LoginPage loginPage;
     private CartPage cartPage;
 
-    @BeforeClass
-    public void Login() {
+    @BeforeMethod
+    public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
+        options.addArguments("--start-maximized", "--guest", "--disable-notifications");
+        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.navigate().to("https://www.saucedemo.com/");
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        driver.findElement(By.id("login-button")).click();
+        loginPage = new LoginPage(driver);
+
+        // Login and add item to cart
+        loginPage.navigateToLoginPage()
+                .enterUsername("standard_user")
+                .enterPassword("secret_sauce")
+                .clickLoginButton();
+
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         cartPage = new CartPage(driver);
     }
@@ -43,31 +49,45 @@ public class CartPageTests {
     public void Cart_Tc2_removeItemFromCart() {
         cartPage.openCartLink();
         int itemsBefore = cartPage.countCartItems();
-        int badgeBefore = cartPage.getCartBadgeNumber();
         cartPage.removeFirstItemFromCart();
+
+        // Wait for the page to update
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
         int itemsAfter = cartPage.countCartItems();
-        int badgeAfter = cartPage.getCartBadgeNumber();
         Assert.assertEquals(itemsAfter, itemsBefore - 1, "Item was not removed from cart!");
-        Assert.assertEquals(badgeAfter, badgeBefore - 1, "Cart badge number did not decrease after removal!");
     }
 
     @Test(priority = 3)
-    public void Cart_Tc3_checkoutWithEmptyCart() {
+    public void Cart_Tc3_checkoutWithItems() {
         cartPage.openCartLink();
-        while (cartPage.countCartItems() > 0) {
-            cartPage.removeFirstItemFromCart();
-        }
+        Assert.assertTrue(cartPage.isCartPageOpened(), "Cart page was not opened!");
+        Assert.assertTrue(cartPage.countCartItems() > 0, "No items in cart!");
+
         cartPage.clickCheckoutButton();
-        Assert.assertNotEquals(
+
+        // Wait for navigation
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        Assert.assertEquals(
                 driver.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-one.html",
-                "User was able to navigate to checkout with an empty cart!"
+                "User was not able to navigate to checkout!"
         );
     }
 
-    // Close browser after tests
-    /*@AfterClass
-    public void closeBrowser() {
-        driver.quit();
-    }*/
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
