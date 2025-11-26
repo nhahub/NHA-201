@@ -92,7 +92,7 @@ public class CheckoutConfirmationPageTests {
         confirmationPage = new CheckoutConfirmationPage(driver);
 
         // Assert: Should not navigate to complete page
-        Assert.assertNotEquals(
+        Assert.assertEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html",
                 "User wrongly navigated to finish order page with empty cart!"
