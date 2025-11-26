@@ -27,11 +27,11 @@ public class HomePageTest extends BaseTest {
 
         // Scroll Down
         home.scrollToBottom();
-        Thread.sleep(1500);
+
 
         // Scroll Up
         home.scrollToTop();
-        Thread.sleep(1500);
+
 
         String badge = home.getCartBadgeCount();
         Assert.assertTrue(badge.isEmpty() || badge.matches("\\d+"));
