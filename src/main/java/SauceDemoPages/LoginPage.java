@@ -1,9 +1,9 @@
+
 package SauceDemoPages;
 
 import Engine.Bot.ActionsBot;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class LoginPage {
 
@@ -21,7 +21,6 @@ public class LoginPage {
     private final By inventoryContainer = By.id("inventory_container");
     private final By productTitle = By.className("title");
 
-
     // Constructor
 
     public LoginPage(WebDriver driver) {
@@ -35,7 +34,6 @@ public class LoginPage {
         actionsBot.navigateTo("https://www.saucedemo.com/");
         return this;
     }
-
 
     // Login Actions
 
@@ -54,37 +52,30 @@ public class LoginPage {
         return this;
     }
 
-    //  Validation Methods
-    // Successful Login Validations
+    //  Validation Helpers (no TestNG here - just state)
 
-    public void validateSuccessfulLogin() {
-        Assert.assertTrue(actionsBot.isElementDisplayed(inventoryContainer),
-                "Products page is not displayed after login!");
+    // Successful Login Helpers
+
+    public boolean isInventoryContainerDisplayed() {
+        return actionsBot.isElementDisplayed(inventoryContainer);
     }
 
-    public LoginPage validatePageTitle(String expectedTitle) {
-        Assert.assertEquals(actionsBot.getPageTitle(), expectedTitle,
-                "Page title does not match!");
-        return this;
+    public String getPageTitle() {
+        return actionsBot.getPageTitle();
     }
 
-    public LoginPage validateUrlContains(String expectedUrlPart) {
-        Assert.assertTrue(actionsBot.getCurrentUrl().contains(expectedUrlPart),
-                "URL does not contain expected part: " + expectedUrlPart);
-        return this;
+    public String getCurrentUrl() {
+        return actionsBot.getCurrentUrl();
     }
 
-
-    public void validateProductsPageDisplayed() {
-        Assert.assertTrue(actionsBot.isElementDisplayed(productTitle),
-                "Products page title is not displayed!");
+    public boolean isProductsPageTitleDisplayed() {
+        return actionsBot.isElementDisplayed(productTitle);
     }
 
-    // Error Message Validations
-    public void validateErrorMessage(String expectedError) {
-        String actualError = actionsBot.getText(errorMessage);
-        Assert.assertEquals(actualError, expectedError,
-                "Error message does not match!");
+    // Error Message Helper
+
+    public String getErrorMessage() {
+        return actionsBot.getText(errorMessage);
     }
 
     public WebDriver getDriver() {

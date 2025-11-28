@@ -1,3 +1,4 @@
+
 package SauceDemoTests;
 
 import SauceDemoPages.LoginPage;
@@ -15,9 +16,7 @@ public class LoginPageTests {
     private WebDriver driver;
     private LoginPage loginPage;
 
-
     // VALID LOGIN SCENARIOS
-
 
     // Scenario 1 (TC-1): Valid Login
     @Test(priority = 1)
@@ -25,9 +24,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("standard_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validatePageTitle("Swag Labs")
-                .validateUrlContains("/inventory.html");
+                .clickLoginButton();
+
+        Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs",
+                "Page title does not match!");
+        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
+                "URL does not contain expected part: /inventory.html");
     }
 
     // Scenario 1 (TC-2): Successful Login with Standard User
@@ -36,11 +38,13 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("standard_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validatePageTitle("Swag Labs")
-                .validateProductsPageDisplayed();
-    }
+                .clickLoginButton();
 
+        Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs",
+                "Page title does not match!");
+        Assert.assertTrue(loginPage.isProductsPageTitleDisplayed(),
+                "Products page title is not displayed!");
+    }
 
     // INVALID LOGIN SCENARIOS
 
@@ -50,8 +54,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("invalid_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Username and password do not match any user in this service");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Username and password do not match any user in this service",
+                "Error message does not match!");
     }
 
     // Scenario 2 (TC-2): Failed Login with Invalid Credentials
@@ -60,8 +68,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("wrong_user")
                 .enterPassword("wrong_password")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Username and password do not match any user in this service");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Username and password do not match any user in this service",
+                "Error message does not match!");
     }
 
     // EMPTY FIELDS VALIDATION SCENARIOS
@@ -72,8 +84,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Username is required");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Username is required",
+                "Error message does not match!");
     }
 
     // Scenario 3 (TC-2): Login Validation - Empty Username
@@ -82,8 +98,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Username is required");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Username is required",
+                "Error message does not match!");
     }
 
     // LOCKED USER SCENARIO
@@ -94,8 +114,12 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("locked_out_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Sorry, this user has been locked out.");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Sorry, this user has been locked out.",
+                "Error message does not match!");
     }
 
     // Scenario 4 (TC-2): Login with Locked Out User
@@ -104,34 +128,44 @@ public class LoginPageTests {
         loginPage.navigateToLoginPage()
                 .enterUsername("locked_out_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateErrorMessage("Epic sadface: Sorry, this user has been locked out.");
+                .clickLoginButton();
+
+        Assert.assertEquals(
+                loginPage.getErrorMessage(),
+                "Epic sadface: Sorry, this user has been locked out.",
+                "Error message does not match!");
     }
 
     // SPECIAL USERS LOGIN SCENARIOS
 
     // Scenario 5 (TC-1): Special Users Login - problem_user
-    @Test(priority = 9 )
+    @Test(priority = 9)
     public void testProblemUserLogin() {
         loginPage.navigateToLoginPage()
                 .enterUsername("problem_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateUrlContains("/inventory.html")
-                .validateSuccessfulLogin();
+                .clickLoginButton();
+
+        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
+                "URL does not contain expected part: /inventory.html");
+        Assert.assertTrue(loginPage.isInventoryContainerDisplayed(),
+                "Products page is not displayed after login!");
     }
 
     // Scenario 5 (TC-2): Login with Performance Glitch User
-    @Test(priority = 10 )
+    @Test(priority = 10)
     public void testPerformanceGlitchUser() {
         long startTime = System.currentTimeMillis();
 
         loginPage.navigateToLoginPage()
                 .enterUsername("performance_glitch_user")
                 .enterPassword("secret_sauce")
-                .clickLoginButton()
-                .validateUrlContains("/inventory.html")
-                .validateSuccessfulLogin();
+                .clickLoginButton();
+
+        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
+                "URL does not contain expected part: /inventory.html");
+        Assert.assertTrue(loginPage.isInventoryContainerDisplayed(),
+                "Products page is not displayed after login!");
 
         long duration = System.currentTimeMillis() - startTime;
         System.out.println("Performance Glitch User - Login took: " + duration + " ms");

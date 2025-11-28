@@ -1,0 +1,7 @@
+Engine\Bot\WaitBots.class
+SauceDemoPages\CheckoutPage.class
+Engine\Bot\ActionsBot.class
+SauceDemoPages\LoginPage.class
+SauceDemoPages\CartPage.class
+SauceDemoPages\HomePage.class
+SauceDemoPages\CheckoutConfirmationPage.class
