@@ -1,3 +1,4 @@
+
 package SauceDemoPages;
 
 import Engine.Bot.ActionsBot;
@@ -21,10 +22,12 @@ public class CheckoutConfirmationPage {
 
     // Action: Get success message text
     public String getThankYouMessageText() {
-        return driver.findElement(thankYouMessage).getText();
+        // Use ActionsBot to read thank you message (with wait + scroll)
+        return actionsBot.getText(thankYouMessage);
     }
 
     public String getCurrentUrl() {
-        return driver.getCurrentUrl();
+        // Use ActionsBot for consistent URL retrieval
+        return actionsBot.getCurrentUrl();
     }
 }

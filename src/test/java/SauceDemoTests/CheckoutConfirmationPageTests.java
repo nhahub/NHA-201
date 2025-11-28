@@ -1,7 +1,6 @@
 
 package SauceDemoTests;
 
-
 import SauceDemoPages.CartPage;
 import SauceDemoPages.CheckoutConfirmationPage;
 import SauceDemoPages.CheckoutPage;
@@ -32,23 +31,25 @@ public class CheckoutConfirmationPageTests {
         driver = new ChromeDriver(options);
         loginPage = new LoginPage(driver);
 
-        // Login
+        // Login with valid user
         loginPage.navigateToLoginPage()
                 .enterUsername("standard_user")
                 .enterPassword("secret_sauce")
                 .clickLoginButton();
     }
 
+    // TC-1: Finish order with items
     @Test(priority = 1)
     public void Confirmation_TC1_finishOrderWithItems() {
-        // Add item to cart
+        // Add one item to cart
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
 
-        // Go فخ checkout
+        // Open cart and go to checkout
         cartPage = new CartPage(driver);
         cartPage.openCartLink();
         cartPage.clickCheckoutButton();
 
+        // Fill checkout form
         checkoutPage = new CheckoutPage(driver);
         checkoutPage.fillFirstName("First Name");
         checkoutPage.fillLastName("Last Name");
@@ -59,7 +60,7 @@ public class CheckoutConfirmationPageTests {
         driver.findElement(By.id("finish")).click();
         confirmationPage = new CheckoutConfirmationPage(driver);
 
-        // Assert: User navigated to finish order page
+        // Verify complete page and thank you message
         Assert.assertEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html",
@@ -72,15 +73,16 @@ public class CheckoutConfirmationPageTests {
         );
     }
 
+    // TC-2: Try to finish order with empty cart
     @Test(priority = 2)
     public void Confirmation_TC2_finishEmptyCartOrder() {
 
-
-        // Go through checkout for empty cart
+        // Open cart with no items and go to checkout
         cartPage = new CartPage(driver);
         cartPage.openCartLink();
         cartPage.clickCheckoutButton();
 
+        // Fill checkout form
         checkoutPage = new CheckoutPage(driver);
         checkoutPage.fillFirstName("First Name");
         checkoutPage.fillLastName("Last Name");
@@ -91,11 +93,45 @@ public class CheckoutConfirmationPageTests {
         driver.findElement(By.id("finish")).click();
         confirmationPage = new CheckoutConfirmationPage(driver);
 
-        // Assert: Should not navigate to complete page
-        Assert.assertEquals(
+        // Verify user does not reach complete page
+        Assert.assertNotEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html",
                 "User wrongly navigated to finish order page with empty cart!"
+        );
+    }
+
+    // TC-3: Back to Home from checkout complete page
+    @Test(priority = 3)
+    public void Confirmation_TC3_backToHomeAfterCompletion() {
+
+        // Add one item to cart
+        driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+
+        // Open cart and go to checkout
+        cartPage = new CartPage(driver);
+        cartPage.openCartLink();
+        cartPage.clickCheckoutButton();
+
+        // Fill checkout form
+        checkoutPage = new CheckoutPage(driver);
+        checkoutPage.fillFirstName("First Name");
+        checkoutPage.fillLastName("Last Name");
+        checkoutPage.fillZipCode("10000");
+        checkoutPage.clickContinue();
+
+        // Finish order
+        driver.findElement(By.id("finish")).click();
+        confirmationPage = new CheckoutConfirmationPage(driver);
+
+        // Click Back Home button
+        driver.findElement(By.id("back-to-products")).click();
+
+        // Verify user redirected to inventory page
+        Assert.assertEquals(
+                driver.getCurrentUrl(),
+                "https://www.saucedemo.com/inventory.html",
+                "User is not redirected back to inventory page after Back Home!"
         );
     }
 
