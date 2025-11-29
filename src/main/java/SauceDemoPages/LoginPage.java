@@ -1,18 +1,11 @@
-
 package SauceDemoPages;
 
-import Engine.Bot.ActionsBot;
+import Engine.Bot.Bot;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-    // Variables
-
-    private final WebDriver driver;
-    private final ActionsBot actionsBot;
-
-    // Locators
+    private final Bot bot;
 
     private final By usernameField = By.id("user-name");
     private final By passwordField = By.id("password");
@@ -21,64 +14,47 @@ public class LoginPage {
     private final By inventoryContainer = By.id("inventory_container");
     private final By productTitle = By.className("title");
 
-    // Constructor
-
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        this.actionsBot = new ActionsBot(driver);
+    public LoginPage(Bot bot) {
+        this.bot = bot;
     }
 
-    // Navigation Actions
-
     public LoginPage navigateToLoginPage() {
-        actionsBot.navigateTo("https://www.saucedemo.com/");
+        bot.navigateTo("https://www.saucedemo.com/");
         return this;
     }
 
-    // Login Actions
-
     public LoginPage enterUsername(String username) {
-        actionsBot.typing(usernameField, username);
+        bot.type(usernameField, username);
         return this;
     }
 
     public LoginPage enterPassword(String password) {
-        actionsBot.typing(passwordField, password);
+        bot.type(passwordField, password);
         return this;
     }
 
     public LoginPage clickLoginButton() {
-        actionsBot.clicking(loginButton);
+        bot.click(loginButton);
         return this;
     }
 
-    //  Validation Helpers (no TestNG here - just state)
-
-    // Successful Login Helpers
-
     public boolean isInventoryContainerDisplayed() {
-        return actionsBot.isElementDisplayed(inventoryContainer);
+        return bot.isElementDisplayed(inventoryContainer);
     }
 
     public String getPageTitle() {
-        return actionsBot.getPageTitle();
+        return bot.getPageTitle();
     }
 
     public String getCurrentUrl() {
-        return actionsBot.getCurrentUrl();
+        return bot.getCurrentUrl();
     }
 
     public boolean isProductsPageTitleDisplayed() {
-        return actionsBot.isElementDisplayed(productTitle);
+        return bot.isElementDisplayed(productTitle);
     }
-
-    // Error Message Helper
 
     public String getErrorMessage() {
-        return actionsBot.getText(errorMessage);
-    }
-
-    public WebDriver getDriver() {
-        return driver;
+        return bot.getText(errorMessage);
     }
 }

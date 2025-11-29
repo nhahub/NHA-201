@@ -1,36 +1,35 @@
 package SauceDemoPages;
 
-
+import Engine.Bot.Bot;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class HomePage {
 
-    WebDriver driver;
+    private final Bot bot;
+    private final By cartBadge = By.xpath("//span[@class='shopping_cart_badge']");
 
-
-    private By cartBadge = By.xpath("//span[@class='shopping_cart_badge']");
-
-    public HomePage(WebDriver driver) {
-        this.driver = driver;
+    public HomePage(Bot bot) {
+        this.bot = bot;
     }
 
     public String getCartBadgeCount() {
         try {
-            return driver.findElement(cartBadge).getText();
+            return bot.getText(cartBadge);
         } catch (Exception e) {
             return "";
         }
     }
 
-    public void scrollToBottom() {
-        ((JavascriptExecutor) driver)
+    public HomePage scrollToBottom() {
+        ((JavascriptExecutor) bot.getDriver())
                 .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        return this;
     }
 
-    public void scrollToTop() {
-        ((JavascriptExecutor) driver)
+    public HomePage scrollToTop() {
+        ((JavascriptExecutor) bot.getDriver())
                 .executeScript("window.scrollTo(0, 0)");
+        return this;
     }
 }
