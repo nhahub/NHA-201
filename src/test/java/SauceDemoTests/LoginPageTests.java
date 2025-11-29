@@ -15,9 +15,7 @@ public class LoginPageTests {
     private WebDriver driver;
     private LoginPage loginPage;
 
-    // VALID LOGIN SCENARIOS
-
-    @Test(priority = 1, dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
     public void testValidLogin(String username, String password) {
         loginPage.navigateToLoginPage()
                 .enterUsername(username)
@@ -30,7 +28,7 @@ public class LoginPageTests {
                 "URL does not contain expected part for user: " + username);
     }
 
-    @Test(priority = 2, dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
     public void testSuccessfulLoginVerifyProductsPage(String username, String password) {
         loginPage.navigateToLoginPage()
                 .enterUsername(username)
@@ -43,9 +41,7 @@ public class LoginPageTests {
                 "Products page title is not displayed for user: " + username);
     }
 
-    // INVALID LOGIN SCENARIOS
-
-    @Test(priority = 3, dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testSuccessfulLoginVerifyProductsPage")
     public void testInvalidLogin(String username, String password) {
         loginPage.navigateToLoginPage()
                 .enterUsername(username)
@@ -58,9 +54,7 @@ public class LoginPageTests {
                 "Error message does not match for user: " + username);
     }
 
-    // EMPTY FIELDS VALIDATION SCENARIOS
-
-    @Test(priority = 4, dataProvider = "emptyFieldsData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "emptyFieldsData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testInvalidLogin")
     public void testEmptyFields(String username, String password) {
         loginPage.navigateToLoginPage()
                 .enterUsername(username)
@@ -72,9 +66,7 @@ public class LoginPageTests {
                 "Error message should be displayed for empty fields");
     }
 
-    // LOCKED USER SCENARIO
-
-    @Test(priority = 5, dataProvider = "lockedUserData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "lockedUserData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testEmptyFields")
     public void testLockedOutUser(String username, String password) {
         loginPage.navigateToLoginPage()
                 .enterUsername(username)
@@ -86,8 +78,6 @@ public class LoginPageTests {
                 "Epic sadface: Sorry, this user has been locked out.",
                 "Locked user error message not correct");
     }
-
-    // SETUP & TEARDOWN
 
     @BeforeMethod
     public void setUp() {

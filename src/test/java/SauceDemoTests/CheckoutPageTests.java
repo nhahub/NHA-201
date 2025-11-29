@@ -20,29 +20,7 @@ public class CheckoutPageTests {
     private CartPage cartPage;
     private CheckoutPage checkoutPage;
 
-    @BeforeMethod
-    public void setUp() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized", "--guest", "--disable-notifications");
-        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        driver = new ChromeDriver(options);
-        loginPage = new LoginPage(driver);
-
-        // Login with valid user
-        loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
-        // Add item and navigate to checkout step one
-        driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-        cartPage = new CartPage(driver);
-        cartPage.openCartLink();
-        cartPage.clickCheckoutButton();
-        checkoutPage = new CheckoutPage(driver);
-    }
-
-    @Test(priority = 1, dataProvider = "checkoutData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "checkoutData", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithValidData(String firstName, String lastName, String zipCode) {
         checkoutPage.fillFirstName(firstName);
         checkoutPage.fillLastName(lastName);
@@ -54,7 +32,7 @@ public class CheckoutPageTests {
                 "User did not proceed to checkout step two with: " + firstName + " " + lastName);
     }
 
-    @Test(priority = 2, dataProvider = "emptyCheckoutFieldsData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "emptyCheckoutFieldsData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testCheckoutWithValidData")
     public void testCheckoutWithEmptyFields(String firstName, String lastName, String zipCode) {
         checkoutPage.fillFirstName(firstName);
         checkoutPage.fillLastName(lastName);
@@ -67,6 +45,26 @@ public class CheckoutPageTests {
 
         String errorMsg = driver.findElement(By.xpath("//h3[@data-test='error']")).getText();
         Assert.assertTrue(errorMsg.contains("Error"), "Error message not displayed!");
+    }
+
+    @BeforeMethod
+    public void setUp() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized", "--guest", "--disable-notifications");
+        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        driver = new ChromeDriver(options);
+        loginPage = new LoginPage(driver);
+
+        loginPage.navigateToLoginPage()
+                .enterUsername("standard_user")
+                .enterPassword("secret_sauce")
+                .clickLoginButton();
+
+        driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        cartPage = new CartPage(driver);
+        cartPage.openCartLink();
+        cartPage.clickCheckoutButton();
+        checkoutPage = new CheckoutPage(driver);
     }
 
     @AfterMethod
