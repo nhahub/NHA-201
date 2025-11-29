@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="82.364" tests="21" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="170.963" tests="27" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="java.specification.version" value="21"/>
+    <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201\target\test-classes;D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201\target\classes;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\TheDe\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\TheDe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TheDe\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\TheDe\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\TheDe\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\TheDe\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
+    <property name="java.class.path" value="D:\ALI\IdeaProjects\NHA-201\target\test-classes;D:\ALI\IdeaProjects\NHA-201\target\classes;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\Ali\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\Ali\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Ali\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Ali\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\Ali\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\Ali\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\Ali\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Ali\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Ali\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Africa/Cairo"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="java.vm.specification.version" value="24"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\TheDe\AppData\Local\Temp\surefire294717319306530102\surefirebooter-20251128154126005_3.jar C:\Users\TheDe\AppData\Local\Temp\surefire294717319306530102 2025-11-28T15-41-25_893-jvmRun1 surefire-20251128154126005_1tmp surefire_0-20251128154126005_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\Ali\AppData\Local\Temp\surefire15178475410849357090\surefirebooter-20251129164653465_3.jar C:\Users\Ali\AppData\Local\Temp\surefire15178475410849357090 2025-11-29T16-46-53_266-jvmRun1 surefire-20251129164653465_1tmp surefire_0-20251129164653465_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201\target\test-classes;D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201\target\classes;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\TheDe\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\TheDe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TheDe\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\TheDe\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\TheDe\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\TheDe\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\TheDe\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
-    <property name="allure.results.directory" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201\target/allure-results"/>
+    <property name="surefire.test.class.path" value="D:\ALI\IdeaProjects\NHA-201\target\test-classes;D:\ALI\IdeaProjects\NHA-201\target\classes;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\Ali\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\Ali\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Ali\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Ali\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\Ali\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\Ali\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\Ali\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Ali\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Ali\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;"/>
+    <property name="allure.results.directory" value="D:\ALI\IdeaProjects\NHA-201\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\TheDe"/>
+    <property name="user.home" value="C:\Users\Ali"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2025-04-15"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201"/>
+    <property name="basedir" value="D:\ALI\IdeaProjects\NHA-201"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\TheDe\AppData\Local\Temp\surefire294717319306530102\surefirebooter-20251128154126005_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ali\AppData\Local\Temp\surefire15178475410849357090\surefirebooter-20251129164653465_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
-    <property name="user.name" value="TheDe"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="Ali"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\TheDe\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Ali\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\TheDe\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.7"/>
-    <property name="user.dir" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\NHA-201"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ali\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="D:\ALI\IdeaProjects\NHA-201"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\IronRuby 1.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Maven\apache-maven-3.9.11\bin;C:\allure\allure-2.35.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\TheDe\AppData\Local\Microsoft\WindowsApps;C:\Users\TheDe\AppData\Local\GitHubDesktop\bin;C:\Users\TheDe\AppData\Local\PowerToys\;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;D:\ALI\course software tester\apache-maven-3.9.11\bin;D:\ALI\python\Scripts\;D:\ALI\python\;C:\Users\Ali\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Ali\AppData\Local\Programs\Python\Python312\;C:\Users\Ali\AppData\Local\Microsoft\WindowsApps;D:\ALI\VSCodeUserSetup-x64-1.91.1\Microsoft VS Code\bin;C:\Users\Ali\AppData\Roaming\npm;C:\Users\Ali\AppData\Local\GitHubDesktop\bin;D:\ALI\VSCodeUserSetup-x64-1.91.1\Git\cmd;C:\Users\Ali\AppData\Local\PowerToys\;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="21.0.7+8-LTS-245"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="Cart_Tc1_openCartAfterAddingItems" classname="SauceDemoTests.CartPageTests" time="0.748">
+  <testcase name="Cart_Tc1_openCartAfterAddingItems" classname="SauceDemoTests.CartPageTests" time="0.927">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Nov 28, 2025 3:41:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 29, 2025 4:46:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc2_removeItemFromCart" classname="SauceDemoTests.CartPageTests" time="0.768">
-    <system-err><![CDATA[Nov 28, 2025 3:41:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Cart_Tc2_removeItemFromCart" classname="SauceDemoTests.CartPageTests" time="0.941">
+    <system-err><![CDATA[Nov 29, 2025 4:47:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc3_checkoutWithOneItem" classname="SauceDemoTests.CartPageTests" time="0.773">
-    <system-err><![CDATA[Nov 28, 2025 3:41:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Cart_Tc3_checkoutWithOneItem" classname="SauceDemoTests.CartPageTests" time="0.889">
+    <system-err><![CDATA[Nov 29, 2025 4:47:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc4_checkoutWithMultipleItems" classname="SauceDemoTests.CartPageTests" time="0.878">
-    <system-err><![CDATA[Nov 28, 2025 3:41:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Cart_Tc4_checkoutWithMultipleItems" classname="SauceDemoTests.CartPageTests" time="1.273">
+    <system-err><![CDATA[Nov 29, 2025 4:47:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC1_finishOrderWithItems" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="2.546">
-    <system-err><![CDATA[Nov 28, 2025 3:41:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Confirmation_TC1_finishOrderWithItems" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="3.006">
+    <system-err><![CDATA[Nov 29, 2025 4:47:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC2_finishEmptyCartOrder" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="2.227">
+  <testcase name="Confirmation_TC2_finishEmptyCartOrder" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="2.611">
     <failure message="User wrongly navigated to finish order page with empty cart! did not expect [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-complete.html]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: User wrongly navigated to finish order page with empty cart! did not expect [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-complete.html]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failEquals(Assert.java:1594)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
 	at org.testng.Assert.assertNotEquals(Assert.java:2217)
 	at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:97)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -104,7 +104,7 @@ WARNING: Unable to find an exact match for CDP version 142, returning the closes
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -126,84 +126,112 @@ WARNING: Unable to find an exact match for CDP version 142, returning the closes
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-err><![CDATA[Nov 28, 2025 3:41:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Nov 29, 2025 4:47:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC3_backToHomeAfterCompletion" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="2.357">
-    <system-err><![CDATA[Nov 28, 2025 3:41:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Confirmation_TC3_backToHomeAfterCompletion" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="2.737">
+    <system-err><![CDATA[Nov 29, 2025 4:47:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Checkout_TC1_proceedToFinishOrder_withValidData" classname="SauceDemoTests.CheckoutPageTests" time="1.456">
-    <system-err><![CDATA[Nov 28, 2025 3:41:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithValidData[First Name, Last Name, 10000](1)" classname="SauceDemoTests.CheckoutPageTests" time="1.709">
+    <system-err><![CDATA[Nov 29, 2025 4:47:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Checkout_TC2_FirstNameEmpty" classname="SauceDemoTests.CheckoutPageTests" time="1.471">
-    <system-err><![CDATA[Nov 28, 2025 3:42:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithValidData[Ahmed, Ali, 12345](2)" classname="SauceDemoTests.CheckoutPageTests" time="1.649">
+    <system-err><![CDATA[Nov 29, 2025 4:47:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Checkout_TC3_ZipCodeEmpty" classname="SauceDemoTests.CheckoutPageTests" time="1.451">
-    <system-err><![CDATA[Nov 28, 2025 3:42:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithValidData[John, Doe, 99999](3)" classname="SauceDemoTests.CheckoutPageTests" time="1.691">
+    <system-err><![CDATA[Nov 29, 2025 4:48:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="loginAndHomeTests" classname="SauceDemoTests.HomePageTest" time="1.812">
-    <system-err><![CDATA[Nov 28, 2025 3:42:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithEmptyFields[, Last Name, 10000](1)" classname="SauceDemoTests.CheckoutPageTests" time="1.695">
+    <system-err><![CDATA[Nov 29, 2025 4:48:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testValidLoginStandardUser" classname="SauceDemoTests.LoginPageTests" time="1.779">
-    <system-err><![CDATA[Nov 28, 2025 3:42:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithEmptyFields[First Name, , 10000](2)" classname="SauceDemoTests.CheckoutPageTests" time="1.757">
+    <system-err><![CDATA[Nov 29, 2025 4:48:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testSuccessfulLoginVerifyProductsPage" classname="SauceDemoTests.LoginPageTests" time="1.876">
-    <system-err><![CDATA[Nov 28, 2025 3:42:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testCheckoutWithEmptyFields[First Name, Last Name, ](3)" classname="SauceDemoTests.CheckoutPageTests" time="1.725">
+    <system-err><![CDATA[Nov 29, 2025 4:48:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidLogin" classname="SauceDemoTests.LoginPageTests" time="2.055">
-    <system-err><![CDATA[Nov 28, 2025 3:42:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginAndHomeTests" classname="SauceDemoTests.HomePageTest" time="3.258">
+    <system-err><![CDATA[Nov 29, 2025 4:48:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testFailedLoginWrongCredentials" classname="SauceDemoTests.LoginPageTests" time="2.044">
-    <system-err><![CDATA[Nov 28, 2025 3:42:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testValidLogin[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="3.12">
+    <system-err><![CDATA[Nov 29, 2025 4:48:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyUsername" classname="SauceDemoTests.LoginPageTests" time="2.078">
-    <system-err><![CDATA[Nov 28, 2025 3:42:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testValidLogin[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="3.118">
+    <system-err><![CDATA[Nov 29, 2025 4:48:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyUsernameValidation" classname="SauceDemoTests.LoginPageTests" time="2.023">
-    <system-err><![CDATA[Nov 28, 2025 3:42:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testValidLogin[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="8.129">
+    <system-err><![CDATA[Nov 29, 2025 4:48:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testLockedOutUser" classname="SauceDemoTests.LoginPageTests" time="2.101">
-    <system-err><![CDATA[Nov 28, 2025 3:42:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testSuccessfulLoginVerifyProductsPage[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="3.579">
+    <system-err><![CDATA[Nov 29, 2025 4:48:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testLoginWithLockedUser" classname="SauceDemoTests.LoginPageTests" time="2.026">
-    <system-err><![CDATA[Nov 28, 2025 3:42:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testSuccessfulLoginVerifyProductsPage[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="3.158">
+    <system-err><![CDATA[Nov 29, 2025 4:48:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testProblemUserLogin" classname="SauceDemoTests.LoginPageTests" time="1.787">
-    <system-err><![CDATA[Nov 28, 2025 3:42:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testSuccessfulLoginVerifyProductsPage[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="8.305">
+    <system-err><![CDATA[Nov 29, 2025 4:49:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testPerformanceGlitchUser" classname="SauceDemoTests.LoginPageTests" time="6.915">
-    <system-out><![CDATA[Performance Glitch User - Login took: 6911 ms
-]]></system-out>
-    <system-err><![CDATA[Nov 28, 2025 3:42:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="testInvalidLogin[invalid_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="3.521">
+    <system-err><![CDATA[Nov 29, 2025 4:49:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testInvalidLogin[wrong_user, wrong_password](2)" classname="SauceDemoTests.LoginPageTests" time="3.637">
+    <system-err><![CDATA[Nov 29, 2025 4:49:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testInvalidLogin[fake_user, fake_pass](3)" classname="SauceDemoTests.LoginPageTests" time="3.521">
+    <system-err><![CDATA[Nov 29, 2025 4:49:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyFields[, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="3.666">
+    <system-err><![CDATA[Nov 29, 2025 4:49:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyFields[standard_user, ](2)" classname="SauceDemoTests.LoginPageTests" time="3.572">
+    <system-err><![CDATA[Nov 29, 2025 4:49:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyFields[, ](3)" classname="SauceDemoTests.LoginPageTests" time="3.458">
+    <system-err><![CDATA[Nov 29, 2025 4:49:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
+]]></system-err>
+  </testcase>
+  <testcase name="testLockedOutUser[locked_out_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="3.539">
+    <system-err><![CDATA[Nov 29, 2025 4:49:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>

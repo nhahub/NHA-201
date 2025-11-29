@@ -14,57 +14,29 @@ public class ActionsBot {
         this.waitBots = new WaitBots(driver);
     }
 
-    // Action Methods
-
     public void clicking(By locator) {
-        waitBots.fluentWait().until(d -> {
-            try {
-                WebElement element = d.findElement(locator);
-                new Actions(d).scrollToElement(element).perform();
-                element.click();
-                return true;
-            } catch (Exception e) {
-                return false;
-            }
-        });
+        WebElement element = waitBots.waitForElement(locator);
+        scrollToElement(element);
+        element.click();
     }
 
     public void typing(By locator, String text) {
-        waitBots.fluentWait().until(d -> {
-            try {
-                WebElement element = d.findElement(locator);
-                new Actions(d).scrollToElement(element).perform();
-                element.clear();
-                element.sendKeys(text);
-                return true;
-            } catch (Exception e) {
-                return false;
-            }
-        });
+        WebElement element = waitBots.waitForElement(locator);
+        scrollToElement(element);
+        element.clear();
+        element.sendKeys(text);
     }
 
     public String getText(By locator) {
-        return waitBots.fluentWait().until(d -> {
-            try {
-                WebElement element = d.findElement(locator);
-                new Actions(d).scrollToElement(element).perform();
-                String textMsg = element.getText();
-                return !textMsg.isEmpty() ? textMsg : null;
-            } catch (Exception e) {
-                return null;
-            }
-        });
+        WebElement element = waitBots.waitForElement(locator);
+        scrollToElement(element);
+        return element.getText();
     }
 
     public boolean isElementDisplayed(By locator) {
         try {
-            return waitBots.fluentWait().until(d -> {
-                try {
-                    return d.findElement(locator).isDisplayed();
-                } catch (Exception e) {
-                    return false;
-                }
-            });
+            WebElement element = waitBots.waitForElement(locator);
+            return element.isDisplayed();
         } catch (Exception e) {
             return false;
         }
@@ -80,5 +52,9 @@ public class ActionsBot {
 
     public String getPageTitle() {
         return driver.getTitle();
+    }
+
+    private void scrollToElement(WebElement element) {
+        new Actions(driver).scrollToElement(element).perform();
     }
 }

@@ -1,9 +1,8 @@
 package Engine.Bot;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.FluentWait;
-import java.time.Duration;
-import java.util.ArrayList;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class WaitBots {
     private final WebDriver driver;
@@ -12,19 +11,29 @@ public class WaitBots {
         this.driver = driver;
     }
 
-    public FluentWait<WebDriver> fluentWait() {
-        return new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(15))
-                .pollingEvery(Duration.ofMillis(100))
-                .ignoreAll(getExceptions());
-    }
+    public WebElement waitForElement(By locator) {
+        int attempts = 0;
+        int maxAttempts = 15;
 
-    private ArrayList<Class<? extends Exception>> getExceptions() {
-        ArrayList<Class<? extends Exception>> exceptions = new ArrayList<>();
-        exceptions.add(NoSuchElementException.class);
-        exceptions.add(StaleElementReferenceException.class);
-        exceptions.add(ElementClickInterceptedException.class);
-        exceptions.add(ElementNotInteractableException.class);
-        return exceptions;
+        while (attempts < maxAttempts) {
+            try {
+                WebElement element = driver.findElement(locator);
+                if (element.isDisplayed()) {
+                    return element;
+                }
+            } catch (Exception e) {
+                // element not found or not displayed
+            }
+
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+
+            attempts++;
+        }
+
+        throw new RuntimeException("Element not found: " + locator);
     }
 }

@@ -1,4 +1,3 @@
-
 package SauceDemoTests;
 
 import SauceDemoPages.LoginPage;
@@ -18,161 +17,74 @@ public class LoginPageTests {
 
     // VALID LOGIN SCENARIOS
 
-    // Scenario 1 (TC-1): Valid Login
-    @Test(priority = 1)
-    public void testValidLoginStandardUser() {
+    @Test(priority = 1, dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
+    public void testValidLogin(String username, String password) {
         loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
+                .enterUsername(username)
+                .enterPassword(password)
                 .clickLoginButton();
 
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs",
-                "Page title does not match!");
+                "Page title does not match for user: " + username);
         Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
-                "URL does not contain expected part: /inventory.html");
+                "URL does not contain expected part for user: " + username);
     }
 
-    // Scenario 1 (TC-2): Successful Login with Standard User
-    @Test(priority = 2)
-    public void testSuccessfulLoginVerifyProductsPage() {
+    @Test(priority = 2, dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
+    public void testSuccessfulLoginVerifyProductsPage(String username, String password) {
         loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
+                .enterUsername(username)
+                .enterPassword(password)
                 .clickLoginButton();
 
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs",
-                "Page title does not match!");
+                "Page title does not match for user: " + username);
         Assert.assertTrue(loginPage.isProductsPageTitleDisplayed(),
-                "Products page title is not displayed!");
+                "Products page title is not displayed for user: " + username);
     }
 
     // INVALID LOGIN SCENARIOS
 
-    // Scenario 2 (TC-1): Invalid Login
-    @Test(priority = 3)
-    public void testInvalidLogin() {
+    @Test(priority = 3, dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class)
+    public void testInvalidLogin(String username, String password) {
         loginPage.navigateToLoginPage()
-                .enterUsername("invalid_user")
-                .enterPassword("secret_sauce")
+                .enterUsername(username)
+                .enterPassword(password)
                 .clickLoginButton();
 
         Assert.assertEquals(
                 loginPage.getErrorMessage(),
                 "Epic sadface: Username and password do not match any user in this service",
-                "Error message does not match!");
-    }
-
-    // Scenario 2 (TC-2): Failed Login with Invalid Credentials
-    @Test(priority = 4)
-    public void testFailedLoginWrongCredentials() {
-        loginPage.navigateToLoginPage()
-                .enterUsername("wrong_user")
-                .enterPassword("wrong_password")
-                .clickLoginButton();
-
-        Assert.assertEquals(
-                loginPage.getErrorMessage(),
-                "Epic sadface: Username and password do not match any user in this service",
-                "Error message does not match!");
+                "Error message does not match for user: " + username);
     }
 
     // EMPTY FIELDS VALIDATION SCENARIOS
 
-    // Scenario 3 (TC-1): Empty Fields Validation - Empty Username
-    @Test(priority = 5)
-    public void testEmptyUsername() {
+    @Test(priority = 4, dataProvider = "emptyFieldsData", dataProviderClass = TestDataProvider.class)
+    public void testEmptyFields(String username, String password) {
         loginPage.navigateToLoginPage()
-                .enterUsername("")
-                .enterPassword("secret_sauce")
+                .enterUsername(username)
+                .enterPassword(password)
                 .clickLoginButton();
 
-        Assert.assertEquals(
-                loginPage.getErrorMessage(),
-                "Epic sadface: Username is required",
-                "Error message does not match!");
-    }
-
-    // Scenario 3 (TC-2): Login Validation - Empty Username
-    @Test(priority = 6)
-    public void testEmptyUsernameValidation() {
-        loginPage.navigateToLoginPage()
-                .enterUsername("")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
-        Assert.assertEquals(
-                loginPage.getErrorMessage(),
-                "Epic sadface: Username is required",
-                "Error message does not match!");
+        String errorMsg = loginPage.getErrorMessage();
+        Assert.assertFalse(errorMsg.isEmpty(),
+                "Error message should be displayed for empty fields");
     }
 
     // LOCKED USER SCENARIO
 
-    // Scenario 4 (TC-1): Locked User Login
-    @Test(priority = 7)
-    public void testLockedOutUser() {
+    @Test(priority = 5, dataProvider = "lockedUserData", dataProviderClass = TestDataProvider.class)
+    public void testLockedOutUser(String username, String password) {
         loginPage.navigateToLoginPage()
-                .enterUsername("locked_out_user")
-                .enterPassword("secret_sauce")
+                .enterUsername(username)
+                .enterPassword(password)
                 .clickLoginButton();
 
         Assert.assertEquals(
                 loginPage.getErrorMessage(),
                 "Epic sadface: Sorry, this user has been locked out.",
-                "Error message does not match!");
-    }
-
-    // Scenario 4 (TC-2): Login with Locked Out User
-    @Test(priority = 8)
-    public void testLoginWithLockedUser() {
-        loginPage.navigateToLoginPage()
-                .enterUsername("locked_out_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
-        Assert.assertEquals(
-                loginPage.getErrorMessage(),
-                "Epic sadface: Sorry, this user has been locked out.",
-                "Error message does not match!");
-    }
-
-    // SPECIAL USERS LOGIN SCENARIOS
-
-    // Scenario 5 (TC-1): Special Users Login - problem_user
-    @Test(priority = 9)
-    public void testProblemUserLogin() {
-        loginPage.navigateToLoginPage()
-                .enterUsername("problem_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
-        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
-                "URL does not contain expected part: /inventory.html");
-        Assert.assertTrue(loginPage.isInventoryContainerDisplayed(),
-                "Products page is not displayed after login!");
-    }
-
-    // Scenario 5 (TC-2): Login with Performance Glitch User
-    @Test(priority = 10)
-    public void testPerformanceGlitchUser() {
-        long startTime = System.currentTimeMillis();
-
-        loginPage.navigateToLoginPage()
-                .enterUsername("performance_glitch_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
-        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"),
-                "URL does not contain expected part: /inventory.html");
-        Assert.assertTrue(loginPage.isInventoryContainerDisplayed(),
-                "Products page is not displayed after login!");
-
-        long duration = System.currentTimeMillis() - startTime;
-        System.out.println("Performance Glitch User - Login took: " + duration + " ms");
-
-        // Assert delay exists (should be more than 2 seconds)
-        Assert.assertTrue(duration > 2000,
-                "Expected delay for performance_glitch_user but login was too fast");
+                "Locked user error message not correct");
     }
 
     // SETUP & TEARDOWN

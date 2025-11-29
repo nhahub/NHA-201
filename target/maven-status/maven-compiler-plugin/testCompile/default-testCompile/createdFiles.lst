@@ -1,6 +1,7 @@
-SauceDemoTests\LoginPageTests.class
 SauceDemoTests\BaseTest.class
-SauceDemoTests\CheckoutConfirmationPageTests.class
 SauceDemoTests\CheckoutPageTests.class
 SauceDemoTests\HomePageTest.class
 SauceDemoTests\CartPageTests.class
+SauceDemoTests\LoginPageTests.class
+SauceDemoTests\CheckoutConfirmationPageTests.class
+SauceDemoTests\TestDataProvider.class
