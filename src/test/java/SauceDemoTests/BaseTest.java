@@ -10,11 +10,13 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+        //open Browser
         bot = new Bot();
     }
 
     @AfterMethod
     public void tearDown() {
+        //close Browser
         bot.quit();
     }
 }
