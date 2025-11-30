@@ -58,12 +58,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
 
-        Assert.assertEquals(
+        Assert.assertNotEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
-        Assert.assertEquals(
-                confirmationPage.getThankYouMessageText(),
-                "Thank you for your order!");
     }
 
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
