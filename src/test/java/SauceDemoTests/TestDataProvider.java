@@ -1,3 +1,4 @@
+
 package SauceDemoTests;
 
 import org.testng.annotations.DataProvider;
@@ -6,7 +7,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "validLoginData")
     public Object[][] provideValidLoginData() {
-        return new Object[][] {
+        return new Object[][]{
                 {"standard_user", "secret_sauce"},
                 {"problem_user", "secret_sauce"},
                 {"performance_glitch_user", "secret_sauce"}
@@ -15,7 +16,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "invalidLoginData")
     public Object[][] provideInvalidLoginData() {
-        return new Object[][] {
+        return new Object[][]{
                 {"invalid_user", "secret_sauce"},
                 {"wrong_user", "wrong_password"},
                 {"fake_user", "fake_pass"}
@@ -24,7 +25,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "emptyFieldsData")
     public Object[][] provideEmptyFieldsData() {
-        return new Object[][] {
+        return new Object[][]{
                 {"", "secret_sauce"},
                 {"standard_user", ""},
                 {"", ""}
@@ -33,26 +34,32 @@ public class TestDataProvider {
 
     @DataProvider(name = "lockedUserData")
     public Object[][] provideLockedUserData() {
-        return new Object[][] {
+        return new Object[][]{
                 {"locked_out_user", "secret_sauce"}
         };
     }
 
-    @DataProvider(name = "checkoutData")
-    public Object[][] provideCheckoutData() {
-        return new Object[][] {
-                {"First Name", "Last Name", "10000"},
-                {"Ahmed", "Ali", "12345"},
-                {"John", "Doe", "99999"}
+    // 1) Valid checkout data: Group / Project / 201
+    @DataProvider(name = "checkoutValidData")
+    public Object[][] provideCheckoutValidData() {
+        return new Object[][]{
+                {"Group", "Project", "201"}
         };
     }
 
-    @DataProvider(name = "emptyCheckoutFieldsData")
-    public Object[][] provideEmptyCheckoutFieldsData() {
-        return new Object[][] {
-                {"", "Last Name", "10000"},
-                {"First Name", "", "10000"},
-                {"First Name", "Last Name", ""}
+    // 2) Empty first name
+    @DataProvider(name = "checkoutEmptyFirstName")
+    public Object[][] provideCheckoutEmptyFirstName() {
+        return new Object[][]{
+                {"", "Project", "201"}
+        };
+    }
+
+    // 3) Empty zipcode
+    @DataProvider(name = "checkoutEmptyZip")
+    public Object[][] provideCheckoutEmptyZip() {
+        return new Object[][]{
+                {"Group", "Project", ""}
         };
     }
 }

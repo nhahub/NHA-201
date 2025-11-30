@@ -19,24 +19,41 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @BeforeMethod
     public void setUpConfirmation() {
         loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
+        loginPage.loginAsStandardUser();
+    }
+
+    private CheckoutConfirmationPage finishOrderWithBackpack() {
+        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+
+        cartPage = new CartPage(bot);
+        cartPage.goToCheckout();
+
+        checkoutPage = new CheckoutPage(bot);
+        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
+
+        bot.click(By.id("finish"));
+        return new CheckoutConfirmationPage(bot);
     }
 
     @Test
     public void Confirmation_TC1_finishOrderWithItems() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        confirmationPage = finishOrderWithBackpack();
 
+        Assert.assertEquals(
+                confirmationPage.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-complete.html");
+        Assert.assertEquals(
+                confirmationPage.getThankYouMessageText(),
+                "Thank you for your order!");
+    }
+
+    @Test
+    public void Confirmation_TC2_finishEmptyCartOrder() {
         cartPage = new CartPage(bot);
-        cartPage.openCartLink().clickCheckoutButton();
+        cartPage.goToCheckout();
 
         checkoutPage = new CheckoutPage(bot);
-        checkoutPage.fillFirstName("First Name")
-                .fillLastName("Last Name")
-                .fillZipCode("10000")
-                .clickContinue();
+        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
 
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
@@ -50,20 +67,8 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
-    public void Confirmation_TC2_backToHomeAfterCompletion() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-
-        cartPage = new CartPage(bot);
-        cartPage.openCartLink().clickCheckoutButton();
-
-        checkoutPage = new CheckoutPage(bot);
-        checkoutPage.fillFirstName("First Name")
-                .fillLastName("Last Name")
-                .fillZipCode("10000")
-                .clickContinue();
-
-        bot.click(By.id("finish"));
-        confirmationPage = new CheckoutConfirmationPage(bot);
+    public void Confirmation_TC3_backToHomeAfterCompletion() {
+        confirmationPage = finishOrderWithBackpack();
 
         bot.click(By.id("back-to-products"));
 

@@ -17,39 +17,60 @@ public class CheckoutPageTests extends BaseTest {
     @BeforeMethod
     public void setUpCheckout() {
         loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
+        loginPage.loginAsStandardUser();
 
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         cartPage = new CartPage(bot);
-        cartPage.openCartLink().clickCheckoutButton();
+        cartPage.addBackpackAndGoToCheckout();
+
         checkoutPage = new CheckoutPage(bot);
     }
 
-    @Test(dataProvider = "checkoutData", dataProviderClass = TestDataProvider.class)
+    @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithValidData(String firstName, String lastName, String zipCode) {
         checkoutPage.fillFirstName(firstName)
                 .fillLastName(lastName)
                 .fillZipCode(zipCode)
                 .clickContinue();
 
-        Assert.assertEquals(bot.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html");
+        Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
     }
 
-    @Test(dataProvider = "emptyCheckoutFieldsData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testCheckoutWithValidData")
-    public void testCheckoutWithEmptyFields(String firstName, String lastName, String zipCode) {
+    @Test(dataProvider = "checkoutEmptyFirstName", dataProviderClass = TestDataProvider.class)
+    public void testCheckoutWithEmptyFirstName(String firstName, String lastName, String zipCode) {
         checkoutPage.fillFirstName(firstName)
                 .fillLastName(lastName)
                 .fillZipCode(zipCode)
                 .clickContinue();
 
-        Assert.assertNotEquals(bot.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html");
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
 
-        String errorMsg = bot.getDriver().findElement(By.xpath("//h3[@data-test='error']")).getText();
+        String errorMsg = bot.getDriver()
+                .findElement(By.xpath("//h3[@data-test='error']"))
+                .getText();
+        Assert.assertTrue(errorMsg.contains("Error"));
+    }
+
+    @Test(dataProvider = "checkoutEmptyZip", dataProviderClass = TestDataProvider.class)
+    public void testCheckoutWithEmptyZip(String firstName, String lastName, String zipCode) {
+        checkoutPage.fillFirstName(firstName)
+                .fillLastName(lastName)
+                .fillZipCode(zipCode)
+                .clickContinue();
+
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
+
+        String errorMsg = bot.getDriver()
+                .findElement(By.xpath("//h3[@data-test='error']"))
+                .getText();
         Assert.assertTrue(errorMsg.contains("Error"));
     }
 }

@@ -35,4 +35,11 @@ public class CheckoutPage {
         bot.click(continueButton);
         return this;
     }
+
+    public CheckoutPage completeCheckoutForm(String userFirstName, String userLastName, String userZipCode) {
+        return fillFirstName(userFirstName)
+                .fillLastName(userLastName)
+                .fillZipCode(userZipCode)
+                .clickContinue();
+    }
 }

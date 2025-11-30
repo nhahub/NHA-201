@@ -1,8 +1,7 @@
 package SauceDemoTests;
-//Akram
+
 import SauceDemoPages.CartPage;
 import SauceDemoPages.LoginPage;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,28 +14,25 @@ public class CartPageTests extends BaseTest {
     @BeforeMethod
     public void setUpCart() {
         loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
-
+        loginPage.loginAsStandardUser();
         cartPage = new CartPage(bot);
     }
 
     @Test
     public void Cart_Tc1_openCartAfterAddingItems() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        cartPage.addBackpack();
         cartPage.openCartLink();
 
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 1);
         Assert.assertEquals(cartPage.getFirstItemName(), "Sauce Labs Backpack");
         Assert.assertEquals(bot.getCurrentUrl(), "https://www.saucedemo.com/cart.html");
+        Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
     }
 
-    @Test(dependsOnMethods = "Cart_Tc1_openCartAfterAddingItems")
+    @Test
     public void Cart_Tc2_removeItemFromCart() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        cartPage.addBackpack();
         cartPage.openCartLink();
         int itemsBefore = cartPage.countCartItems();
 
@@ -44,14 +40,19 @@ public class CartPageTests extends BaseTest {
 
         int itemsAfter = cartPage.countCartItems();
         Assert.assertTrue(itemsAfter == itemsBefore - 1 || itemsAfter == 0);
+
+        if (itemsAfter > 0) {
+            Assert.assertEquals(cartPage.getCartBadgeNumber(), itemsAfter);
+        }
     }
 
-    @Test(dependsOnMethods = "Cart_Tc2_removeItemFromCart")
+    @Test
     public void Cart_Tc3_checkoutWithOneItem() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        cartPage.addBackpack();
         cartPage.openCartLink();
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 1);
+        Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
 
         cartPage.clickCheckoutButton();
 
@@ -60,15 +61,13 @@ public class CartPageTests extends BaseTest {
                 "https://www.saucedemo.com/checkout-step-one.html");
     }
 
-    @Test(dependsOnMethods = "Cart_Tc3_checkoutWithOneItem")
+    @Test
     public void Cart_Tc4_checkoutWithMultipleItems() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-bike-light")).click();
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
-
+        cartPage.addMultipleItems();
         cartPage.openCartLink();
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 3);
+        Assert.assertEquals(cartPage.getCartBadgeNumber(), 3);
 
         cartPage.clickCheckoutButton();
 

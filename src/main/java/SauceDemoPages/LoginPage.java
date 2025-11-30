@@ -57,4 +57,11 @@ public class LoginPage {
     public String getErrorMessage() {
         return bot.getText(errorMessage);
     }
+
+    public void loginAsStandardUser() {
+        navigateToLoginPage()
+                .enterUsername("standard_user")
+                .enterPassword("secret_sauce")
+                .clickLoginButton();
+    }
 }
