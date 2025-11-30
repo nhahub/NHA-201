@@ -79,7 +79,7 @@ public class FluentBot {
         public WebDriver getDriver() {
             return driver;
         }
-
+//
         public void quit() {
             driver.quit();
         }

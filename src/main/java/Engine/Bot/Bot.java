@@ -76,7 +76,7 @@ public class Bot {
     public WebDriver getDriver() {
         return driver;
     }
-
+//
     public void quit() {
         driver.quit();
     }
