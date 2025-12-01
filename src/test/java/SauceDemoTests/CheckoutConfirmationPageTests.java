@@ -1,5 +1,6 @@
 package SauceDemoTests;
 
+import Base.BaseTest;
 import SauceDemoPages.CartPage;
 import SauceDemoPages.CheckoutConfirmationPage;
 import SauceDemoPages.CheckoutPage;

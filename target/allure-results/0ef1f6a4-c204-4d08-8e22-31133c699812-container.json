@@ -1,0 +1,1 @@
+{"uuid":"0ef1f6a4-c204-4d08-8e22-31133c699812","name":"SauceDemoTests.BaseTest.setUp","children":["eee02509-abad-4d58-9fb5-c11ada591937"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1764575016915,"stop":1764575018023}],"afters":[],"start":1764575016914,"stop":1764575018025}
