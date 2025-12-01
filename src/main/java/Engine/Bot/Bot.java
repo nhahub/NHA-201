@@ -73,6 +73,14 @@ public class Bot {
         return driver.getTitle();
     }
 
+    public void scrollToElement(By locator) {
+        wait.until(d -> {
+            WebElement element = d.findElement(locator);
+            new Actions(d).scrollToElement(element).perform();
+            return true;
+        });
+    }
+
     public WebDriver getDriver() {
         return driver;
     }

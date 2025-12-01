@@ -3,24 +3,47 @@ package SauceDemoTests;
 import SauceDemoPages.HomePage;
 import SauceDemoPages.LoginPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class HomePageTest extends BaseTest {
 
-    @Test
-    public void loginAndHomeTests() {
+    private HomePage homePage;
+
+    @BeforeMethod
+    public void setUpHomePage() {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
-                .clickLoginButton();
+        loginPage.loginAsStandardUser();
 
-        Assert.assertEquals(bot.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
+        Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/inventory.html",
+                "User did NOT land on Home / Inventory page after login!"
+        );
 
-        HomePage homePage = new HomePage(bot);
-        homePage.scrollToBottom().scrollToTop();
+        homePage = new HomePage(bot);
+    }
+
+    @Test(priority = 1)
+    public void Home_Tc1_scrollAndCheckBadge() {
+
+        homePage
+                .scrollToBottom()
+                .scrollToTop();
+
+
+        Assert.assertTrue(bot.getCurrentUrl().contains("inventory"),
+                "User is not on Home / Inventory page!");
+    }
+
+    @Test(priority = 2)
+    public void Home_Tc2_addBackpackAndValidateBadge() {
+
+        homePage.addBackpackToCart();
 
         String badge = homePage.getCartBadgeCount();
-        Assert.assertTrue(badge.isEmpty() || badge.matches("\\d+"));
+
+        Assert.assertEquals(badge, "1",
+                "Cart badge should be '1' after adding the backpack!");
     }
 }
