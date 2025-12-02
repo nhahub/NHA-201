@@ -62,4 +62,16 @@ public class TestDataProvider {
                 {"Group", "Project", ""}
         };
     }
+
+    public class SortingDataProvider {
+        @DataProvider(name = "sortOptions")
+        public static Object[][] sortOptions() {
+            return new Object[][] {
+                    {"Name (A to Z)"},
+                    {"Name (Z to A)"},
+                    {"Price (low to high)"},
+                    {"Price (high to low)"}
+            };
+        }
+    }
 }

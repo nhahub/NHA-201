@@ -15,6 +15,7 @@ import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 
 import static java.awt.SystemColor.text;
 
@@ -95,6 +96,14 @@ public class Bot {
             return true;
         });
     }
+    public WebElement find(By locator) {
+        return wait.until(d -> d.findElement(locator));
+    }
+
+    public List<WebElement> findAll(By locator) {
+        return wait.until(d -> d.findElements(locator));
+    }
+
 
     public static String getTimestamp() {
         return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
@@ -113,7 +122,9 @@ public class Bot {
             e.printStackTrace();
         }
     }
-
+    public List<WebElement> getElements(By locator) {
+        return wait.until(driver -> driver.findElements(locator));
+    }
     public WebDriver getDriver() {
         return driver;
     }
