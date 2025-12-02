@@ -1,0 +1,9 @@
+DataDrivenTest\TestDataProvider$SortingDataProvider.class
+Base\BaseTest.class
+SauceDemoTests\CheckoutPageTests.class
+SauceDemoTests\HomePageTest.class
+SauceDemoTests\CartPageTests.class
+SauceDemoTests\LoginPageTests.class
+SauceDemoTests\CheckoutConfirmationPageTests.class
+SauceDemoTests\SortingFilterPageTest.class
+DataDrivenTest\TestDataProvider.class

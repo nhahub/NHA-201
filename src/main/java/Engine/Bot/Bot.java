@@ -17,12 +17,12 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
-import static java.awt.SystemColor.text;
-
 public class Bot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
+    private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
 
+    //  Constructor
     public Bot() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized", "--guest", "--disable-notifications");
@@ -35,50 +35,10 @@ public class Bot {
                 .ignoring(NoSuchElementException.class);
     }
 
+    // Navigation Methods
     public void navigateTo(String url) {
         driver.navigate().to(url);
         BotLogs.info("Navigated to: " + url);
-    }
-
-    public void click(By locator) {
-        wait.until(d -> {
-            d.findElement(locator).click();
-            return true;
-        });
-        BotLogs.info("Clicked on element: " + locator);
-    }
-
-    public void type(By locator, String text) {
-        wait.until(d -> {
-            WebElement element = d.findElement(locator);
-            element.clear();
-            element.sendKeys(text);
-            return true;
-        });
-        BotLogs.info("Typed text: " + text + "' into element with locator: " + locator.toString());
-
-    }
-
-    public String getText(By locator) {
-        return wait.until(d -> {
-            WebElement element = d.findElement(locator);
-            new Actions(d).scrollToElement(element).perform();
-            String text = element.getText();
-            return (text != null && !text.trim().isEmpty()) ? text : null;
-        });
-
-    }
-
-    public boolean isElementDisplayed(By locator) {
-        Boolean result = wait.until(d -> {
-            try {
-                return d.findElement(locator).isDisplayed();
-            } catch (Exception e) {
-                return false;
-            }
-        });
-        BotLogs.info("Element displayed status for locator " + locator +": " + result);
-        return result != null && result;
     }
 
     public String getCurrentUrl() {
@@ -89,13 +49,76 @@ public class Bot {
         return driver.getTitle();
     }
 
+    // Click Methods
+    public void click(By locator) {
+        wait.until(d -> {
+            d.findElement(locator).click();
+            return true;
+        });
+        BotLogs.info("Clicked on element: " + locator);
+    }
+
+    public void findAndClick(By locator) {
+        wait.until(d -> {
+            d.findElement(locator).click();
+            return true;
+        });
+        BotLogs.info("Found and clicked on element: " + locator);
+    }
+
+    // Type / Input Methods
+    public void type(By locator, String text) {
+        wait.until(d -> {
+            WebElement element = d.findElement(locator);
+            element.clear();
+            element.sendKeys(text);
+            return true;
+        });
+        BotLogs.info("Typed text: " + text + " into element with locator: " + locator.toString());
+    }
+
+    //  Get Text Methods
+    public String getText(By locator) {
+        return wait.until(d -> {
+            WebElement element = d.findElement(locator);
+            new Actions(d).scrollToElement(element).perform();
+            String text = element.getText();
+            return (text != null && !text.trim().isEmpty()) ? text : null;
+        });
+    }
+
+    public String findAndGetText(By locator) {
+        return wait.until(d -> {
+            WebElement element = d.findElement(locator);
+            String text = element.getText();
+            return (text != null && !text.trim().isEmpty()) ? text : null;
+        });
+    }
+
+    // Element Display / Existence Methods
+    public boolean isElementDisplayed(By locator) {
+        Boolean result = wait.until(d -> {
+            try {
+                return d.findElement(locator).isDisplayed();
+            } catch (Exception e) {
+                return false;
+            }
+        });
+        BotLogs.info("Element displayed status for locator " + locator + ": " + result);
+        return result != null && result;
+    }
+
+    //  Scroll Methods
     public void scrollToElement(By locator) {
         wait.until(d -> {
             WebElement element = d.findElement(locator);
             new Actions(d).scrollToElement(element).perform();
             return true;
         });
+        BotLogs.info("Scrolled to element: " + locator);
     }
+
+    // Find Element Methods
     public WebElement find(By locator) {
         return wait.until(d -> d.findElement(locator));
     }
@@ -105,31 +128,35 @@ public class Bot {
     }
 
 
-    public static String getTimestamp() {
-        return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
+    public int countElements(By locator) {
+        return wait.until(driver -> driver.findElements(locator).size());
     }
-    private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
+
+    // Screenshot Methods
     public void takeScreenShot(WebDriver driver, String screenshotName) {
         try {
-            // Capture screenshot using TakeScreenshot
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            // Save screenshot to a file if needed
             File screenshotFile = new File(SCREENSHOTS_PATH + screenshotName + "-" + getTimestamp() + ".png");
             FileUtils.copyFile(screenshotSrc, screenshotFile);
-            // Attach the screenshot to Allure
             Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
+            BotLogs.info("Screenshot taken: " + screenshotName);
         } catch (Exception e) {
+            BotLogs.error("Failed to take screenshot: " + e.getMessage());
             e.printStackTrace();
         }
     }
-    public List<WebElement> getElements(By locator) {
-        return wait.until(driver -> driver.findElements(locator));
+
+    // Utility Methods
+    public static String getTimestamp() {
+        return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
     }
+
     public WebDriver getDriver() {
         return driver;
     }
 
     public void quit() {
         driver.quit();
+        BotLogs.info("Browser closed");
     }
 }
