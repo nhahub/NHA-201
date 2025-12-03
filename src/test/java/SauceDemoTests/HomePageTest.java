@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class HomePageTest extends BaseTest {
 
     private HomePage homePage;
-
+//
     @BeforeMethod
     public void setUpHomePage() {
         LoginPage loginPage = new LoginPage(bot);
