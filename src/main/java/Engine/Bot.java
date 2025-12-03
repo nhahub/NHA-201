@@ -1,10 +1,8 @@
-package Engine.Bot;
-
+package Engine;
+import Engine.BotLogger;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -23,22 +21,19 @@ public class Bot {
     private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
 
     //  Constructor
-    public Bot() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized", "--guest", "--disable-notifications");
-        driver = new ChromeDriver(options);
-
-        wait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(15))
-                .pollingEvery(Duration.ofMillis(300))
-                .ignoring(ElementNotInteractableException.class)
-                .ignoring(NoSuchElementException.class);
-    }
+    public Bot(WebDriver driver) {
+            this.driver = driver;
+            this.wait = new FluentWait<>(driver)
+                    .withTimeout(Duration.ofSeconds(15))
+                    .pollingEvery(Duration.ofMillis(300))
+                    .ignoring(ElementNotInteractableException.class)
+                    .ignoring(NoSuchElementException.class);
+        }
 
     // Navigation Methods
     public void navigateTo(String url) {
         driver.navigate().to(url);
-        BotLogs.info("Navigated to: " + url);
+        BotLogger.info("Navigated to: " + url);
     }
 
     public String getCurrentUrl() {
@@ -55,7 +50,7 @@ public class Bot {
             d.findElement(locator).click();
             return true;
         });
-        BotLogs.info("Clicked on element: " + locator);
+        BotLogger.info("Clicked on element: " + locator);
     }
 
     public void findAndClick(By locator) {
@@ -63,7 +58,7 @@ public class Bot {
             d.findElement(locator).click();
             return true;
         });
-        BotLogs.info("Found and clicked on element: " + locator);
+        BotLogger.info("Found and clicked on element: " + locator);
     }
 
     // Type / Input Methods
@@ -74,7 +69,7 @@ public class Bot {
             element.sendKeys(text);
             return true;
         });
-        BotLogs.info("Typed text: " + text + " into element with locator: " + locator.toString());
+        BotLogger.info("Typed text: " + text + " into element with locator: " + locator.toString());
     }
 
     //  Get Text Methods
@@ -104,7 +99,7 @@ public class Bot {
                 return false;
             }
         });
-        BotLogs.info("Element displayed status for locator " + locator + ": " + result);
+        BotLogger.info("Element displayed status for locator " + locator + ": " + result);
         return result != null && result;
     }
 
@@ -115,7 +110,7 @@ public class Bot {
             new Actions(d).scrollToElement(element).perform();
             return true;
         });
-        BotLogs.info("Scrolled to element: " + locator);
+        BotLogger.info("Scrolled to element: " + locator);
     }
 
     // Find Element Methods
@@ -133,15 +128,15 @@ public class Bot {
     }
 
     // Screenshot Methods
-    public void takeScreenShot(WebDriver driver, String screenshotName) {
+    public static void takeScreenShot(WebDriver driver, String screenshotName) {
         try {
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File screenshotFile = new File(SCREENSHOTS_PATH + screenshotName + "-" + getTimestamp() + ".png");
             FileUtils.copyFile(screenshotSrc, screenshotFile);
             Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
-            BotLogs.info("Screenshot taken: " + screenshotName);
+            BotLogger.info("Screenshot taken: " + screenshotName);
         } catch (Exception e) {
-            BotLogs.error("Failed to take screenshot: " + e.getMessage());
+            BotLogger.error("Failed to take screenshot: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -155,12 +150,4 @@ public class Bot {
         return !driver.findElements(locator).isEmpty();
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
-    public void quit() {
-        driver.quit();
-        BotLogs.info("Browser closed");
-    }
 }
