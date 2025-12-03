@@ -1,5 +1,7 @@
 package SauceDemoTests;
 
+import Base.BaseTest;
+import DataDrivenTest.TestDataProvider;
 import SauceDemoPages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

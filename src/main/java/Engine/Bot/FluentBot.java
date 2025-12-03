@@ -1,5 +1,7 @@
 package Engine.Bot;
 
+import io.qameta.allure.Allure;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,7 +9,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 public class FluentBot {
     private final WebDriver driver;
@@ -76,10 +83,29 @@ public class FluentBot {
             return driver.getTitle();
         }
 
+        public static String getTimestamp() {
+        return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
+        }
+        private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
+        public FluentBot takeScreenShot(WebDriver driver, String screenshotName) {
+        try {
+            // Capture screenshot using TakeScreenshot
+            File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            // Save screenshot to a file if needed
+            File screenshotFile = new File(SCREENSHOTS_PATH + screenshotName + "-" + getTimestamp() + ".png");
+            FileUtils.copyFile(screenshotSrc, screenshotFile);
+            // Attach the screenshot to Allure
+            Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
+
         public WebDriver getDriver() {
             return driver;
         }
-//
+
         public void quit() {
             driver.quit();
         }

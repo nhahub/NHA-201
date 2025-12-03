@@ -1,5 +1,6 @@
 package SauceDemoTests;
 
+import Base.BaseTest;
 import SauceDemoPages.HomePage;
 import SauceDemoPages.LoginPage;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 public class HomePageTest extends BaseTest {
 
     private HomePage homePage;
-
+//
     @BeforeMethod
     public void setUpHomePage() {
         LoginPage loginPage = new LoginPage(bot);

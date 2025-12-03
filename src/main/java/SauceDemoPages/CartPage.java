@@ -31,7 +31,7 @@ public class CartPage {
     }
 
     public int countCartItems() {
-        return bot.getDriver().findElements(cartItems).size();
+        return bot.countElements(cartItems);
     }
 
     public String getFirstItemName() {

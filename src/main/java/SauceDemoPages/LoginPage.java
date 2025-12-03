@@ -38,9 +38,6 @@ public class LoginPage {
         return this;
     }
 
-    public boolean isInventoryContainerDisplayed() {
-        return bot.isElementDisplayed(inventoryContainer);
-    }
 
     public String getPageTitle() {
         return bot.getPageTitle();
