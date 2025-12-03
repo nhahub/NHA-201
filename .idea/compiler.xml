@@ -9,8 +9,8 @@
         <module name="QA-Seenium" />
       </profile>
       <profile name="Annotation profile for Team201_SaucedemoTesting" enabled="true">
-        <sourceOutputDir name="test-outputs/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="test-outputs/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="test-output/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="test-output/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Team201_SaucedemoTesting" />
       </profile>

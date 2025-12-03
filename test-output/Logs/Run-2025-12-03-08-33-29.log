@@ -1,0 +1,9 @@
+08:33:29 INFO  [Log] Chrome driver is opened
+08:33:31 INFO  [Log] Bot is initialized
+08:33:31 INFO  [Log] Navigating to Login Page...
+08:33:32 INFO  [Log] Navigated to: https://www.saucedemo.com/
+08:33:33 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+08:33:33 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+08:33:33 INFO  [Log] Clicked on element: By.id: login-button
+08:33:33 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+08:33:33 INFO  [Log] Clicked on element: By.id: shopping_cart_container

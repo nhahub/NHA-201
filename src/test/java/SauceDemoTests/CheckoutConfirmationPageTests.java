@@ -8,8 +8,8 @@ import SauceDemoPages.LoginPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 public class CheckoutConfirmationPageTests extends BaseTest {
 
     private LoginPage loginPage;
@@ -24,8 +24,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-
+        //Edited by nada from getDriver() to findAndClick()
+        //bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
         cartPage = new CartPage(bot);
         cartPage.goToCheckout();
 

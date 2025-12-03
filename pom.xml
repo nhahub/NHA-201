@@ -97,7 +97,7 @@
     </dependencies>
 
     <build>
-        <directory>test-outputs/target</directory>
+        <directory>test-output/target</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

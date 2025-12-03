@@ -52,6 +52,7 @@ public class TestDataProvider {
     public Object[][] provideCheckoutEmptyFirstName() {
         return new Object[][]{
                 {"", "Project", "201"}
+
         };
     }
 

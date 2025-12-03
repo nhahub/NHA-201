@@ -2,32 +2,39 @@ package SauceDemoTests;
 
 import Base.BaseTest;
 import DataDrivenTest.TestDataProvider;
+import DataDrivenTest.UserData;
+import Engine.BotData;
+import Engine.BotLogger;
 import SauceDemoPages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class LoginPageTests extends BaseTest {
-
-    @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class)
-    public void testValidLogin(String username, String password) {
+    private final List<UserData> users = BotData.getArrayFromJson("login", "users", UserData.class);
+    @Test
+    public void testValidLogin() {
+        for (UserData user : users) {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername(username)
-                .enterPassword(password)
-                .clickLoginButton();
-
+        BotLogger.info("Test Started: loginTest");
+        loginPage.navigateToLoginPage();
+        loginPage.enterUsername(user.username);
+        loginPage.enterPassword(user.password);
+        loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"));
+        BotLogger.info("Test Finished: loginTest");
+        }
     }
 
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
     public void testSuccessfulLoginVerifyProductsPage(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername(username)
-                .enterPassword(password)
-                .clickLoginButton();
-
+        loginPage.navigateToLoginPage();
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.isProductsPageTitleDisplayed());
     }
@@ -35,24 +42,21 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testSuccessfulLoginVerifyProductsPage")
     public void testInvalidLogin(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername(username)
-                .enterPassword(password)
-                .clickLoginButton();
-
-        Assert.assertEquals(
-                loginPage.getErrorMessage(),
+        loginPage.navigateToLoginPage();
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorMessage(),
                 "Epic sadface: Username and password do not match any user in this service");
     }
 
     @Test(dataProvider = "emptyFieldsData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testInvalidLogin")
     public void testEmptyFields(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername(username)
-                .enterPassword(password)
-                .clickLoginButton();
-
+        loginPage.navigateToLoginPage();
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLoginButton();
         String errorMsg = loginPage.getErrorMessage();
         Assert.assertFalse(errorMsg.isEmpty());
     }
@@ -60,11 +64,10 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "lockedUserData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testEmptyFields")
     public void testLockedOutUser(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage()
-                .enterUsername(username)
-                .enterPassword(password)
-                .clickLoginButton();
-
+        loginPage.navigateToLoginPage();
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        loginPage.clickLoginButton();
         Assert.assertEquals(
                 loginPage.getErrorMessage(),
                 "Epic sadface: Sorry, this user has been locked out.");

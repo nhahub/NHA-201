@@ -1,0 +1,41 @@
+19:04:48 INFO  [Log] Chrome driver is opened
+19:04:51 INFO  [Log] Bot is initialized
+19:04:51 INFO  [Log] Navigating to Login Page...
+19:04:51 INFO  [Log] Navigated to: https://www.saucedemo.com/
+19:04:52 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+19:04:52 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+19:04:52 INFO  [Log] Clicked on element: By.id: login-button
+19:04:52 INFO  [Log] Test CaseConfirmation_TC1_finishOrderWithItemsstarted
+19:04:52 INFO  [Log] Found and clicked on element: By.id: add-to-cart-sauce-labs-backpack
+19:04:52 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+19:04:52 INFO  [Log] Clicked on element: By.id: checkout
+19:04:52 INFO  [Log] Typed text: First Name into element with locator: By.id: first-name
+19:04:52 INFO  [Log] Typed text: Last Name into element with locator: By.id: last-name
+19:04:52 INFO  [Log] Typed text: 10000 into element with locator: By.id: postal-code
+19:04:52 INFO  [Log] Clicked on element: By.id: continue
+19:05:13 INFO  [Log] Test CaseConfirmation_TC1_finishOrderWithItemsfailed
+19:05:13 INFO  [Log] Screenshot taken: Confirmation_TC1_finishOrderWithItems
+19:05:13 INFO  [Log] Test CaseConfirmation_TC1_finishOrderWithItemsfailed
+19:05:13 INFO  [Log] Closing browser...
+19:05:13 INFO  [Log] Browser closed
+19:05:13 INFO  [Log] Test CaseConfirmation_TC3_backToHomeAfterCompletionstarted
+19:05:13 INFO  [Log] Test CaseConfirmation_TC3_backToHomeAfterCompletionskipped
+19:05:13 INFO  [Log] Chrome driver is opened
+19:05:14 INFO  [Log] Bot is initialized
+19:05:14 INFO  [Log] Navigating to Login Page...
+19:05:14 INFO  [Log] Navigated to: https://www.saucedemo.com/
+19:05:15 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+19:05:15 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+19:05:15 INFO  [Log] Clicked on element: By.id: login-button
+19:05:15 INFO  [Log] Test CaseConfirmation_TC2_finishEmptyCartOrderstarted
+19:05:15 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+19:05:15 INFO  [Log] Clicked on element: By.id: checkout
+19:05:15 INFO  [Log] Typed text: First Name into element with locator: By.id: first-name
+19:05:15 INFO  [Log] Typed text: Last Name into element with locator: By.id: last-name
+19:05:15 INFO  [Log] Typed text: 10000 into element with locator: By.id: postal-code
+19:05:15 INFO  [Log] Clicked on element: By.id: continue
+19:05:36 INFO  [Log] Test CaseConfirmation_TC2_finishEmptyCartOrderfailed
+19:05:36 INFO  [Log] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
+19:05:36 INFO  [Log] Test CaseConfirmation_TC2_finishEmptyCartOrderfailed
+19:05:36 INFO  [Log] Closing browser...
+19:05:36 INFO  [Log] Browser closed

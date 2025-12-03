@@ -1,0 +1,21 @@
+15:52:17 INFO  [Log] Chrome driver is opened
+15:52:18 INFO  [Log] Bot is initialized
+15:52:18 INFO  [Log] Navigating to Login Page...
+15:52:19 INFO  [Log] Navigated to: https://www.saucedemo.com/
+15:52:19 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+15:52:19 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+15:52:19 INFO  [Log] Clicked on element: By.id: login-button
+15:52:19 INFO  [Log] Scrolled to element: By.className: footer
+15:52:20 INFO  [Log] Scrolled to element: By.className: app_logo
+15:52:20 INFO  [Log] Closing browser...
+15:52:20 INFO  [Log] Browser closed
+15:52:20 INFO  [Log] Chrome driver is opened
+15:52:21 INFO  [Log] Bot is initialized
+15:52:21 INFO  [Log] Navigating to Login Page...
+15:52:22 INFO  [Log] Navigated to: https://www.saucedemo.com/
+15:52:22 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+15:52:22 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+15:52:22 INFO  [Log] Clicked on element: By.id: login-button
+15:52:22 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+15:52:22 INFO  [Log] Closing browser...
+15:52:22 INFO  [Log] Browser closed

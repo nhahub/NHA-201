@@ -1,0 +1,52 @@
+18:38:50 INFO  [Log] Chrome driver is opened
+18:38:52 INFO  [Log] Bot is initialized
+18:38:52 INFO  [Log] Navigating to Login Page...
+18:38:52 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:38:53 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:38:53 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:38:53 INFO  [Log] Clicked on element: By.id: login-button
+18:38:53 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:38:53 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:38:53 INFO  [Log] Clicked on element: By.id: checkout
+18:38:53 INFO  [Log] Test CasetestCheckoutWithEmptyFirstNamestarted
+18:38:53 INFO  [Log] Typed text:  into element with locator: By.id: first-name
+18:38:53 INFO  [Log] Typed text: Project into element with locator: By.id: last-name
+18:38:53 INFO  [Log] Typed text: 201 into element with locator: By.id: postal-code
+18:38:53 INFO  [Log] Clicked on element: By.id: continue
+18:38:53 INFO  [Log] Test CasetestCheckoutWithEmptyFirstNamepassed
+18:38:53 INFO  [Log] Closing browser...
+18:38:54 INFO  [Log] Browser closed
+18:38:54 INFO  [Log] Chrome driver is opened
+18:38:54 INFO  [Log] Bot is initialized
+18:38:54 INFO  [Log] Navigating to Login Page...
+18:38:55 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:38:55 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:38:55 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:38:55 INFO  [Log] Clicked on element: By.id: login-button
+18:38:55 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:38:55 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:38:56 INFO  [Log] Clicked on element: By.id: checkout
+18:38:56 INFO  [Log] Test CasetestCheckoutWithEmptyZipstarted
+18:39:16 INFO  [Log] Test CasetestCheckoutWithEmptyZipfailed
+18:39:16 INFO  [Log] Screenshot taken: testCheckoutWithEmptyZip
+18:39:16 INFO  [Log] Test CasetestCheckoutWithEmptyZipfailed
+18:39:16 INFO  [Log] Closing browser...
+18:39:16 INFO  [Log] Browser closed
+18:39:16 INFO  [Log] Chrome driver is opened
+18:39:17 INFO  [Log] Bot is initialized
+18:39:17 INFO  [Log] Navigating to Login Page...
+18:39:18 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:39:18 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:39:18 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:39:18 INFO  [Log] Clicked on element: By.id: login-button
+18:39:18 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:39:18 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:39:18 INFO  [Log] Clicked on element: By.id: checkout
+18:39:18 INFO  [Log] Test CasetestCheckoutWithValidDatastarted
+18:39:18 INFO  [Log] Typed text: Group into element with locator: By.id: first-name
+18:39:18 INFO  [Log] Typed text: Project into element with locator: By.id: last-name
+18:39:18 INFO  [Log] Typed text: 201 into element with locator: By.id: postal-code
+18:39:18 INFO  [Log] Clicked on element: By.id: continue
+18:39:18 INFO  [Log] Test CasetestCheckoutWithValidDatapassed
+18:39:18 INFO  [Log] Closing browser...
+18:39:19 INFO  [Log] Browser closed

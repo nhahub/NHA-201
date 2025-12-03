@@ -1,6 +1,6 @@
 package SauceDemoPages;
 
-import Engine.Bot.Bot;
+import Engine.Bot;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;

@@ -1,6 +1,6 @@
 package SauceDemoPages;
 
-import Engine.Bot.Bot;
+import Engine.Bot;
 import org.openqa.selenium.By;
 
 public class CheckoutPage {

@@ -1,0 +1,152 @@
+17:54:31 INFO  [Log] Chrome driver is opened
+17:54:37 INFO  [Log] Bot is initialized
+17:54:37 INFO  [Log] Navigating to Login Page...
+17:54:38 INFO  [Log] Test CasetestValidLoginstarted
+17:54:38 INFO  [Log] Test Started: loginTest
+17:54:39 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:54:39 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+17:54:39 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:54:39 INFO  [Log] Clicked on element: By.id: login-button
+17:54:39 INFO  [Log] Test Finished: loginTest
+17:54:39 INFO  [Log] Test CasetestValidLoginpassed
+17:54:39 INFO  [Log] Closing browser...
+17:54:40 INFO  [Log] Browser closed
+17:54:40 INFO  [Log] Chrome driver is opened
+17:54:41 INFO  [Log] Bot is initialized
+17:54:41 INFO  [Log] Navigating to Login Page...
+17:54:41 INFO  [Log] Test CasetestValidLoginstarted
+17:54:41 INFO  [Log] Test Started: loginTest
+17:54:41 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:54:42 INFO  [Log] Typed text: problem_user into element with locator: By.id: user-name
+17:54:42 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:54:42 INFO  [Log] Clicked on element: By.id: login-button
+17:54:42 INFO  [Log] Test Finished: loginTest
+17:54:42 INFO  [Log] Test CasetestValidLoginpassed
+17:54:42 INFO  [Log] Closing browser...
+17:54:43 INFO  [Log] Browser closed
+17:54:43 INFO  [Log] Chrome driver is opened
+17:54:44 INFO  [Log] Bot is initialized
+17:54:44 INFO  [Log] Navigating to Login Page...
+17:54:44 INFO  [Log] Test CasetestValidLoginstarted
+17:54:44 INFO  [Log] Test Started: loginTest
+17:54:44 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:54:44 INFO  [Log] Typed text: performance_glitch_user into element with locator: By.id: user-name
+17:54:45 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:54:50 INFO  [Log] Clicked on element: By.id: login-button
+17:54:50 INFO  [Log] Test Finished: loginTest
+17:54:50 INFO  [Log] Test CasetestValidLoginpassed
+17:54:50 INFO  [Log] Closing browser...
+17:54:50 INFO  [Log] Browser closed
+17:54:50 INFO  [Log] Chrome driver is opened
+17:54:51 INFO  [Log] Bot is initialized
+17:54:51 INFO  [Log] Navigating to Login Page...
+17:54:51 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagestarted
+17:54:52 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:54:52 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+17:54:52 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:54:52 INFO  [Log] Clicked on element: By.id: login-button
+17:54:52 INFO  [Log] Element displayed status for locator By.className: title: true
+17:54:52 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagepassed
+17:54:52 INFO  [Log] Closing browser...
+17:54:53 INFO  [Log] Browser closed
+17:54:53 INFO  [Log] Chrome driver is opened
+17:54:54 INFO  [Log] Bot is initialized
+17:54:54 INFO  [Log] Navigating to Login Page...
+17:54:54 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagestarted
+17:54:55 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:54:55 INFO  [Log] Typed text: problem_user into element with locator: By.id: user-name
+17:54:55 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:54:55 INFO  [Log] Clicked on element: By.id: login-button
+17:54:55 INFO  [Log] Element displayed status for locator By.className: title: true
+17:54:55 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagepassed
+17:54:55 INFO  [Log] Closing browser...
+17:54:55 INFO  [Log] Browser closed
+17:54:55 INFO  [Log] Chrome driver is opened
+17:54:56 INFO  [Log] Bot is initialized
+17:54:56 INFO  [Log] Navigating to Login Page...
+17:54:56 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagestarted
+17:55:00 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:00 INFO  [Log] Typed text: performance_glitch_user into element with locator: By.id: user-name
+17:55:00 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:55:05 INFO  [Log] Clicked on element: By.id: login-button
+17:55:05 INFO  [Log] Element displayed status for locator By.className: title: true
+17:55:05 INFO  [Log] Test CasetestSuccessfulLoginVerifyProductsPagepassed
+17:55:05 INFO  [Log] Closing browser...
+17:55:05 INFO  [Log] Browser closed
+17:55:05 INFO  [Log] Chrome driver is opened
+17:55:06 INFO  [Log] Bot is initialized
+17:55:06 INFO  [Log] Navigating to Login Page...
+17:55:06 INFO  [Log] Test CasetestInvalidLoginstarted
+17:55:07 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:07 INFO  [Log] Typed text: invalid_user into element with locator: By.id: user-name
+17:55:07 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:55:07 INFO  [Log] Clicked on element: By.id: login-button
+17:55:08 INFO  [Log] Test CasetestInvalidLoginpassed
+17:55:08 INFO  [Log] Closing browser...
+17:55:08 INFO  [Log] Browser closed
+17:55:08 INFO  [Log] Chrome driver is opened
+17:55:09 INFO  [Log] Bot is initialized
+17:55:09 INFO  [Log] Navigating to Login Page...
+17:55:09 INFO  [Log] Test CasetestInvalidLoginstarted
+17:55:09 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:10 INFO  [Log] Typed text: wrong_user into element with locator: By.id: user-name
+17:55:10 INFO  [Log] Typed text: wrong_password into element with locator: By.id: password
+17:55:10 INFO  [Log] Clicked on element: By.id: login-button
+17:55:11 INFO  [Log] Test CasetestInvalidLoginpassed
+17:55:11 INFO  [Log] Closing browser...
+17:55:11 INFO  [Log] Browser closed
+17:55:11 INFO  [Log] Chrome driver is opened
+17:55:12 INFO  [Log] Bot is initialized
+17:55:12 INFO  [Log] Navigating to Login Page...
+17:55:12 INFO  [Log] Test CasetestInvalidLoginstarted
+17:55:13 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:13 INFO  [Log] Typed text: fake_user into element with locator: By.id: user-name
+17:55:13 INFO  [Log] Typed text: fake_pass into element with locator: By.id: password
+17:55:13 INFO  [Log] Clicked on element: By.id: login-button
+17:55:14 INFO  [Log] Test CasetestInvalidLoginpassed
+17:55:14 INFO  [Log] Closing browser...
+17:55:14 INFO  [Log] Browser closed
+17:55:14 INFO  [Log] Chrome driver is opened
+17:55:15 INFO  [Log] Bot is initialized
+17:55:15 INFO  [Log] Navigating to Login Page...
+17:55:15 INFO  [Log] Test CasetestEmptyFieldsstarted
+17:55:15 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:16 INFO  [Log] Typed text:  into element with locator: By.id: user-name
+17:55:16 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:55:16 INFO  [Log] Clicked on element: By.id: login-button
+17:55:16 INFO  [Log] Test CasetestEmptyFieldspassed
+17:55:16 INFO  [Log] Closing browser...
+17:55:16 INFO  [Log] Browser closed
+17:55:16 INFO  [Log] Chrome driver is opened
+17:55:18 INFO  [Log] Bot is initialized
+17:55:18 INFO  [Log] Navigating to Login Page...
+17:55:18 INFO  [Log] Test CasetestEmptyFieldsstarted
+17:55:18 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:19 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+17:55:19 INFO  [Log] Typed text:  into element with locator: By.id: password
+17:55:19 INFO  [Log] Clicked on element: By.id: login-button
+17:55:19 INFO  [Log] Test CasetestEmptyFieldspassed
+17:55:19 INFO  [Log] Closing browser...
+17:55:19 INFO  [Log] Browser closed
+17:55:20 INFO  [Log] Chrome driver is opened
+17:55:20 INFO  [Log] Bot is initialized
+17:55:20 INFO  [Log] Navigating to Login Page...
+17:55:20 INFO  [Log] Test CasetestEmptyFieldsstarted
+17:55:21 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:21 INFO  [Log] Typed text:  into element with locator: By.id: user-name
+17:55:22 INFO  [Log] Typed text:  into element with locator: By.id: password
+17:55:22 INFO  [Log] Clicked on element: By.id: login-button
+17:55:22 INFO  [Log] Test CasetestEmptyFieldspassed
+17:55:22 INFO  [Log] Closing browser...
+17:55:22 INFO  [Log] Browser closed
+17:55:22 INFO  [Log] Chrome driver is opened
+17:55:23 INFO  [Log] Bot is initialized
+17:55:23 INFO  [Log] Navigating to Login Page...
+17:55:23 INFO  [Log] Test CasetestLockedOutUserstarted
+17:55:23 INFO  [Log] Navigated to: https://www.saucedemo.com/
+17:55:24 INFO  [Log] Typed text: locked_out_user into element with locator: By.id: user-name
+17:55:24 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+17:55:25 INFO  [Log] Clicked on element: By.id: login-button
+17:55:25 INFO  [Log] Test CasetestLockedOutUserpassed
+17:55:25 INFO  [Log] Closing browser...
+17:55:25 INFO  [Log] Browser closed

@@ -1,0 +1,61 @@
+18:37:56 INFO  [Log] Chrome driver is opened
+18:37:58 INFO  [Log] Bot is initialized
+18:37:58 INFO  [Log] Navigating to Login Page...
+18:37:58 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:37:58 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:37:58 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:37:59 INFO  [Log] Clicked on element: By.id: login-button
+18:37:59 INFO  [Log] Test CaseCart_Tc1_openCartAfterAddingItemsstarted
+18:37:59 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:37:59 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:37:59 INFO  [Log] Test CaseCart_Tc1_openCartAfterAddingItemspassed
+18:37:59 INFO  [Log] Closing browser...
+18:38:00 INFO  [Log] Browser closed
+18:38:00 INFO  [Log] Chrome driver is opened
+18:38:00 INFO  [Log] Bot is initialized
+18:38:00 INFO  [Log] Navigating to Login Page...
+18:38:01 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:38:01 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:38:01 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:38:01 INFO  [Log] Clicked on element: By.id: login-button
+18:38:01 INFO  [Log] Test CaseCart_Tc2_removeItemFromCartstarted
+18:38:01 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:38:01 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:38:01 INFO  [Log] Clicked on element: By.xpath: (//button[@class='btn btn_secondary btn_small cart_button'])[1]
+18:38:12 INFO  [Log] Test CaseCart_Tc2_removeItemFromCartpassed
+18:38:12 INFO  [Log] Closing browser...
+18:38:12 INFO  [Log] Browser closed
+18:38:12 INFO  [Log] Chrome driver is opened
+18:38:13 INFO  [Log] Bot is initialized
+18:38:13 INFO  [Log] Navigating to Login Page...
+18:38:13 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:38:13 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:38:13 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:38:13 INFO  [Log] Clicked on element: By.id: login-button
+18:38:13 INFO  [Log] Test CaseCart_Tc3_checkoutWithOneItemstarted
+18:38:14 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:38:14 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:38:14 INFO  [Log] Clicked on element: By.id: checkout
+18:38:14 INFO  [Log] Test CaseCart_Tc3_checkoutWithOneItemfailed
+18:38:14 INFO  [Log] Screenshot taken: Cart_Tc3_checkoutWithOneItem
+18:38:14 INFO  [Log] Test CaseCart_Tc3_checkoutWithOneItemfailed
+18:38:14 INFO  [Log] Closing browser...
+18:38:14 INFO  [Log] Browser closed
+18:38:14 INFO  [Log] Chrome driver is opened
+18:38:15 INFO  [Log] Bot is initialized
+18:38:15 INFO  [Log] Navigating to Login Page...
+18:38:16 INFO  [Log] Navigated to: https://www.saucedemo.com/
+18:38:16 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+18:38:16 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+18:38:16 INFO  [Log] Clicked on element: By.id: login-button
+18:38:16 INFO  [Log] Test CaseCart_Tc4_checkoutWithMultipleItemsstarted
+18:38:16 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+18:38:16 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+18:38:16 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+18:38:16 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+18:38:17 INFO  [Log] Clicked on element: By.id: checkout
+18:38:17 INFO  [Log] Test CaseCart_Tc4_checkoutWithMultipleItemsfailed
+18:38:17 INFO  [Log] Screenshot taken: Cart_Tc4_checkoutWithMultipleItems
+18:38:17 INFO  [Log] Test CaseCart_Tc4_checkoutWithMultipleItemsfailed
+18:38:17 INFO  [Log] Closing browser...
+18:38:17 INFO  [Log] Browser closed

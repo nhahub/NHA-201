@@ -1,0 +1,44 @@
+08:31:11 INFO  [Log] Chrome driver is opened
+08:31:13 INFO  [Log] Bot is initialized
+08:31:13 INFO  [Log] Navigating to Login Page...
+08:31:13 INFO  [Log] Navigated to: https://www.saucedemo.com/
+08:31:13 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+08:31:14 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+08:31:14 INFO  [Log] Clicked on element: By.id: login-button
+08:31:14 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+08:31:14 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+08:31:14 INFO  [Log] Clicked on element: By.id: checkout
+08:31:14 INFO  [Log] Typed text:  into element with locator: By.id: first-name
+08:31:14 INFO  [Log] Typed text: Project into element with locator: By.id: last-name
+08:31:14 INFO  [Log] Typed text: 201 into element with locator: By.id: postal-code
+08:31:14 INFO  [Log] Clicked on element: By.id: continue
+08:31:35 INFO  [Log] Closing browser...
+08:31:35 INFO  [Log] Browser closed
+08:31:35 INFO  [Log] Chrome driver is opened
+08:31:36 INFO  [Log] Bot is initialized
+08:31:36 INFO  [Log] Navigating to Login Page...
+08:31:36 INFO  [Log] Navigated to: https://www.saucedemo.com/
+08:31:36 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+08:31:36 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+08:31:36 INFO  [Log] Clicked on element: By.id: login-button
+08:31:37 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+08:31:37 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+08:31:37 INFO  [Log] Clicked on element: By.id: checkout
+08:31:37 INFO  [Log] Typed text: Group into element with locator: By.id: first-name
+08:31:37 INFO  [Log] Typed text: Project into element with locator: By.id: last-name
+08:31:37 INFO  [Log] Typed text:  into element with locator: By.id: postal-code
+08:31:37 INFO  [Log] Clicked on element: By.id: continue
+08:31:37 INFO  [Log] Closing browser...
+08:31:37 INFO  [Log] Browser closed
+08:31:37 INFO  [Log] Chrome driver is opened
+08:31:38 INFO  [Log] Bot is initialized
+08:31:38 INFO  [Log] Navigating to Login Page...
+08:31:39 INFO  [Log] Navigated to: https://www.saucedemo.com/
+08:31:39 INFO  [Log] Typed text: standard_user into element with locator: By.id: user-name
+08:31:39 INFO  [Log] Typed text: secret_sauce into element with locator: By.id: password
+08:31:39 INFO  [Log] Clicked on element: By.id: login-button
+08:31:39 INFO  [Log] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+08:31:39 INFO  [Log] Clicked on element: By.id: shopping_cart_container
+08:31:39 INFO  [Log] Clicked on element: By.id: checkout
+08:32:00 INFO  [Log] Closing browser...
+08:32:00 INFO  [Log] Browser closed

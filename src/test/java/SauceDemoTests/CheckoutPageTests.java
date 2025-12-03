@@ -29,10 +29,10 @@ public class CheckoutPageTests extends BaseTest {
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithValidData(String firstName, String lastName, String zipCode) {
-        checkoutPage.fillFirstName(firstName)
-                .fillLastName(lastName)
-                .fillZipCode(zipCode)
-                .clickContinue();
+        checkoutPage.fillFirstName(firstName);
+        checkoutPage.fillLastName(lastName);
+        checkoutPage.fillZipCode(zipCode);
+        checkoutPage.clickContinue();
 
         Assert.assertEquals(
                 bot.getCurrentUrl(),
@@ -42,10 +42,10 @@ public class CheckoutPageTests extends BaseTest {
 
     @Test(dataProvider = "checkoutEmptyFirstName", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithEmptyFirstName(String firstName, String lastName, String zipCode) {
-        checkoutPage.fillFirstName(firstName)
-                .fillLastName(lastName)
-                .fillZipCode(zipCode)
-                .clickContinue();
+        checkoutPage.fillFirstName(firstName);
+        checkoutPage.fillLastName(lastName);
+        checkoutPage.fillZipCode(zipCode);
+        checkoutPage.clickContinue();
 
         Assert.assertNotEquals(
                 bot.getCurrentUrl(),
