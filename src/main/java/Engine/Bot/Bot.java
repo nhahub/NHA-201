@@ -81,6 +81,10 @@ public class Bot {
         });
     }
 
+    public boolean isPresent(By locator) {
+        return !driver.findElements(locator).isEmpty();
+    }
+
     public WebDriver getDriver() {
         return driver;
     }
