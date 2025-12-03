@@ -19,19 +19,24 @@ import java.util.Date;
 public class FluentBot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
+    private static final String SCREENSHOTS_PATH = "test-output/Screenshots/";
 
-    public FluentBot() {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--start-maximized", "--guest", "--disable-notifications");
-            driver = new ChromeDriver(options);
-            wait = new FluentWait<>(driver)
-                    .withTimeout(Duration.ofSeconds(15))
-                    .pollingEvery(Duration.ofMillis(300))
-                    .ignoring(ElementNotInteractableException.class)
-                    .ignoring(NoSuchElementException.class);
-        }
+    //Constructor
+    public FluentBot(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(15))
+                .pollingEvery(Duration.ofMillis(300))
+                .ignoring(ElementNotInteractableException.class)
+                .ignoring(NoSuchElementException.class);
+    }
 
-        public FluentBot navigateTo(String url) {
+    public FluentBot(WebDriver driver, Wait<WebDriver> wait) {
+        this.driver = driver;
+        this.wait = wait;
+    }
+
+    public FluentBot navigateTo(String url) {
             driver.navigate().to(url);
             return this;
         }
@@ -86,7 +91,6 @@ public class FluentBot {
         public static String getTimestamp() {
         return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
         }
-        private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
         public FluentBot takeScreenShot(WebDriver driver, String screenshotName) {
         try {
             // Capture screenshot using TakeScreenshot
@@ -101,12 +105,4 @@ public class FluentBot {
         }
         return this;
     }
-
-        public WebDriver getDriver() {
-            return driver;
-        }
-
-        public void quit() {
-            driver.quit();
-        }
 }

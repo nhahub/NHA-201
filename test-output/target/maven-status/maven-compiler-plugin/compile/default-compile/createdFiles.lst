@@ -1,9 +1,0 @@
-SauceDemoPages\CheckoutPage.class
-SauceDemoPages\LoginPage.class
-Engine\Bot\BotLogs.class
-SauceDemoPages\CartPage.class
-SauceDemoPages\HomePage.class
-Engine\Bot\Bot.class
-SauceDemoPages\SortingFilterPage.class
-Engine\Bot\FluentBot.class
-SauceDemoPages\CheckoutConfirmationPage.class

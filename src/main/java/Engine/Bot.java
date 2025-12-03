@@ -1,5 +1,4 @@
 package Engine;
-import Engine.BotLogger;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -18,7 +17,7 @@ import java.util.List;
 public class Bot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
-    private static final String SCREENSHOTS_PATH = "test-outputs/Screenshots/";
+    private static final String SCREENSHOTS_PATH = "test-output/Screenshots/";
 
     //  Constructor
     public Bot(WebDriver driver) {
