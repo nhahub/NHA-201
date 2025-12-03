@@ -24,7 +24,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-        bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
 
         cartPage = new CartPage(bot);
         cartPage.goToCheckout();
@@ -32,7 +32,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
         checkoutPage = new CheckoutPage(bot);
         checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
 
-        bot.click(By.id("finish"));
+        bot.findAndClick(By.id("finish"));
         return new CheckoutConfirmationPage(bot);
     }
 

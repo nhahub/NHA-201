@@ -16,16 +16,10 @@ public class HomePageTest extends BaseTest {
         LoginPage loginPage = new LoginPage(bot);
         loginPage.loginAsStandardUser();
 
-        Assert.assertEquals(
-                bot.getCurrentUrl(),
-                "https://www.saucedemo.com/inventory.html",
-                "User did NOT land on Home / Inventory page after login!"
-        );
-
         homePage = new HomePage(bot);
     }
 
-    @Test(priority = 1)
+    @Test
     public void Home_Tc1_scrollAndCheckBadge() {
 
         homePage
@@ -37,14 +31,44 @@ public class HomePageTest extends BaseTest {
                 "User is not on Home / Inventory page!");
     }
 
-    @Test(priority = 2)
-    public void Home_Tc2_addBackpackAndValidateBadge() {
+    @Test
+    public void Home_Tc2_testOpenMenu() {
 
-        homePage.addBackpackToCart();
+        homePage.clickMenuButton();
+
+
+        Assert.assertTrue(homePage.isMenuOpen(), "Menu should be visible after clicking the button");
+    }
+
+    @Test
+    public void Home_Tc3_addMultipleProducts() {
+
+        homePage.addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
 
         String badge = homePage.getCartBadgeCount();
 
-        Assert.assertEquals(badge, "1",
-                "Cart badge should be '1' after adding the backpack!");
+        Assert.assertEquals(badge, "3",
+                "Cart badge should be '3' after adding Multiple Products");
     }
+    @Test
+    public void Home_Tc4_removeProducts() {
+
+        homePage.addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+
+        homePage.removeBackpack()
+                .removeBikeLight()
+                .removeBoltShirt();
+
+        String badge = homePage.getCartBadgeCount();
+
+        Assert.assertTrue(
+                badge.isEmpty(),
+                "Cart badge should be empty after removing all items"
+        );
+    }
+
 }

@@ -151,6 +151,10 @@ public class Bot {
         return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
     }
 
+    public boolean isPresent(By locator) {
+        return !driver.findElements(locator).isEmpty();
+    }
+
     public WebDriver getDriver() {
         return driver;
     }
