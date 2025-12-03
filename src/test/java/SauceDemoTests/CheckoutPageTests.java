@@ -52,9 +52,7 @@ public class CheckoutPageTests extends BaseTest {
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
 
-        String errorMsg = bot.getDriver()
-                .findElement(By.xpath("//h3[@data-test='error']"))
-                .getText();
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
         Assert.assertTrue(errorMsg.contains("Error"));
     }
 
@@ -70,9 +68,7 @@ public class CheckoutPageTests extends BaseTest {
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
 
-        String errorMsg = bot.getDriver()
-                .findElement(By.xpath("//h3[@data-test='error']"))
-                .getText();
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
         Assert.assertTrue(errorMsg.contains("Error"));
     }
 }

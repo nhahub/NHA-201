@@ -2,19 +2,11 @@ package SauceDemoTests;
 
 import Base.BaseTest;
 import DataDrivenTest.TestDataProvider;
-import Engine.Bot.Bot;
 import SauceDemoPages.LoginPage;
 import SauceDemoPages.SortingFilterPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SortingFilterPageTest extends BaseTest {

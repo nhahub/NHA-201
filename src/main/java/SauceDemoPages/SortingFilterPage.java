@@ -2,7 +2,6 @@ package SauceDemoPages;
 
 import Engine.Bot.Bot;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -15,7 +14,6 @@ public class SortingFilterPage {
     //Locators
     private final By SortDropDown = By.className("product_sort_container");
     private final By productName =  By.className("inventory_item_name");
-    private final By productPrice = By.className("inventory_item_price");
 
     //Constructor
     public SortingFilterPage(Bot bot)
