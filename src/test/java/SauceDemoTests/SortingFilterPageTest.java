@@ -16,10 +16,8 @@ public class SortingFilterPageTest extends BaseTest {
     @BeforeMethod
     public void setup() {
         loginPage = new LoginPage(bot);
-        sortingPage = new SortingFilterPage(bot);
-
-        loginPage.navigateToLoginPage();
         loginPage.loginAsStandardUser();
+        sortingPage = new SortingFilterPage(bot);
     }
     @Test(dataProvider = "sortOptions", dataProviderClass = TestDataProvider.class)
     public void sortingTest(String option) {
