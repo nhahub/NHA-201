@@ -8,11 +8,6 @@ import org.testng.annotations.Test;
 
 
 public class EndToEndTest extends BaseTest {
-    private LoginPage loginPage;
-    private HomePage homePage;
-    private CartPage cartPage;
-    private CheckoutPage checkoutPage;
-    private CheckoutConfirmationPage checkoutConfirmationPage;
 
     @Test
     //TODO: valid end to end purchase flow

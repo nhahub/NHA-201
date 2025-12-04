@@ -11,16 +11,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 public class CheckoutConfirmationPageTests extends BaseTest {
-
-    private LoginPage loginPage;
     private CartPage cartPage;
     private CheckoutPage checkoutPage;
     private CheckoutConfirmationPage confirmationPage;
 
     @BeforeMethod
     public void setUpConfirmation() {
-        loginPage = new LoginPage(bot);
-        loginPage.loginAsStandardUser();
+        new LoginPage(bot)
+            .loginAsStandardUser();
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {

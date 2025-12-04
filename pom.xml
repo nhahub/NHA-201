@@ -17,7 +17,7 @@
         <seleniumVersion>4.37.0</seleniumVersion>
         <testNGVersion>7.11.0</testNGVersion>
         <allure.version>2.31.0</allure.version>
-        <aspectj.version>1.9.22</aspectj.version>
+        <aspectj.version>1.9.21</aspectj.version>
         <slf4jVersion>2.0.16</slf4jVersion>
         <log4jVersion>2.25.2</log4jVersion>
         <surefire>3.2.5</surefire>
@@ -44,6 +44,11 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.25.0</version>
         </dependency>
         <!-- AspectJ -->
         <dependency>
@@ -80,13 +85,6 @@
             <artifactId>commons-io</artifactId>
             <version>${commonIO}</version>
         </dependency>
-
-        <!-- AspectJ -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
         <!-- JetBrains Annotations -->
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -97,30 +95,12 @@
     </dependencies>
 
     <build>
-        <directory>test-output/target</directory>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${surefire}</version>
-                <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
             <!-- Surefire Plugin with Allure listener -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <version>${surefire}</version>
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
                     <properties>

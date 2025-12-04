@@ -9,13 +9,12 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class SortingFilterPageTest extends BaseTest {
-    private LoginPage loginPage;
     private SortingFilterPage sortingPage;
 
     @BeforeMethod
     public void setup() {
-        loginPage = new LoginPage(bot);
-        loginPage.loginAsStandardUser();
+        new LoginPage(bot)
+           .loginAsStandardUser();
         sortingPage = new SortingFilterPage(bot);
     }
     @Test(dataProvider = "sortOptions", dataProviderClass = TestDataProvider.class)

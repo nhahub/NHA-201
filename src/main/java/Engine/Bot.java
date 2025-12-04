@@ -147,7 +147,6 @@ public class Bot {
         }
     }
 
-    // Utility Methods
     public static String getTimestamp() {
         return new SimpleDateFormat("yyyy-MM-h-m-ssa").format(new Date());
     }

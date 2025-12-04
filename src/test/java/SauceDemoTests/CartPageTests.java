@@ -8,14 +8,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CartPageTests extends BaseTest {
-
-    private LoginPage loginPage;
     private CartPage cartPage;
 
     @BeforeMethod
     public void setUpCart() {
-        loginPage = new LoginPage(bot);
-        loginPage.loginAsStandardUser();
+        new LoginPage(bot)
+             .loginAsStandardUser();
         cartPage = new CartPage(bot);
     }
 
@@ -23,7 +21,6 @@ public class CartPageTests extends BaseTest {
     public void Cart_Tc1_openCartAfterAddingItems() {
         cartPage.addBackpack();
         cartPage.openCartLink();
-
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 1);
         Assert.assertEquals(cartPage.getFirstItemName(), "Sauce Labs Backpack");
@@ -36,12 +33,9 @@ public class CartPageTests extends BaseTest {
         cartPage.addBackpack();
         cartPage.openCartLink();
         int itemsBefore = cartPage.countCartItems();
-
         cartPage.removeFirstItemFromCart();
-
         int itemsAfter = cartPage.countCartItems();
         Assert.assertTrue(itemsAfter == itemsBefore - 1 || itemsAfter == 0);
-
         if (itemsAfter > 0) {
             Assert.assertEquals(cartPage.getCartBadgeNumber(), itemsAfter);
         }
@@ -54,9 +48,7 @@ public class CartPageTests extends BaseTest {
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 1);
         Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
-
         cartPage.clickCheckoutButton();
-
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-one.html");
@@ -69,9 +61,7 @@ public class CartPageTests extends BaseTest {
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 3);
         Assert.assertEquals(cartPage.getCartBadgeNumber(), 3);
-
         cartPage.clickCheckoutButton();
-
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-one.html");
