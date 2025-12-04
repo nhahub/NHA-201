@@ -22,26 +22,18 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-        //Edited by nada from getDriver() to findAndClick()
-        //bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
-
-        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
-
-        cartPage = new CartPage(bot);
-        cartPage.goToCheckout();
-
-        checkoutPage = new CheckoutPage(bot);
-        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
-
-        bot.findAndClick(By.id("finish"));
-        return new CheckoutConfirmationPage(bot);
+       new CartPage(bot)
+           .addBackpackAndGoToCheckout();
+       new CheckoutPage(bot)
+           .completeCheckoutForm("First Name", "Last Name", "10000");
+       confirmationPage = new CheckoutConfirmationPage(bot);
+       bot.click(By.id("finish"));
+       return confirmationPage;
     }
 
     @Test
     public void Confirmation_TC1_finishOrderWithItems() {
         confirmationPage = finishOrderWithBackpack();
-
         Assert.assertEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
@@ -52,15 +44,12 @@ public class CheckoutConfirmationPageTests extends BaseTest {
 
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
-        cartPage = new CartPage(bot);
-        cartPage.goToCheckout();
-
-        checkoutPage = new CheckoutPage(bot);
-        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
-
+        new CartPage(bot)
+            .goToCheckout();
+        new CheckoutPage(bot)
+            .completeCheckoutForm("First Name", "Last Name", "10000");
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
-
         Assert.assertNotEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
@@ -69,9 +58,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
     public void Confirmation_TC3_backToHomeAfterCompletion() {
         confirmationPage = finishOrderWithBackpack();
-
-        bot.click(By.id("back-to-products"));
-
+        confirmationPage.clickBackHomeButton();
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");

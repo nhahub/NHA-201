@@ -6,10 +6,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
-
+import Engine.BotLogger;
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -18,7 +17,7 @@ import java.util.List;
 public class Bot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
-    private static final String SCREENSHOTS_PATH = "test-output/Screenshots/";
+    private static final String SCREENSHOTS_PATH = "allure-results/Screenshots/";
 
     //  Constructor
     public Bot(WebDriver driver) {
@@ -139,7 +138,8 @@ public class Bot {
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File screenshotFile = new File(SCREENSHOTS_PATH + screenshotName + "-" + getTimestamp() + ".png");
             FileUtils.copyFile(screenshotSrc, screenshotFile);
-            Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
+            //Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
+            Allure.addAttachment(screenshotName, new FileInputStream(screenshotFile));
             BotLogger.info("Screenshot taken: " + screenshotName);
         } catch (Exception e) {
             BotLogger.error("Failed to take screenshot: " + e.getMessage());

@@ -1,0 +1,49 @@
+19:21:42 INFO  [BotLogger] Chrome driver is opened
+19:21:45 INFO  [BotLogger] Bot is initialized
+19:21:45 INFO  [BotLogger] Navigating to Login Page...
+19:21:46 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+19:21:46 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+19:21:46 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+19:21:46 INFO  [BotLogger] Clicked on element: By.id: login-button
+19:21:46 INFO  [BotLogger] Scrolled to element: By.className: footer
+19:21:46 INFO  [BotLogger] Scrolled to element: By.className: app_logo
+19:21:47 INFO  [BotLogger] Closing browser...
+19:21:47 INFO  [BotLogger] Browser closed
+19:21:47 INFO  [BotLogger] Chrome driver is opened
+19:21:48 INFO  [BotLogger] Bot is initialized
+19:21:48 INFO  [BotLogger] Navigating to Login Page...
+19:21:48 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+19:21:48 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+19:21:48 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+19:21:49 INFO  [BotLogger] Clicked on element: By.id: login-button
+19:21:49 INFO  [BotLogger] Clicked on element: By.xpath: //button[@id='react-burger-menu-btn']
+19:21:49 INFO  [BotLogger] Element displayed status for locator By.id: menu_button_container: true
+19:21:49 INFO  [BotLogger] Closing browser...
+19:21:49 INFO  [BotLogger] Browser closed
+19:21:49 INFO  [BotLogger] Chrome driver is opened
+19:21:50 INFO  [BotLogger] Bot is initialized
+19:21:50 INFO  [BotLogger] Navigating to Login Page...
+19:21:50 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+19:21:51 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+19:21:51 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+19:21:51 INFO  [BotLogger] Clicked on element: By.id: login-button
+19:21:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+19:21:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+19:21:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+19:21:51 INFO  [BotLogger] Closing browser...
+19:21:51 INFO  [BotLogger] Browser closed
+19:21:51 INFO  [BotLogger] Chrome driver is opened
+19:21:52 INFO  [BotLogger] Bot is initialized
+19:21:52 INFO  [BotLogger] Navigating to Login Page...
+19:21:53 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+19:21:53 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+19:21:53 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: login-button
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-backpack
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bike-light
+19:21:53 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bolt-t-shirt
+19:21:53 INFO  [BotLogger] Closing browser...
+19:21:53 INFO  [BotLogger] Browser closed

@@ -1,4 +1,0 @@
-<listeners>
-    <listener class-name="Listener.ITestResultListener"/>
-    <listener class-name="Listener.IInvokedMethodResultListener"/>
-</listeners>

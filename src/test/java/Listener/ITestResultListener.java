@@ -6,19 +6,19 @@ import org.testng.ITestResult;
 
 public class ITestResultListener implements ITestListener {
     public void onTestStart(ITestResult result) {
-        BotLogger.info("Test Case" + result.getName() + "started");
+        BotLogger.info("Test Case" + result.getName() + "  started");
     }
 
     public void onTestSuccess(ITestResult result) {
-        BotLogger.info("Test Case" + result.getName() + "passed");
+        BotLogger.info("Test Case" + result.getName() + "  passed");
     }
 
     public void onTestFailure(ITestResult result) {
-        BotLogger.info("Test Case" + result.getName() + "failed");
+        BotLogger.info("Test Case" + result.getName() + "  failed");
     }
 
     public void onTestSkipped(ITestResult result) {
-        BotLogger.info("Test Case" + result.getName() + "skipped");
+        BotLogger.info("Test Case" + result.getName() + "  skipped");
     }
 
 }
