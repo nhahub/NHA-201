@@ -8,8 +8,8 @@ import SauceDemoPages.LoginPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 public class CheckoutConfirmationPageTests extends BaseTest {
     private CartPage cartPage;
     private CheckoutPage checkoutPage;
@@ -18,24 +18,19 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @BeforeMethod
     public void setUpConfirmation() {
         new LoginPage(bot)
-            .loginAsStandardUser();
+                .loginAsStandardUser();
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-        //Edited by nada from getDriver() to findAndClick()
-        //bot.getDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
-
-        bot.findAndClick(By.id("add-to-cart-sauce-labs-backpack"));
-
         cartPage = new CartPage(bot);
-        cartPage.goToCheckout();
-
         checkoutPage = new CheckoutPage(bot);
+
+        cartPage.addBackpackAndGoToCheckout();
         checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
 
-        bot.findAndClick(By.id("finish"));
-        return new CheckoutConfirmationPage(bot);
+        confirmationPage = new CheckoutConfirmationPage(bot);
+        bot.click(By.id("finish"));
+        return confirmationPage;
     }
 
     @Test
@@ -70,10 +65,11 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     public void Confirmation_TC3_backToHomeAfterCompletion() {
         confirmationPage = finishOrderWithBackpack();
 
-        bot.click(By.id("back-to-products"));
+        confirmationPage.clickBackHomeButton();
 
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
     }
 }
+
