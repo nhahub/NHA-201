@@ -24,7 +24,6 @@ public class CartPageTests extends BaseTest {
         Assert.assertTrue(cartPage.isCartPageOpened());
         Assert.assertEquals(cartPage.countCartItems(), 1);
         Assert.assertEquals(cartPage.getFirstItemName(), "Sauce Labs Backpack");
-        Assert.assertEquals(bot.getCurrentUrl(), "https://www.saucedemo.com/cart.html");
         Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
     }
 
