@@ -22,15 +22,13 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-<<<<<<< HEAD
-       new CartPage(bot)
-           .addBackpackAndGoToCheckout();
-       new CheckoutPage(bot)
-           .completeCheckoutForm("First Name", "Last Name", "10000");
-       confirmationPage = new CheckoutConfirmationPage(bot);
-       bot.click(By.id("finish"));
-       return confirmationPage;
-=======
+        new CartPage(bot)
+                .addBackpackAndGoToCheckout();
+        new CheckoutPage(bot)
+                .completeCheckoutForm("First Name", "Last Name", "10000");
+        confirmationPage = new CheckoutConfirmationPage(bot);
+        bot.click(By.id("finish"));
+        return confirmationPage;
         cartPage = new CartPage(bot);
         checkoutPage = new CheckoutPage(bot);
 
@@ -40,7 +38,6 @@ public class CheckoutConfirmationPageTests extends BaseTest {
         confirmationPage = new CheckoutConfirmationPage(bot);
         bot.click(By.id("finish"));
         return confirmationPage;
->>>>>>> d30d0fcc6a2392e59dd2141db96659394588bbe9
     }
 
     @Test
@@ -57,9 +54,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
         new CartPage(bot)
-            .goToCheckout();
+                .goToCheckout();
         new CheckoutPage(bot)
-            .completeCheckoutForm("First Name", "Last Name", "10000");
+                .completeCheckoutForm("First Name", "Last Name", "10000");
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
         Assert.assertNotEquals(
@@ -70,20 +67,10 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
     public void Confirmation_TC3_backToHomeAfterCompletion() {
         confirmationPage = finishOrderWithBackpack();
-<<<<<<< HEAD
         confirmationPage.clickBackHomeButton();
-=======
-
         confirmationPage.clickBackHomeButton();
-
->>>>>>> d30d0fcc6a2392e59dd2141db96659394588bbe9
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
     }
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> d30d0fcc6a2392e59dd2141db96659394588bbe9
