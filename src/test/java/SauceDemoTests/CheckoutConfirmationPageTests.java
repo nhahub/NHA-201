@@ -23,16 +23,6 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-<<<<<<< HEAD
-=======
-        new CartPage(bot)
-                .addBackpackAndGoToCheckout();
-        new CheckoutPage(bot)
-                .completeCheckoutForm("First Name", "Last Name", "10000");
-        confirmationPage = new CheckoutConfirmationPage(bot);
-        bot.click(By.id("finish"));
-        return confirmationPage;
->>>>>>> 5bbfc0d7c87920da2377fd6a844f3ffef10ab2d5
         cartPage = new CartPage(bot);
         checkoutPage = new CheckoutPage(bot);
 
@@ -59,19 +49,12 @@ public class CheckoutConfirmationPageTests extends BaseTest {
 
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
-<<<<<<< HEAD
         cartPage = new CartPage(bot);
         checkoutPage = new CheckoutPage(bot);
 
         cartPage.goToCheckout();
         checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
 
-=======
-        new CartPage(bot)
-                .goToCheckout();
-        new CheckoutPage(bot)
-                .completeCheckoutForm("First Name", "Last Name", "10000");
->>>>>>> 5bbfc0d7c87920da2377fd6a844f3ffef10ab2d5
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
 
@@ -83,14 +66,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
     public void Confirmation_TC3_backToHomeAfterCompletion() {
         confirmationPage = finishOrderWithBackpack();
-<<<<<<< HEAD
 
         confirmationPage.clickBackHomeButton();
 
-=======
-        confirmationPage.clickBackHomeButton();
-        confirmationPage.clickBackHomeButton();
->>>>>>> 5bbfc0d7c87920da2377fd6a844f3ffef10ab2d5
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
