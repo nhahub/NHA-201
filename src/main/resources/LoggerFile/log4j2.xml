@@ -5,7 +5,6 @@
         <Property name="log-path">test-output/Logs</Property>
         <Property name="timestamp">${date:yyyy-MM-dd-HH-mm-ss}</Property>
     </Properties>
-    log-path =
     <Appenders>
 
         <RollingFile
