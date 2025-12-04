@@ -1,0 +1,59 @@
+20:28:59 INFO  [BotLogger] Chrome driver is opened
+20:29:02 INFO  [BotLogger] Bot is initialized
+20:29:02 INFO  [BotLogger] Navigating to Login Page...
+20:29:02 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+20:29:03 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:29:03 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: login-button
+20:29:03 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: checkout
+20:29:03 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+20:29:03 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+20:29:03 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: continue
+20:29:03 INFO  [BotLogger] Clicked on element: By.id: finish
+20:29:04 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  passed
+20:29:04 INFO  [BotLogger] Closing browser...
+20:29:04 INFO  [BotLogger] Browser closed
+20:29:04 INFO  [BotLogger] Chrome driver is opened
+20:29:05 INFO  [BotLogger] Bot is initialized
+20:29:05 INFO  [BotLogger] Navigating to Login Page...
+20:29:05 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+20:29:06 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:29:06 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: login-button
+20:29:06 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: checkout
+20:29:06 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+20:29:06 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+20:29:06 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: continue
+20:29:06 INFO  [BotLogger] Clicked on element: By.id: finish
+20:29:06 INFO  [BotLogger] Clicked on element: By.xpath: //button[text()='Back Home']
+20:29:06 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  passed
+20:29:06 INFO  [BotLogger] Closing browser...
+20:29:06 INFO  [BotLogger] Browser closed
+20:29:06 INFO  [BotLogger] Chrome driver is opened
+20:29:07 INFO  [BotLogger] Bot is initialized
+20:29:07 INFO  [BotLogger] Navigating to Login Page...
+20:29:08 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+20:29:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:29:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:29:08 INFO  [BotLogger] Clicked on element: By.id: login-button
+20:29:08 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
+20:29:09 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+20:29:09 INFO  [BotLogger] Clicked on element: By.id: checkout
+20:29:09 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+20:29:09 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+20:29:09 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+20:29:09 INFO  [BotLogger] Clicked on element: By.id: continue
+20:29:09 INFO  [BotLogger] Clicked on element: By.id: finish
+20:29:09 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrderfailed
+20:29:09 INFO  [BotLogger] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
+20:29:09 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  failed
+20:29:09 INFO  [BotLogger] Closing browser...
+20:29:09 INFO  [BotLogger] Browser closed

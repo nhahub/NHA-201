@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CheckoutConfirmationPageTests extends BaseTest {
-
     private CartPage cartPage;
     private CheckoutPage checkoutPage;
     private CheckoutConfirmationPage confirmationPage;
@@ -24,11 +23,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
         cartPage = new CartPage(bot);
-        checkoutPage = new CheckoutPage(bot);
-
         cartPage.addBackpackAndGoToCheckout();
+        checkoutPage = new CheckoutPage(bot);
         checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
-
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
         return confirmationPage;
@@ -37,11 +34,9 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test
     public void Confirmation_TC1_finishOrderWithItems() {
         confirmationPage = finishOrderWithBackpack();
-
         Assert.assertEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
-
         Assert.assertEquals(
                 confirmationPage.getThankYouMessageText(),
                 "Thank you for your order!");
@@ -50,14 +45,11 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
         cartPage = new CartPage(bot);
-        checkoutPage = new CheckoutPage(bot);
-
         cartPage.goToCheckout();
+        checkoutPage = new CheckoutPage(bot);
         checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
-
         bot.click(By.id("finish"));
         confirmationPage = new CheckoutConfirmationPage(bot);
-
         Assert.assertNotEquals(
                 confirmationPage.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
@@ -66,9 +58,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
     public void Confirmation_TC3_backToHomeAfterCompletion() {
         confirmationPage = finishOrderWithBackpack();
-
         confirmationPage.clickBackHomeButton();
-
         Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
