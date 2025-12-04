@@ -2,6 +2,7 @@ package SauceDemoTests;
 
 import Base.BaseTest;
 import SauceDemoPages.*;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -78,9 +79,12 @@ public class EndToEndTest extends BaseTest {
                 .fillLastName("Testing")
                 .fillZipCode("201")
                 .clickContinue();
-        Assert.assertEquals(
-                checkoutPage.getErrorMessage(),
-                "Error: First Name is required");
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
+        Assert.assertTrue(errorMsg.contains("Error: First Name is required"));
     }
     //TODO: invalid, missing fields in checkout page
     @Test
@@ -99,9 +103,12 @@ public class EndToEndTest extends BaseTest {
                 .fillLastName("")
                 .fillZipCode("201")
                 .clickContinue();
-        Assert.assertFalse(
-                checkoutPage.getErrorMessage(),
-                "Error: Last Name is required");
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
+        Assert.assertTrue(errorMsg.contains("Error: Last Name is required"));
     }
     //TODO: invalid, missing fields in checkout page
     @Test
@@ -120,10 +127,14 @@ public class EndToEndTest extends BaseTest {
                 .fillLastName("Testing")
                 .fillZipCode("")
                 .clickContinue();
-        Assert.assertFalse(
-                checkoutPage.getErrorMessage(),
-                "Error: Postal Code is required");
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
+        Assert.assertTrue(errorMsg.contains("Error: Postal Code is required"));
     }
+
     //TODO: invalid, missing fields in checkout page
     @Test
     public void invalidEndToEndPurchaseFlow4() {
@@ -166,7 +177,7 @@ public class EndToEndTest extends BaseTest {
                 .clickCancel();
                 Assert.assertEquals(
                 bot.getCurrentUrl(),
-                "https://www.saucedemo.com/inventory.html");
+                "https://www.saucedemo.com/cart.html");
     }
 }
 
