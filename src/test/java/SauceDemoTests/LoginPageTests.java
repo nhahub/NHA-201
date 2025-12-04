@@ -2,31 +2,25 @@ package SauceDemoTests;
 
 import Base.BaseTest;
 import DataDrivenTest.TestDataProvider;
-import DataDrivenTest.UserData;
-import Engine.BotData;
 import Engine.BotLogger;
 import SauceDemoPages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 public class LoginPageTests extends BaseTest {
-    private final List<UserData> users = BotData.getArrayFromJson("login", "users", UserData.class);
-    @Test
-    public void testValidLogin() {
-        for (UserData user : users) {
+
+    @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class )
+    public void testValidLogin(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
         BotLogger.info("Test Started: loginTest");
         loginPage.navigateToLoginPage();
-        loginPage.enterUsername(user.username);
-        loginPage.enterPassword(user.password);
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
         loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"));
         BotLogger.info("Test Finished: loginTest");
         }
-    }
 
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
     public void testSuccessfulLoginVerifyProductsPage(String username, String password) {

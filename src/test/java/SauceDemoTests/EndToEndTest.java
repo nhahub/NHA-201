@@ -1,6 +1,174 @@
 package SauceDemoTests;
 
 import Base.BaseTest;
+import SauceDemoPages.*;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 
 public class EndToEndTest extends BaseTest {
+    private LoginPage loginPage;
+    private HomePage homePage;
+    private CartPage cartPage;
+    private CheckoutPage checkoutPage;
+    private CheckoutConfirmationPage checkoutConfirmationPage;
+
+    @Test
+    //TODO: valid end to end purchase flow
+    public void validEndToEndPurchaseFlow1() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("NHA")
+                .fillLastName("Testing")
+                .fillZipCode("201")
+                .clickContinue()
+                .clickFinish();
+        new CheckoutConfirmationPage(bot)
+                .getThankYouMessageText();
+        Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-complete.html");
+    }
+    //TODO: valid end to end purchase flow , back to home page
+    @Test
+    public void validEndToEndPurchaseFlow2() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("NHA")
+                .fillLastName("Testing")
+                .fillZipCode("201")
+                .clickContinue()
+                .clickFinish();
+        new CheckoutConfirmationPage(bot)
+                .clickBackHomeButton();
+        Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/inventory.html");
+    }
+    //TODO: invalid, missing fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow1() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("")
+                .fillLastName("Testing")
+                .fillZipCode("201")
+                .clickContinue();
+        Assert.assertEquals(
+                checkoutPage.getErrorMessage(),
+                "Error: First Name is required");
+    }
+    //TODO: invalid, missing fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow2() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("NHA")
+                .fillLastName("")
+                .fillZipCode("201")
+                .clickContinue();
+        Assert.assertFalse(
+                checkoutPage.getErrorMessage(),
+                "Error: Last Name is required");
+    }
+    //TODO: invalid, missing fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow3() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("NHA")
+                .fillLastName("Testing")
+                .fillZipCode("")
+                .clickContinue();
+        Assert.assertFalse(
+                checkoutPage.getErrorMessage(),
+                "Error: Postal Code is required");
+    }
+    //TODO: invalid, missing fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow4() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("")
+                .fillLastName("Testing")
+                .fillZipCode("201")
+                .clickCancel();
+
+        Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/cart.html");
+    }
+    //TODO: cancel order after filling some fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow5() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("NHA")
+                .fillLastName("")
+                .fillZipCode("201")
+                .clickContinue()
+                .clickCancel();
+                Assert.assertEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/inventory.html");
+    }
 }
+
+
+

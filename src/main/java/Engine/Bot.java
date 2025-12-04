@@ -1,4 +1,5 @@
 package Engine;
+
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -79,6 +80,12 @@ public class Bot {
             String text = element.getText();
             return (text != null && !text.trim().isEmpty()) ? text : null;
         });
+    }
+    public String getMessage(By locator) {
+        String text = wait.until(d ->
+                d.findElement(locator).getText());
+        BotLogger.info("Got text from element [" + locator + "]: " + text);
+        return text;
     }
 
     public String findAndGetText(By locator) {

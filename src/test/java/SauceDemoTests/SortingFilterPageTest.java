@@ -10,7 +10,6 @@ import java.util.List;
 
 public class SortingFilterPageTest extends BaseTest {
     private LoginPage loginPage;
-
     private SortingFilterPage sortingPage;
 
     @BeforeMethod
