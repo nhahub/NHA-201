@@ -152,9 +152,33 @@ public class EndToEndTest extends BaseTest {
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/cart.html");
     }
-    //TODO: cancel order after filling some fields in checkout page
+    //TODO: invalid, missing fields in checkout page
     @Test
     public void invalidEndToEndPurchaseFlow5() {
+        new LoginPage(bot)
+                .loginAsStandardUser();
+        new HomePage(bot)
+                .addBackpackToCart()
+                .addBikeLightToCart()
+                .addBoltShirtToCart();
+        new CartPage(bot)
+                .openCartLink()
+                .clickCheckoutButton();
+        new CheckoutPage(bot)
+                .fillFirstName("")
+                .fillLastName("")
+                .fillZipCode("201")
+                .clickContinue();
+        Assert.assertNotEquals(
+                bot.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );
+        String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
+        Assert.assertTrue(errorMsg.contains("Error"));
+    }
+    //TODO: cancel order after filling some fields in checkout page
+    @Test
+    public void invalidEndToEndPurchaseFlow6() {
         new LoginPage(bot)
                 .loginAsStandardUser();
         new HomePage(bot)

@@ -16,7 +16,7 @@ public class IInvokedMethodResultListener implements IInvokedMethodListener {
 
     public void afterInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
         if (testResult.getStatus() == ITestResult.FAILURE) {
-            BotLogger.info("Test Case" + testResult.getName() + "failed");
+            BotLogger.info("TestCase  " + testResult.getName() + "  failed");
             Bot.takeScreenShot(getDriver(), testResult.getName());
         }
     }

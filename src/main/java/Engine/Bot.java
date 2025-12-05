@@ -17,7 +17,7 @@ import java.util.List;
 public class Bot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
-    private static final String SCREENSHOTS_PATH = "allure-results/Screenshots/";
+    private static final String SCREENSHOTS_PATH = "target/allure-results/Screenshots/";
 
     //  Constructor
     public Bot(WebDriver driver) {
