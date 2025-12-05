@@ -126,7 +126,7 @@ public class Bot {
     public List<WebElement> findAll(By locator) {
         return wait.until(d -> d.findElements(locator));
     }
-
+//
 
     public int countElements(By locator) {
         return wait.until(driver -> driver.findElements(locator).size());
