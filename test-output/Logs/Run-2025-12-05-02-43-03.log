@@ -1,0 +1,586 @@
+02:43:03 INFO  [BotLogger] Chrome driver is opened
+02:43:04 INFO  [BotLogger] Bot is initialized
+02:43:04 INFO  [BotLogger] Navigating to Login Page...
+02:43:05 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:05 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:05 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:05 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:05 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  started
+02:43:06 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:06 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:06 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  passed
+02:43:06 INFO  [BotLogger] Closing browser...
+02:43:06 INFO  [BotLogger] Browser closed
+02:43:06 INFO  [BotLogger] Chrome driver is opened
+02:43:07 INFO  [BotLogger] Bot is initialized
+02:43:07 INFO  [BotLogger] Navigating to Login Page...
+02:43:08 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:08 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:08 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  started
+02:43:08 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:08 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:08 INFO  [BotLogger] Clicked on element: By.xpath: (//button[@class='btn btn_secondary btn_small cart_button'])[1]
+02:43:08 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  passed
+02:43:08 INFO  [BotLogger] Closing browser...
+02:43:09 INFO  [BotLogger] Browser closed
+02:43:09 INFO  [BotLogger] Chrome driver is opened
+02:43:09 INFO  [BotLogger] Bot is initialized
+02:43:09 INFO  [BotLogger] Navigating to Login Page...
+02:43:10 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:10 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:10 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:10 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:10 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  started
+02:43:10 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:10 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:11 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:11 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  passed
+02:43:11 INFO  [BotLogger] Closing browser...
+02:43:11 INFO  [BotLogger] Browser closed
+02:43:11 INFO  [BotLogger] Chrome driver is opened
+02:43:12 INFO  [BotLogger] Bot is initialized
+02:43:12 INFO  [BotLogger] Navigating to Login Page...
+02:43:12 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:12 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:12 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:12 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:12 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  started
+02:43:13 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:13 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:13 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:13 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:13 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:13 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  passed
+02:43:13 INFO  [BotLogger] Closing browser...
+02:43:13 INFO  [BotLogger] Browser closed
+02:43:13 INFO  [BotLogger] Chrome driver is opened
+02:43:14 INFO  [BotLogger] Bot is initialized
+02:43:14 INFO  [BotLogger] Navigating to Login Page...
+02:43:15 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:15 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:15 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:15 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:15 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+02:43:15 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+02:43:15 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:15 INFO  [BotLogger] Clicked on element: By.id: finish
+02:43:16 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  passed
+02:43:16 INFO  [BotLogger] Closing browser...
+02:43:16 INFO  [BotLogger] Browser closed
+02:43:16 INFO  [BotLogger] Chrome driver is opened
+02:43:17 INFO  [BotLogger] Bot is initialized
+02:43:17 INFO  [BotLogger] Navigating to Login Page...
+02:43:17 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:17 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:18 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:18 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:18 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+02:43:18 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+02:43:18 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:18 INFO  [BotLogger] Clicked on element: By.id: finish
+02:43:18 INFO  [BotLogger] Clicked on element: By.xpath: //button[text()='Back Home']
+02:43:18 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  passed
+02:43:18 INFO  [BotLogger] Closing browser...
+02:43:18 INFO  [BotLogger] Browser closed
+02:43:18 INFO  [BotLogger] Chrome driver is opened
+02:43:19 INFO  [BotLogger] Bot is initialized
+02:43:19 INFO  [BotLogger] Navigating to Login Page...
+02:43:20 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:20 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:20 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:20 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:20 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
+02:43:20 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:20 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:20 INFO  [BotLogger] Typed text: First Name into element with locator: By.id: first-name
+02:43:20 INFO  [BotLogger] Typed text: Last Name into element with locator: By.id: last-name
+02:43:20 INFO  [BotLogger] Typed text: 10000 into element with locator: By.id: postal-code
+02:43:20 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:20 INFO  [BotLogger] Clicked on element: By.id: finish
+02:43:21 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrderfailed
+02:43:21 INFO  [BotLogger] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
+02:43:21 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  failed
+02:43:21 INFO  [BotLogger] Closing browser...
+02:43:21 INFO  [BotLogger] Browser closed
+02:43:21 INFO  [BotLogger] Chrome driver is opened
+02:43:22 INFO  [BotLogger] Bot is initialized
+02:43:22 INFO  [BotLogger] Navigating to Login Page...
+02:43:22 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:22 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:22 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:23 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:23 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:23 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:23 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:23 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  started
+02:43:23 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+02:43:23 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+02:43:23 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:23 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:23 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  passed
+02:43:23 INFO  [BotLogger] Closing browser...
+02:43:23 INFO  [BotLogger] Browser closed
+02:43:23 INFO  [BotLogger] Chrome driver is opened
+02:43:24 INFO  [BotLogger] Bot is initialized
+02:43:24 INFO  [BotLogger] Navigating to Login Page...
+02:43:24 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:25 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:25 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:25 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:25 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:25 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:25 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:25 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  started
+02:43:25 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+02:43:25 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+02:43:25 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
+02:43:25 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:25 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  passed
+02:43:25 INFO  [BotLogger] Closing browser...
+02:43:25 INFO  [BotLogger] Browser closed
+02:43:25 INFO  [BotLogger] Chrome driver is opened
+02:43:26 INFO  [BotLogger] Bot is initialized
+02:43:26 INFO  [BotLogger] Navigating to Login Page...
+02:43:27 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:27 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:27 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:27 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:27 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:27 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:27 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:27 INFO  [BotLogger] Test CasetestCheckoutWithValidData  started
+02:43:27 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+02:43:27 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+02:43:27 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:27 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:27 INFO  [BotLogger] Test CasetestCheckoutWithValidData  passed
+02:43:27 INFO  [BotLogger] Closing browser...
+02:43:28 INFO  [BotLogger] Browser closed
+02:43:28 INFO  [BotLogger] Chrome driver is opened
+02:43:28 INFO  [BotLogger] Bot is initialized
+02:43:28 INFO  [BotLogger] Navigating to Login Page...
+02:43:28 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  started
+02:43:29 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:29 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:29 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:29 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:29 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+02:43:30 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+02:43:30 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:30 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:30 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  passed
+02:43:30 INFO  [BotLogger] Closing browser...
+02:43:30 INFO  [BotLogger] Browser closed
+02:43:30 INFO  [BotLogger] Chrome driver is opened
+02:43:31 INFO  [BotLogger] Bot is initialized
+02:43:31 INFO  [BotLogger] Navigating to Login Page...
+02:43:31 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  started
+02:43:31 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:31 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:31 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:32 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+02:43:32 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
+02:43:32 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:32 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:32 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  passed
+02:43:32 INFO  [BotLogger] Closing browser...
+02:43:32 INFO  [BotLogger] Browser closed
+02:43:32 INFO  [BotLogger] Chrome driver is opened
+02:43:33 INFO  [BotLogger] Bot is initialized
+02:43:33 INFO  [BotLogger] Navigating to Login Page...
+02:43:33 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  started
+02:43:34 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:34 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:34 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:34 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+02:43:34 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+02:43:34 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
+02:43:34 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:34 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  passed
+02:43:34 INFO  [BotLogger] Closing browser...
+02:43:35 INFO  [BotLogger] Browser closed
+02:43:35 INFO  [BotLogger] Chrome driver is opened
+02:43:35 INFO  [BotLogger] Bot is initialized
+02:43:35 INFO  [BotLogger] Navigating to Login Page...
+02:43:35 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  started
+02:43:36 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:36 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:36 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:36 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:36 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:36 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:36 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:36 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:37 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:37 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+02:43:37 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+02:43:37 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:37 INFO  [BotLogger] Clicked on element: By.id: cancel
+02:43:37 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  passed
+02:43:37 INFO  [BotLogger] Closing browser...
+02:43:37 INFO  [BotLogger] Browser closed
+02:43:37 INFO  [BotLogger] Chrome driver is opened
+02:43:38 INFO  [BotLogger] Bot is initialized
+02:43:38 INFO  [BotLogger] Navigating to Login Page...
+02:43:38 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  started
+02:43:38 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:39 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:39 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:39 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+02:43:39 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
+02:43:39 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:39 INFO  [BotLogger] Clicked on element: By.id: cancel
+02:43:39 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  passed
+02:43:39 INFO  [BotLogger] Closing browser...
+02:43:39 INFO  [BotLogger] Browser closed
+02:43:39 INFO  [BotLogger] Chrome driver is opened
+02:43:40 INFO  [BotLogger] Bot is initialized
+02:43:40 INFO  [BotLogger] Navigating to Login Page...
+02:43:40 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  started
+02:43:41 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:41 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:41 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:41 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+02:43:41 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+02:43:41 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:41 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:42 INFO  [BotLogger] Clicked on element: By.id: finish
+02:43:42 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  passed
+02:43:42 INFO  [BotLogger] Closing browser...
+02:43:42 INFO  [BotLogger] Browser closed
+02:43:42 INFO  [BotLogger] Chrome driver is opened
+02:43:43 INFO  [BotLogger] Bot is initialized
+02:43:43 INFO  [BotLogger] Navigating to Login Page...
+02:43:43 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  started
+02:43:43 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:43 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:44 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: checkout
+02:43:44 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+02:43:44 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+02:43:44 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: continue
+02:43:44 INFO  [BotLogger] Clicked on element: By.id: finish
+02:43:44 INFO  [BotLogger] Clicked on element: By.xpath: //button[text()='Back Home']
+02:43:44 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  passed
+02:43:44 INFO  [BotLogger] Closing browser...
+02:43:45 INFO  [BotLogger] Browser closed
+02:43:45 INFO  [BotLogger] Chrome driver is opened
+02:43:45 INFO  [BotLogger] Bot is initialized
+02:43:45 INFO  [BotLogger] Navigating to Login Page...
+02:43:46 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:46 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:46 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:46 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:46 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  started
+02:43:47 INFO  [BotLogger] Scrolled to element: By.className: footer
+02:43:47 INFO  [BotLogger] Scrolled to element: By.className: app_logo
+02:43:47 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  passed
+02:43:47 INFO  [BotLogger] Closing browser...
+02:43:47 INFO  [BotLogger] Browser closed
+02:43:47 INFO  [BotLogger] Chrome driver is opened
+02:43:48 INFO  [BotLogger] Bot is initialized
+02:43:48 INFO  [BotLogger] Navigating to Login Page...
+02:43:49 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:49 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:49 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:49 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:49 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  started
+02:43:49 INFO  [BotLogger] Clicked on element: By.xpath: //button[@id='react-burger-menu-btn']
+02:43:49 INFO  [BotLogger] Element displayed status for locator By.id: menu_button_container: true
+02:43:49 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  passed
+02:43:49 INFO  [BotLogger] Closing browser...
+02:43:49 INFO  [BotLogger] Browser closed
+02:43:49 INFO  [BotLogger] Chrome driver is opened
+02:43:50 INFO  [BotLogger] Bot is initialized
+02:43:50 INFO  [BotLogger] Navigating to Login Page...
+02:43:51 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:51 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:51 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:51 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:51 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  started
+02:43:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:51 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:51 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  passed
+02:43:51 INFO  [BotLogger] Closing browser...
+02:43:52 INFO  [BotLogger] Browser closed
+02:43:52 INFO  [BotLogger] Chrome driver is opened
+02:43:52 INFO  [BotLogger] Bot is initialized
+02:43:52 INFO  [BotLogger] Navigating to Login Page...
+02:43:53 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:53 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:53 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:53 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:53 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  started
+02:43:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+02:43:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
+02:43:53 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+02:43:54 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-backpack
+02:43:54 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bike-light
+02:43:54 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bolt-t-shirt
+02:43:54 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  passed
+02:43:54 INFO  [BotLogger] Closing browser...
+02:43:54 INFO  [BotLogger] Browser closed
+02:43:54 INFO  [BotLogger] Chrome driver is opened
+02:43:55 INFO  [BotLogger] Bot is initialized
+02:43:55 INFO  [BotLogger] Navigating to Login Page...
+02:43:55 INFO  [BotLogger] Test CasetestValidLogin  started
+02:43:55 INFO  [BotLogger] Test Started: loginTest
+02:43:55 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:55 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:43:55 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:56 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:56 INFO  [BotLogger] Test Finished: loginTest
+02:43:56 INFO  [BotLogger] Test CasetestValidLogin  passed
+02:43:56 INFO  [BotLogger] Closing browser...
+02:43:56 INFO  [BotLogger] Browser closed
+02:43:56 INFO  [BotLogger] Chrome driver is opened
+02:43:57 INFO  [BotLogger] Bot is initialized
+02:43:57 INFO  [BotLogger] Navigating to Login Page...
+02:43:57 INFO  [BotLogger] Test CasetestValidLogin  started
+02:43:57 INFO  [BotLogger] Test Started: loginTest
+02:43:57 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:57 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+02:43:57 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:43:57 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:43:58 INFO  [BotLogger] Test Finished: loginTest
+02:43:58 INFO  [BotLogger] Test CasetestValidLogin  passed
+02:43:58 INFO  [BotLogger] Closing browser...
+02:43:58 INFO  [BotLogger] Browser closed
+02:43:58 INFO  [BotLogger] Chrome driver is opened
+02:43:58 INFO  [BotLogger] Bot is initialized
+02:43:58 INFO  [BotLogger] Navigating to Login Page...
+02:43:58 INFO  [BotLogger] Test CasetestValidLogin  started
+02:43:58 INFO  [BotLogger] Test Started: loginTest
+02:43:59 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:43:59 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+02:43:59 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:04 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:04 INFO  [BotLogger] Test Finished: loginTest
+02:44:04 INFO  [BotLogger] Test CasetestValidLogin  passed
+02:44:04 INFO  [BotLogger] Closing browser...
+02:44:05 INFO  [BotLogger] Browser closed
+02:44:05 INFO  [BotLogger] Chrome driver is opened
+02:44:05 INFO  [BotLogger] Bot is initialized
+02:44:05 INFO  [BotLogger] Navigating to Login Page...
+02:44:05 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+02:44:05 INFO  [BotLogger] Test Started: loginTest
+02:44:06 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:06 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:06 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:06 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:06 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+02:44:06 INFO  [BotLogger] Test Finished: loginTest
+02:44:06 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+02:44:06 INFO  [BotLogger] Closing browser...
+02:44:06 INFO  [BotLogger] Browser closed
+02:44:06 INFO  [BotLogger] Chrome driver is opened
+02:44:07 INFO  [BotLogger] Bot is initialized
+02:44:07 INFO  [BotLogger] Navigating to Login Page...
+02:44:07 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+02:44:07 INFO  [BotLogger] Test Started: loginTest
+02:44:08 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:08 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+02:44:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:08 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:08 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+02:44:08 INFO  [BotLogger] Test Finished: loginTest
+02:44:08 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+02:44:08 INFO  [BotLogger] Closing browser...
+02:44:08 INFO  [BotLogger] Browser closed
+02:44:08 INFO  [BotLogger] Chrome driver is opened
+02:44:09 INFO  [BotLogger] Bot is initialized
+02:44:09 INFO  [BotLogger] Navigating to Login Page...
+02:44:09 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+02:44:09 INFO  [BotLogger] Test Started: loginTest
+02:44:10 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:10 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+02:44:10 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:15 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:15 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+02:44:15 INFO  [BotLogger] Test Finished: loginTest
+02:44:15 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+02:44:15 INFO  [BotLogger] Closing browser...
+02:44:15 INFO  [BotLogger] Browser closed
+02:44:15 INFO  [BotLogger] Chrome driver is opened
+02:44:16 INFO  [BotLogger] Bot is initialized
+02:44:16 INFO  [BotLogger] Navigating to Login Page...
+02:44:16 INFO  [BotLogger] Test CasetestInvalidLogin  started
+02:44:17 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:17 INFO  [BotLogger] Typed text: invalid_user into element with locator: By.id: user-name
+02:44:17 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:17 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:17 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+02:44:17 INFO  [BotLogger] Closing browser...
+02:44:17 INFO  [BotLogger] Browser closed
+02:44:17 INFO  [BotLogger] Chrome driver is opened
+02:44:18 INFO  [BotLogger] Bot is initialized
+02:44:18 INFO  [BotLogger] Navigating to Login Page...
+02:44:18 INFO  [BotLogger] Test CasetestInvalidLogin  started
+02:44:19 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:19 INFO  [BotLogger] Typed text: wrong_user into element with locator: By.id: user-name
+02:44:19 INFO  [BotLogger] Typed text: wrong_password into element with locator: By.id: password
+02:44:19 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:19 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+02:44:19 INFO  [BotLogger] Closing browser...
+02:44:19 INFO  [BotLogger] Browser closed
+02:44:19 INFO  [BotLogger] Chrome driver is opened
+02:44:20 INFO  [BotLogger] Bot is initialized
+02:44:20 INFO  [BotLogger] Navigating to Login Page...
+02:44:20 INFO  [BotLogger] Test CasetestInvalidLogin  started
+02:44:22 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:22 INFO  [BotLogger] Typed text: fake_user into element with locator: By.id: user-name
+02:44:22 INFO  [BotLogger] Typed text: fake_pass into element with locator: By.id: password
+02:44:22 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:22 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+02:44:22 INFO  [BotLogger] Closing browser...
+02:44:22 INFO  [BotLogger] Browser closed
+02:44:22 INFO  [BotLogger] Chrome driver is opened
+02:44:23 INFO  [BotLogger] Bot is initialized
+02:44:23 INFO  [BotLogger] Navigating to Login Page...
+02:44:23 INFO  [BotLogger] Test CasetestEmptyFields  started
+02:44:24 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:24 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+02:44:24 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:24 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:24 INFO  [BotLogger] Test CasetestEmptyFields  passed
+02:44:24 INFO  [BotLogger] Closing browser...
+02:44:24 INFO  [BotLogger] Browser closed
+02:44:24 INFO  [BotLogger] Chrome driver is opened
+02:44:25 INFO  [BotLogger] Bot is initialized
+02:44:25 INFO  [BotLogger] Navigating to Login Page...
+02:44:25 INFO  [BotLogger] Test CasetestEmptyFields  started
+02:44:26 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:26 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:26 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+02:44:26 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:26 INFO  [BotLogger] Test CasetestEmptyFields  passed
+02:44:26 INFO  [BotLogger] Closing browser...
+02:44:26 INFO  [BotLogger] Browser closed
+02:44:26 INFO  [BotLogger] Chrome driver is opened
+02:44:27 INFO  [BotLogger] Bot is initialized
+02:44:27 INFO  [BotLogger] Navigating to Login Page...
+02:44:27 INFO  [BotLogger] Test CasetestEmptyFields  started
+02:44:28 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:28 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+02:44:28 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+02:44:28 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:28 INFO  [BotLogger] Test CasetestEmptyFields  passed
+02:44:28 INFO  [BotLogger] Closing browser...
+02:44:28 INFO  [BotLogger] Browser closed
+02:44:28 INFO  [BotLogger] Chrome driver is opened
+02:44:29 INFO  [BotLogger] Bot is initialized
+02:44:29 INFO  [BotLogger] Navigating to Login Page...
+02:44:29 INFO  [BotLogger] Test CasetestLockedOutUser  started
+02:44:30 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:30 INFO  [BotLogger] Typed text: locked_out_user into element with locator: By.id: user-name
+02:44:30 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:30 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:30 INFO  [BotLogger] Test CasetestLockedOutUser  passed
+02:44:30 INFO  [BotLogger] Closing browser...
+02:44:31 INFO  [BotLogger] Browser closed
+02:44:31 INFO  [BotLogger] Chrome driver is opened
+02:44:31 INFO  [BotLogger] Bot is initialized
+02:44:31 INFO  [BotLogger] Navigating to Login Page...
+02:44:31 INFO  [BotLogger] Test CasevalidLoginWithJasonData  started
+02:44:31 INFO  [BotLogger] Test Started: loginTest
+02:44:32 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:32 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:32 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:32 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:32 INFO  [BotLogger] Test Finished: loginTest
+02:44:32 INFO  [BotLogger] Test CasevalidLoginWithJasonData  passed
+02:44:32 INFO  [BotLogger] Closing browser...
+02:44:33 INFO  [BotLogger] Browser closed
+02:44:33 INFO  [BotLogger] Chrome driver is opened
+02:44:33 INFO  [BotLogger] Bot is initialized
+02:44:33 INFO  [BotLogger] Navigating to Login Page...
+02:44:34 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:34 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:34 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:34 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:34 INFO  [BotLogger] Test CasesortingTest  started
+02:44:35 INFO  [BotLogger] Test CasesortingTest  passed
+02:44:35 INFO  [BotLogger] Closing browser...
+02:44:35 INFO  [BotLogger] Browser closed
+02:44:35 INFO  [BotLogger] Chrome driver is opened
+02:44:35 INFO  [BotLogger] Bot is initialized
+02:44:35 INFO  [BotLogger] Navigating to Login Page...
+02:44:36 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:36 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:36 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:36 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:36 INFO  [BotLogger] Test CasesortingTest  started
+02:44:37 INFO  [BotLogger] Test CasesortingTest  passed
+02:44:37 INFO  [BotLogger] Closing browser...
+02:44:37 INFO  [BotLogger] Browser closed
+02:44:37 INFO  [BotLogger] Chrome driver is opened
+02:44:38 INFO  [BotLogger] Bot is initialized
+02:44:38 INFO  [BotLogger] Navigating to Login Page...
+02:44:38 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:39 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:39 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:39 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:39 INFO  [BotLogger] Test CasesortingTest  started
+02:44:39 INFO  [BotLogger] Test CasesortingTest  passed
+02:44:39 INFO  [BotLogger] Closing browser...
+02:44:39 INFO  [BotLogger] Browser closed
+02:44:39 INFO  [BotLogger] Chrome driver is opened
+02:44:40 INFO  [BotLogger] Bot is initialized
+02:44:40 INFO  [BotLogger] Navigating to Login Page...
+02:44:41 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:44:41 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:44:41 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:44:41 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:44:41 INFO  [BotLogger] Test CasesortingTest  started
+02:44:41 INFO  [BotLogger] Test CasesortingTest  passed
+02:44:41 INFO  [BotLogger] Closing browser...
+02:44:41 INFO  [BotLogger] Browser closed

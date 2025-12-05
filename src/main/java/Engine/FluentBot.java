@@ -19,7 +19,7 @@ import java.util.Date;
 public class FluentBot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
-    private static final String SCREENSHOTS_PATH = "test-output/Screenshots/";
+    private static final String SCREENSHOTS_PATH = "allure-results/Screenshots/";
 
     //Constructor
     public FluentBot(WebDriver driver) {
@@ -31,22 +31,18 @@ public class FluentBot {
                 .ignoring(NoSuchElementException.class);
     }
 
-    public FluentBot(WebDriver driver, Wait<WebDriver> wait) {
-        this.driver = driver;
-        this.wait = wait;
-    }
-
     public FluentBot navigateTo(String url) {
             driver.navigate().to(url);
             return this;
         }
 
-        public FluentBot click(By locator) {
+    public FluentBot click(By locator) {
             wait.until(d -> {
                 d.findElement(locator).click();
                 return true;
             });
-            return this;
+        BotLogger.info("Clicked on element: " + locator);
+        return this;
         }
 
         public FluentBot type(By locator, String text) {

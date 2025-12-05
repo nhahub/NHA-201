@@ -170,7 +170,7 @@ public class EndToEndTest extends BaseTest {
                 .fillZipCode("201")
                 .clickContinue()
                 .clickCancel();
-                Assert.assertEquals(
+        Assert.assertEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/cart.html");
     }

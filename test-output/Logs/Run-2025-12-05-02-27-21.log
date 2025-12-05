@@ -1,0 +1,13 @@
+02:27:21 INFO  [BotLogger] Chrome driver is opened
+02:27:23 INFO  [BotLogger] Bot is initialized
+02:27:23 INFO  [BotLogger] Navigating to Login Page...
+02:27:23 INFO  [BotLogger] Test CasevalidLoginWithJasonData  started
+02:27:23 INFO  [BotLogger] Test Started: loginTest
+02:27:24 INFO  [BotLogger] Navigated to: https://www.saucedemo.com/
+02:27:24 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+02:27:25 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+02:27:25 INFO  [BotLogger] Clicked on element: By.id: login-button
+02:27:25 INFO  [BotLogger] Test Finished: loginTest
+02:27:25 INFO  [BotLogger] Test CasevalidLoginWithJasonData  passed
+02:27:25 INFO  [BotLogger] Closing browser...
+02:27:25 INFO  [BotLogger] Browser closed
