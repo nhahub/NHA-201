@@ -16,6 +16,7 @@ public class BaseTestFluent {
         @BeforeMethod
         public void setUp() {
             //open Browser
+            //
             BotLogger.info("Chrome driver is opened");
             DriverFactory.setupDriver("chrome");
             WebDriver driver = DriverFactory.getDriver();
