@@ -1,5 +1,6 @@
 package Drivers;
 
+import Engine.BotLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -32,11 +33,13 @@ public class DriverFactory {
     }
 
     public static WebDriver getDriver() {
+        BotLogger.info("Browser is opened");
         return driverThreadLocal.get();
     }
 
     public static void quitDriver() {
         getDriver().quit();
+        BotLogger.info("Browser closed");
         driverThreadLocal.remove();
     }
 }

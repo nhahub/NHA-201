@@ -13,19 +13,16 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class )
     public void testValidLogin(String username, String password) {
         LoginPage loginPage = new LoginPage(bot);
-        BotLogger.info("Test Started: loginTest");
         loginPage.navigateToLoginPage();
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"));
-        BotLogger.info("Test Finished: loginTest");
         }
 
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
     public void testSuccessfulLoginVerifyProductsPage(String username, String password) {
-        BotLogger.info("Test Started: loginTest");
         LoginPage loginPage = new LoginPage(bot);
         loginPage.navigateToLoginPage();
         loginPage.enterUsername(username);
@@ -33,8 +30,6 @@ public class LoginPageTests extends BaseTest {
         loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.isProductsPageTitleDisplayed());
-        BotLogger.info("Test Finished: loginTest");
-
     }
 
     @Test(dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testSuccessfulLoginVerifyProductsPage")
@@ -76,14 +71,12 @@ public class LoginPageTests extends BaseTest {
         String EMAIL = BotData.getJsonData("LoginData", "username");
         String PASSWORD = BotData.getJsonData("LoginData", "password");
         LoginPage loginPage = new LoginPage(bot);
-        BotLogger.info("Test Started: loginTest");
         loginPage.navigateToLoginPage();
         loginPage.enterUsername(EMAIL);
         loginPage.enterPassword(PASSWORD);
         loginPage.clickLoginButton();
         Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
         Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"));
-        BotLogger.info("Test Finished: loginTest");
     }
 
 }

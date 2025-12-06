@@ -16,19 +16,14 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         //open Browser
-        BotLogger.info("Chrome driver is opened");
         DriverFactory.setupDriver("chrome");
         WebDriver driver = DriverFactory.getDriver();
         bot = new Bot(driver);
-        BotLogger.info("Bot is initialized");
-        BotLogger.info("Navigating to Login Page...");
     }
 
     @AfterMethod
     public void tearDown() {
         //close Browser
-        BotLogger.info("Closing browser...");
         DriverFactory.quitDriver();
-        BotLogger.info("Browser closed");
     }
 }
