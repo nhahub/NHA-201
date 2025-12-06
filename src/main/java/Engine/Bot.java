@@ -123,7 +123,7 @@ public class Bot {
         return wait.until(d -> d.findElement(locator));
     }
 
-    public List<WebElement> findAll(By locator) {
+    public List<WebElement> findElements(By locator) {
         return wait.until(d -> d.findElements(locator));
     }
 //
