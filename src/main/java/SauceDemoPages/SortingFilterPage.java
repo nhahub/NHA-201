@@ -26,7 +26,7 @@ public class SortingFilterPage {
 
     // Get product names as Strings
     public List<String> getProductNames() {
-        List<WebElement> products = bot.findAll(productName);
+        List<WebElement> products = bot.findElements(productName);
         List<String> names = new ArrayList<>();
         for (WebElement product : products) {
             names.add(product.getText());
