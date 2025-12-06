@@ -37,9 +37,9 @@ suite.
 |------|------------------------|-------------------|
 | Ali Nabil Ali | Login & Engine | Engine setup, Bot, LoginPage, Login Tests |
 | Mohamed Mahmoud Mohamed | Home & Add to Cart | Engine setup, Bot, HomePage, HomePageTests, DataBase |
-| Akram Hussen Ibraheem | Cart & Checkout | Engine setup, Bot, AllureRebort, CartPage, CheckoutPage, ConfirmationPage, Cart & Checkout Tests |
+| Akram Hussen Ibraheem | Cart & Checkout | Engine setup, Bot, Allure-Report, CartPage, CheckoutPage, ConfirmationPage, Cart & Checkout Tests |
 | Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests |
-| Nada Khamis Mohamed | End-to-End | Engine setup, Bot, AllureRebort, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot |
+| Nada Khamis Mohamed | End-to-End | Engine setup, Bot, Allure-Report, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot |
 
 ### Tools & Technologies
 
