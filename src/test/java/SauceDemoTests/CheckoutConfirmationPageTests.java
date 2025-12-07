@@ -5,14 +5,12 @@ import SauceDemoPages.CartPage;
 import SauceDemoPages.CheckoutConfirmationPage;
 import SauceDemoPages.CheckoutPage;
 import SauceDemoPages.LoginPage;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CheckoutConfirmationPageTests extends BaseTest {
-    private CartPage cartPage;
-    private CheckoutPage checkoutPage;
+
     private CheckoutConfirmationPage confirmationPage;
 
     @BeforeMethod
@@ -23,45 +21,56 @@ public class CheckoutConfirmationPageTests extends BaseTest {
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
         new CartPage(bot)
-           .addBackpackAndGoToCheckout();
+                .addBackpackAndGoToCheckout();
+
         new CheckoutPage(bot)
-            .completeCheckoutForm("First Name", "Last Name", "10000");
-        bot.click(By.id("finish"));
-        return confirmationPage;
+                .completeCheckoutForm("First Name", "Last Name", "10000")
+                .clickFinish();
+
+        return new CheckoutConfirmationPage(bot);
     }
 
     @Test
     public void Confirmation_TC1_finishOrderWithItems() {
-        // ???
         confirmationPage = finishOrderWithBackpack();
+
         Assert.assertEquals(
-                new CheckoutConfirmationPage(bot).getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-complete.html");
+                confirmationPage.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-complete.html"
+        );
         Assert.assertEquals(
-                new CheckoutConfirmationPage(bot).getThankYouMessageText(),
-                "Thank you for your order!");
+                confirmationPage.getThankYouMessageText(),
+                "Thank you for your order!"
+        );
     }
 
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
         new CartPage(bot)
-           .goToCheckout();
+                .goToCheckout();
+
         new CheckoutPage(bot)
-            .completeCheckoutForm("First Name", "Last Name", "10000");
-        bot.click(By.id("finish"));
+                .completeCheckoutForm("First Name", "Last Name", "10000")
+                .clickFinish();
+
+        confirmationPage = new CheckoutConfirmationPage(bot);
+
         Assert.assertNotEquals(
-                new CheckoutConfirmationPage(bot).getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-complete.html");
+                confirmationPage.getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-complete.html"
+        );
     }
 
-    @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
+    @Test
     public void Confirmation_TC3_backToHomeAfterCompletion() {
-        // ???
         confirmationPage = finishOrderWithBackpack();
-        new CheckoutConfirmationPage(bot)
-            .clickBackHomeButton();
+
+        confirmationPage
+                .clickBackHomeButton();
+
         Assert.assertEquals(
-                new CheckoutConfirmationPage(bot).getCurrentUrl(),
-                "https://www.saucedemo.com/inventory.html");
+                confirmationPage.getCurrentUrl(),
+                "https://www.saucedemo.com/inventory.html"
+        );
     }
 }
