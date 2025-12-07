@@ -220,8 +220,5 @@ Add more test suites
 
 Integrate CI/CD (GitHub Actions)
 
-Support for WebDriver Manager
-
-ssional
-automation practices. It covers core functionalities, employs robust
+Support for WebDriver Manager functionalities, employs robust
 design patterns, and provides detailed reporting, serving as an
