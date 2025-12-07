@@ -32,12 +32,11 @@ public class LoginPage {
         bot.type(passwordField, password);
         return this;
     }
-
-    public LoginPage clickLoginButton() {
+    //TODO: Navigate to HomePage
+    public HomePage clickLoginButton() {
         bot.click(loginButton);
-        return this;
+        return new HomePage(bot);
     }
-
 
     public String getPageTitle() {
         return bot.getPageTitle();
@@ -54,7 +53,21 @@ public class LoginPage {
     public String getErrorMessage() {
         return bot.getText(errorMessage);
     }
+    //TODO: Assertion
+    // AssertEquals use String Methods
+    // AssertTrue use boolean Methods
+    public boolean assertLoginTc(String expectedTitle) {
+        return bot.getPageTitle().equals(expectedTitle);
+    }
 
+    public String ActualLoginTitle() {
+        return bot.getPageTitle();
+    }
+
+    public boolean assertErrorMessage(String expectedMessage) {
+        return getErrorMessage().equals(expectedMessage);
+    }
+    //TODO: login by user
     public void loginAsStandardUser() {
         navigateToLoginPage()
                 .enterUsername("standard_user")

@@ -12,13 +12,14 @@ public class LoginPageTests extends BaseTest {
 
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class )
     public void testValidLogin(String username, String password) {
-        LoginPage loginPage = new LoginPage(bot);
-        loginPage.navigateToLoginPage();
-        loginPage.enterUsername(username);
-        loginPage.enterPassword(password);
-        loginPage.clickLoginButton();
-        Assert.assertEquals(loginPage.getPageTitle(), "Swag Labs");
-        Assert.assertTrue(loginPage.getCurrentUrl().contains("/inventory.html"));
+        new LoginPage(bot)
+            .navigateToLoginPage()
+            .enterUsername(username)
+            .enterPassword(password)
+            .clickLoginButton();
+        Assert.assertEquals(new LoginPage(bot).ActualLoginTitle(), "Swag Labs");
+        Assert.assertTrue(new LoginPage(bot).getCurrentUrl().contains("/inventory.html")
+        );
         }
 
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
