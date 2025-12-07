@@ -1,4 +1,4 @@
-## SauceDemo.com UI Automation Testing Project Summary
+## NHA-201 Automation Testing Project
 
 This document consolidates information about the UI automation test
 suite for SauceDemo.com, developed by Group 201 for the DEPI Software
