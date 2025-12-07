@@ -64,9 +64,6 @@ public class LoginPage {
         return bot.getPageTitle();
     }
 
-    public boolean assertErrorMessage(String expectedMessage) {
-        return getErrorMessage().equals(expectedMessage);
-    }
     //TODO: login by user
     public void loginAsStandardUser() {
         navigateToLoginPage()
