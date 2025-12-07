@@ -26,7 +26,7 @@ Separate test logic from business logic
 
 Support data-driven testing using JSON
 
-Generate detailed test execution reports using Allure
+Generate detailed test execution reports using allure-report
 
 **Scope:**
 
