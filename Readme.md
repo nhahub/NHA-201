@@ -220,5 +220,4 @@ Add more test suites
 
 Integrate CI/CD (GitHub Actions)
 
-Support for WebDriver Manager functionalities, employs robust
-design patterns, and provides detailed reporting, serving as an
+Support for WebDriver Manager
