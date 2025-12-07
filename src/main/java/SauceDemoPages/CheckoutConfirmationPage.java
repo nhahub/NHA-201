@@ -13,16 +13,16 @@ public class CheckoutConfirmationPage {
         this.bot = bot;
     }
 
-    public CheckoutConfirmationPage clickBackHomeButton() {
-        bot.click(backHomeButton);
-        return this;
-    }
-
     public String getThankYouMessageText() {
         return bot.getText(thankYouMessage);
     }
 
     public String getCurrentUrl() {
         return bot.getCurrentUrl();
+    }
+    //TODO: Back to HomePage
+    public HomePage clickBackHomeButton() {
+        bot.click(backHomeButton);
+        return new HomePage(bot);
     }
 }

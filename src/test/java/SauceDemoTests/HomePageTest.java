@@ -13,7 +13,7 @@ public class HomePageTest extends BaseTest {
     @BeforeMethod
     public void setUpHomePage() {
         new LoginPage(bot)
-            .loginAsStandardUser();
+                .loginAsStandardUser();
         homePage = new HomePage(bot);
     }
 

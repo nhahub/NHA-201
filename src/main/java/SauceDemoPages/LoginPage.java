@@ -18,11 +18,6 @@ public class LoginPage {
         this.bot = bot;
     }
 
-    public LoginPage navigateToLoginPage() {
-        bot.navigateTo("https://www.saucedemo.com/");
-        return this;
-    }
-
     public LoginPage enterUsername(String username) {
         bot.type(usernameField, username);
         return this;
@@ -31,11 +26,6 @@ public class LoginPage {
     public LoginPage enterPassword(String password) {
         bot.type(passwordField, password);
         return this;
-    }
-    //TODO: Navigate to HomePage
-    public HomePage clickLoginButton() {
-        bot.click(loginButton);
-        return new HomePage(bot);
     }
 
     public String getPageTitle() {
@@ -53,22 +43,19 @@ public class LoginPage {
     public String getErrorMessage() {
         return bot.getText(errorMessage);
     }
-    //TODO: Assertion
-    // AssertEquals use String Methods
-    // AssertTrue use boolean Methods
+
     public boolean assertLoginTc(String expectedTitle) {
         return bot.getPageTitle().equals(expectedTitle);
     }
-
-    public String ActualLoginTitle() {
-        return bot.getPageTitle();
-    }
-
     //TODO: login by user
     public void loginAsStandardUser() {
-        navigateToLoginPage()
-                .enterUsername("standard_user")
+                enterUsername("standard_user")
                 .enterPassword("secret_sauce")
                 .clickLoginButton();
+    }
+    //TODO: Navigate to HomePage
+    public HomePage clickLoginButton() {
+        bot.click(loginButton);
+        return new HomePage(bot);
     }
 }

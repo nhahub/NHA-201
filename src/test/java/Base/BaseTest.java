@@ -1,10 +1,10 @@
 package Base;
-import Engine.BotLogger;
-import java.time.Duration;
+import java.io.IOException;
 import static Drivers.DriverFactory.getDriver;
+import static Drivers.DriverFactory.setupDriver;
+import static Engine.BotData.getProperty;
 import Drivers.DriverFactory;
 import Engine.Bot;
-import Engine.BotLogger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,9 +14,10 @@ public class BaseTest {
     protected Bot bot;
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp() throws IOException {
         //open Browser
-        DriverFactory.setupDriver("chrome");
+        setupDriver(getProperty("environment", "Browser"));
+        getDriver().get(getProperty("environment", "LOGIN_URL"));
         WebDriver driver = DriverFactory.getDriver();
         bot = new Bot(driver);
     }

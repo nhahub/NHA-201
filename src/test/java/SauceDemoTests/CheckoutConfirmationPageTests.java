@@ -22,45 +22,46 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     private CheckoutConfirmationPage finishOrderWithBackpack() {
-        cartPage = new CartPage(bot);
-        cartPage.addBackpackAndGoToCheckout();
-        checkoutPage = new CheckoutPage(bot);
-        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
+        new CartPage(bot)
+           .addBackpackAndGoToCheckout();
+        new CheckoutPage(bot)
+            .completeCheckoutForm("First Name", "Last Name", "10000");
         bot.click(By.id("finish"));
-        confirmationPage = new CheckoutConfirmationPage(bot);
         return confirmationPage;
     }
 
     @Test
     public void Confirmation_TC1_finishOrderWithItems() {
+        // ???
         confirmationPage = finishOrderWithBackpack();
         Assert.assertEquals(
-                confirmationPage.getCurrentUrl(),
+                new CheckoutConfirmationPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
         Assert.assertEquals(
-                confirmationPage.getThankYouMessageText(),
+                new CheckoutConfirmationPage(bot).getThankYouMessageText(),
                 "Thank you for your order!");
     }
 
     @Test
     public void Confirmation_TC2_finishEmptyCartOrder() {
-        cartPage = new CartPage(bot);
-        cartPage.goToCheckout();
-        checkoutPage = new CheckoutPage(bot);
-        checkoutPage.completeCheckoutForm("First Name", "Last Name", "10000");
+        new CartPage(bot)
+           .goToCheckout();
+        new CheckoutPage(bot)
+            .completeCheckoutForm("First Name", "Last Name", "10000");
         bot.click(By.id("finish"));
-        confirmationPage = new CheckoutConfirmationPage(bot);
         Assert.assertNotEquals(
-                confirmationPage.getCurrentUrl(),
+                new CheckoutConfirmationPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-complete.html");
     }
 
     @Test(dependsOnMethods = "Confirmation_TC1_finishOrderWithItems")
     public void Confirmation_TC3_backToHomeAfterCompletion() {
+        // ???
         confirmationPage = finishOrderWithBackpack();
-        confirmationPage.clickBackHomeButton();
+        new CheckoutConfirmationPage(bot)
+            .clickBackHomeButton();
         Assert.assertEquals(
-                bot.getCurrentUrl(),
+                new CheckoutConfirmationPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
     }
 }

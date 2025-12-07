@@ -19,29 +19,30 @@ public class CheckoutPageTests extends BaseTest {
            .loginAsStandardUser();
        new CartPage(bot)
            .addBackpackAndGoToCheckout();
-        checkoutPage = new CheckoutPage(bot);
     }
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithValidData(String firstName, String lastName, String zipCode) {
-        checkoutPage.fillFirstName(firstName);
-        checkoutPage.fillLastName(lastName);
-        checkoutPage.fillZipCode(zipCode);
-        checkoutPage.clickContinue();
+        new CheckoutPage(bot)
+            .fillFirstName(firstName)
+            .fillLastName(lastName)
+            .fillZipCode(zipCode)
+            .clickContinue();
         Assert.assertEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
     }
 
     @Test(dataProvider = "checkoutEmptyFirstName", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithEmptyFirstName(String firstName, String lastName, String zipCode) {
-        checkoutPage.fillFirstName(firstName);
-        checkoutPage.fillLastName(lastName);
-        checkoutPage.fillZipCode(zipCode);
-        checkoutPage.clickContinue();
+        new CheckoutPage(bot)
+            .fillFirstName(firstName)
+            .fillLastName(lastName)
+            .fillZipCode(zipCode)
+            .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
@@ -50,10 +51,11 @@ public class CheckoutPageTests extends BaseTest {
 
     @Test(dataProvider = "checkoutEmptyZip", dataProviderClass = TestDataProvider.class)
     public void testCheckoutWithEmptyZip(String firstName, String lastName, String zipCode) {
-        checkoutPage.fillFirstName(firstName);
-        checkoutPage.fillLastName(lastName);
-        checkoutPage.fillZipCode(zipCode);
-        checkoutPage.clickContinue();
+        new CheckoutPage(bot)
+           .fillFirstName(firstName)
+           .fillLastName(lastName)
+           .fillZipCode(zipCode)
+           .clickContinue();
         Assert.assertNotEquals(
                 bot.getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"

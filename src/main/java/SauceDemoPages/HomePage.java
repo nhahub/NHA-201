@@ -20,23 +20,18 @@ public class HomePage {
     private final By menuButton = By.xpath("//button[@id='react-burger-menu-btn']");
     private final By sideMenu = By.id("menu_button_container");
 
-    // Constructor
     public HomePage(Bot bot) {
         this.Bot = bot;
     }
-
-    // Scroll Down
     public HomePage scrollToBottom() {
         Bot.scrollToElement(footer);
         return this;
     }
 
-    // Scroll Up
     public void scrollToTop() {
         Bot.scrollToElement(header);
     }
 
-    // Add item to cart
     public HomePage addBackpackToCart() {
         Bot.click(addBackpackBtn);
         return this;
@@ -66,18 +61,13 @@ public class HomePage {
         Bot.click(removeBoltShirt);
 
     }
-
-    // Menu Button
     public void clickMenuButton() {
         Bot.click(menuButton);
     }
 
-    // Assertion Helper
     public boolean isMenuOpen() {
         return Bot.isElementDisplayed(sideMenu);
     }
-
-    // Read cart badge
     public String getCartBadgeCount() {
         if (Bot.isPresent(cartBadge)) {
             return Bot.getText(cartBadge);

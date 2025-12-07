@@ -19,7 +19,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("NHA")
@@ -43,7 +43,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("NHA")
@@ -67,7 +67,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("")
@@ -91,7 +91,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("NHA")
@@ -115,7 +115,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("NHA")
@@ -140,7 +140,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("")
@@ -162,7 +162,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("")
@@ -186,7 +186,7 @@ public class EndToEndTest extends BaseTest {
                 .addBikeLightToCart()
                 .addBoltShirtToCart();
         new CartPage(bot)
-                .openCartLink()
+                .openCartIcon()
                 .clickCheckoutButton();
         new CheckoutPage(bot)
                 .fillFirstName("NHA")

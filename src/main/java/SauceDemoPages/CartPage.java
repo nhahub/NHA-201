@@ -7,7 +7,7 @@ public class CartPage {
 
     private final Bot bot;
 
-    private final By cartLink = By.id("shopping_cart_container");
+    private final By cartIcon = By.id("shopping_cart_container");
     private final By cartItems = By.className("cart_item");
     private final By firstItemName = By.xpath("(//div[@class='inventory_item_name'])[1]");
     private final By removeFirstItemButton = By.xpath("(//button[@class='btn btn_secondary btn_small cart_button'])[1]");
@@ -21,8 +21,8 @@ public class CartPage {
         this.bot = bot;
     }
 
-    public CartPage openCartLink() {
-        bot.click(cartLink);
+    public CartPage openCartIcon() {
+        bot.click(cartIcon);
         return this;
     }
 
@@ -43,13 +43,8 @@ public class CartPage {
         return this;
     }
 
-    public CartPage clickCheckoutButton() {
-        bot.click(checkoutButton);
-        return this;
-    }
-
     public CartPage goToCheckout() {
-        openCartLink();
+        openCartIcon();
         clickCheckoutButton();
         return this;
     }
@@ -77,5 +72,13 @@ public class CartPage {
     public CartPage addBackpackAndGoToCheckout() {
         addBackpack();
         return goToCheckout();
+    }
+    public String getCurrentUrl() {
+        return bot.getCurrentUrl();
+    }
+    //TODO: Navigate to CheckoutPage
+    public CheckoutPage clickCheckoutButton() {
+        bot.click(checkoutButton);
+        return new CheckoutPage(bot);
     }
 }

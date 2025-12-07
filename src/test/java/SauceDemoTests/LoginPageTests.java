@@ -13,11 +13,10 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class )
     public void testValidLogin(String username, String password) {
         new LoginPage(bot)
-            .navigateToLoginPage()
             .enterUsername(username)
             .enterPassword(password)
             .clickLoginButton();
-        Assert.assertEquals(new LoginPage(bot).getPageTitle(), "Swag Labs");
+        Assert.assertEquals(new LoginPage(bot).assertLoginTc("Swag Labs"), true);
         Assert.assertTrue(new LoginPage(bot).getCurrentUrl().contains("/inventory.html")
         );
         }
@@ -25,18 +24,16 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "validLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testValidLogin")
     public void testSuccessfulLoginVerifyProductsPage(String username, String password) {
         new LoginPage(bot)
-                .navigateToLoginPage()
                 .enterUsername(username)
                 .enterPassword(password)
                 .clickLoginButton();
-        Assert.assertEquals(new LoginPage(bot).ActualLoginTitle(), "Swag Labs");
+        Assert.assertEquals(new LoginPage(bot).assertLoginTc("Swag Labs"), true);
         Assert.assertTrue(new LoginPage(bot).isProductsPageTitleDisplayed());
     }
 
     @Test(dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testSuccessfulLoginVerifyProductsPage")
     public void testInvalidLogin(String username, String password) {
        new LoginPage(bot)
-           .navigateToLoginPage()
            .enterUsername(username)
            .enterPassword(password)
            .clickLoginButton();
@@ -47,7 +44,6 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "emptyFieldsData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testInvalidLogin")
     public void testEmptyFields(String username, String password) {
         new LoginPage(bot)
-            .navigateToLoginPage()
             .enterUsername(username)
             .enterPassword(password)
             .clickLoginButton();
@@ -58,7 +54,6 @@ public class LoginPageTests extends BaseTest {
     @Test(dataProvider = "lockedUserData", dataProviderClass = TestDataProvider.class, dependsOnMethods = "testEmptyFields")
     public void testLockedOutUser(String username, String password) {
        new LoginPage(bot)
-                  .navigateToLoginPage()
                   .enterUsername(username)
                   .enterPassword(password)
                   .clickLoginButton();
@@ -71,7 +66,6 @@ public class LoginPageTests extends BaseTest {
         String EMAIL = BotData.getJsonData("LoginData", "username");
         String PASSWORD = BotData.getJsonData("LoginData", "password");
         new LoginPage(bot)
-           .navigateToLoginPage()
            .enterUsername(EMAIL)
            .enterPassword(PASSWORD)
            .clickLoginButton();
