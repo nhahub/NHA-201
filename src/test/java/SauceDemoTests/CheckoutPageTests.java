@@ -56,6 +56,10 @@ public class CheckoutPageTests extends BaseTest {
            .fillLastName(lastName)
            .fillZipCode(zipCode)
            .clickContinue();
+        /*Assert.assertNotEquals(
+                new CheckoutPage(bot).getCurrentUrl(),
+                "https://www.saucedemo.com/checkout-step-two.html"
+        );*/
         Assert.assertNotEquals(
                 new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
