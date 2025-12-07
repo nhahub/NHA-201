@@ -216,12 +216,7 @@ The framework can be enhanced in the following areas:
 -   Optimize ThreadLocal usage for better resource management
 -   Implement test execution groups
 -   Add dynamic test allocation for distributed testing
-
-#### 8. Mobile & API Testing
-
--   Extend framework to support mobile automation
--   Integrate API testing capabilities
--   Add visual regression testing support
+  
 
 ### Summary
 
