@@ -1,0 +1,36 @@
+23:20:40 INFO  [BotLogger] Browser is opened
+23:20:42 INFO  [BotLogger] Browser is opened
+23:20:43 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+23:20:43 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+23:20:43 INFO  [BotLogger] Clicked on element: By.id: login-button
+23:20:43 INFO  [BotLogger] Test CasesortingTest  started
+23:20:43 INFO  [BotLogger] Test CasesortingTest  passed
+23:20:43 INFO  [BotLogger] Browser is opened
+23:20:43 INFO  [BotLogger] Browser closed
+23:20:44 INFO  [BotLogger] Browser is opened
+23:20:46 INFO  [BotLogger] Browser is opened
+23:20:47 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+23:20:47 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+23:20:47 INFO  [BotLogger] Clicked on element: By.id: login-button
+23:20:47 INFO  [BotLogger] Test CasesortingTest  started
+23:20:47 INFO  [BotLogger] Test CasesortingTest  passed
+23:20:47 INFO  [BotLogger] Browser is opened
+23:20:47 INFO  [BotLogger] Browser closed
+23:20:48 INFO  [BotLogger] Browser is opened
+23:20:49 INFO  [BotLogger] Browser is opened
+23:20:50 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+23:20:50 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+23:20:50 INFO  [BotLogger] Clicked on element: By.id: login-button
+23:20:50 INFO  [BotLogger] Test CasesortingTest  started
+23:20:50 INFO  [BotLogger] Test CasesortingTest  passed
+23:20:50 INFO  [BotLogger] Browser is opened
+23:20:50 INFO  [BotLogger] Browser closed
+23:20:51 INFO  [BotLogger] Browser is opened
+23:20:53 INFO  [BotLogger] Browser is opened
+23:20:53 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+23:20:53 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+23:20:54 INFO  [BotLogger] Clicked on element: By.id: login-button
+23:20:54 INFO  [BotLogger] Test CasesortingTest  started
+23:20:54 INFO  [BotLogger] Test CasesortingTest  passed
+23:20:54 INFO  [BotLogger] Browser is opened
+23:20:54 INFO  [BotLogger] Browser closed

@@ -119,7 +119,7 @@ public class Bot {
     }
 
     // Find Element Methods
-    public WebElement find(By locator) {
+    public WebElement findElement(By locator) {
         return wait.until(d -> d.findElement(locator));
     }
 

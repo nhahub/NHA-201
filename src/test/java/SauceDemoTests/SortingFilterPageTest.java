@@ -13,26 +13,26 @@ public class SortingFilterPageTest extends BaseTest {
 
     @BeforeMethod
     public void setup() {
-        new LoginPage(bot)
-           .loginAsStandardUser();
+        new LoginPage(bot).loginAsStandardUser();
         sortingPage = new SortingFilterPage(bot);
     }
+
     @Test(dataProvider = "sortOptions", dataProviderClass = TestDataProvider.class)
     public void sortingTest(String option) {
 
-        // Product names at default status "Expected Result"
-        List<String> defaultSort = sortingPage.getProductNames();
-        // Select option
-        sortingPage.selectSortingOption(option);
-        //Actual Result
         List<String> actualSort = sortingPage.getProductNames();
-        //Assertation of products size
-        Assert.assertEquals(actualSort.size(), defaultSort.size(), "Number of products changed!");
 
-        if(option.equals("Name (A to Z)")) {
-            Assert.assertTrue(defaultSort.getFirst().compareTo(actualSort.getFirst()) <= 0,
-                    "Products not sorted correctly by Name (A to Z)");
+        sortingPage.selectSortingOption(option);
+
+        actualSort = sortingPage.getProductNames();
+
+        Assert.assertEquals(actualSort.size(), actualSort.size(),
+                "Number of products changed!");
+
+        if (option.equals("Name (A to Z)")) {
+            sortingPage.assertSortedAZ(actualSort);
+        } else if (option.equals("Name (Z to A)")) {
+            sortingPage.assertSortedZA(actualSort);
         }
     }
 }
-
