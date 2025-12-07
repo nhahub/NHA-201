@@ -66,53 +66,66 @@ Design Patterns: Page Object Model + Fluent Pattern
 
 ### Project Structure
 
-**src/main/java/Drivers/**
 
--   DriverFactory.java *(WebDriver creation and management)*
+```
+NHA-201 [Team201_SaucedemoTesting]/
+│
+├── .allure/                              # Allure configuration files
+├── .idea/                                # IntelliJ IDEA configuration
+├── allure-report/                        # Generated Allure reports
+├── allure-results/                       # Allure test results
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── Drivers/
+│   │       │   └── DriverFactory.java    # WebDriver creation and management
+│   │       │
+│   │       ├── Engine/
+│   │       │   ├── Bot.java              # Bot pattern implementation
+│   │       │   ├── BotData.java          # Bot data handling
+│   │       │   ├── BotLogger.java        # Logging utility
+│   │       │   └── FluentBot.java        # Fluent for Bot pattern
+│   │       │
+│   │       └── SauceDemoPages/
+│   │           ├── CartPage.java         # Shopping cart page object
+│   │           ├── CheckoutConfirmationPage.java # Order confirmation page object
+│   │           ├── CheckoutPage.java     # Checkout form page object
+│   │           ├── HomePage.java         # Home/Inventory page object
+│   │           ├── LoginPage.java        # Login page object
+│   │           └── SortingFilterPage.java # Product filtering page object
+│   │
+│   ├── test/
+│   │   └── java/
+│   │       ├── Base/
+│   │       │   ├── BaseTest.java         # Abstract base class with setup/teardown
+│   │       │   └── BaseTestFluent.java   # Fluent base test class
+│   │       │
+│   │       ├── DataDrivenTest/
+│   │       │   └── TestDataProvider.java # Data-driven test data provider
+│   │       │
+│   │       ├── Listener/
+│   │       │   ├── IInvokedMethodResultListener.java # Test method result listener
+│   │       │   └── ITestResultListener.java          # Test result listener
+│   │       │
+│   │       └── SauceDemoTests/
+│   │           ├── CartPageTests.java                # Cart functionality tests
+│   │           ├── CheckoutConfirmationPageTests.java # Confirmation tests
+│   │           ├── CheckoutPageTests.java            # Checkout process tests
+│   │           ├── EndToEndTest.java                 # End-to-end workflow tests
+│   │           ├── HomePageTest.java                 # Home page functionality tests
+│   │           ├── LoginPageTests.java               # Login tests
+│   │           └── SortingFilterPageTest.java        # Filtering and sorting tests
+│   │
+│   └── resources/                        # Test resources and configuration
+│
+├── resources/                            # Project resources
+├── test-output/                          # Test execution output
+├── pom.xml                               # Maven configuration
+├── README.md                             # Project documentation
+└── testing.xml                           # TestNG suite configuration
+```
 
--   **Engine/**
-    -   Bot.java *(Bot pattern implementation)*
-    -   BotData.java *(Bot data handling)*
-    -   BotLogger.java *(Logging utility)*
-
--   **SauceDemo Pages/**
-    -   CartPage.java *(Shopping cart page object)*
-    -   CheckoutConfirmationPage.java *(Order confirmation page object)*
-    -   CheckoutPage.java *(Checkout form page object)*
-    -   HomePage.java *(Home/Inventory page object)*
-    -   LoginPage.java *(Login page object)*
-    -   SortingFilterPage.java *(Product filtering page object)*
-
--   **test/java/Base/**
-    -   BaseTest.java *(Abstract base class with setup/teardown)*
-
-    -   **DataDrivenTest/**
-        -   TestDataProvider.java *(Data-driven test data provider)*
-
-    -   **Listener/**
-        -   IInvokedMethodResultListener.java *(Test method result listener)*
-        -   ITestResultListener.java *(Test result listener)*
-
-    -   **SauceDemoTests/**
-        -   CartPageTests.java *(Cart functionality tests)*
-        -   CheckoutConfirmationPageTests.java *(Confirmation tests)*
-        -   CheckoutPageTests.java *(Checkout process tests)*
-        -   EndToEndTest.java *(End-to-end workflow tests)*
-        -   HomePageTest.java *(Home page functionality tests)*
-        -   LoginPageTests.java *(Login tests)*
-        -   SortingFilterPageTest.java *(Filtering and sorting tests)*
-
-    -   resources/ *(Test resources and configuration)*
-
--   resources/ *(Project resources)*
-
--   test-output/ *(Test execution output)*
-
--   pom.xml *(Maven configuration)*
-
--   README.md *(Project documentation)*
-
--   testing.xml *(TestNG suite configuration)*
 
 ### Architecture & Design Patterns
 
