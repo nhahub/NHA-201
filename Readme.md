@@ -1,4 +1,4 @@
-## NHA-201 Automation Testing Project
+## NHA-201 Automation Testing Project - SauceDemo.com Graduation Project DEPI (Digital Egypt Pioneers Initiative)
 
 This document consolidates information about the UI automation test
 suite for SauceDemo.com, developed by Group 201 for the DEPI Software
