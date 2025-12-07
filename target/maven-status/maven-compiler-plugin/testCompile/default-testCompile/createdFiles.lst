@@ -1,0 +1,11 @@
+Base\BaseTest.class
+SauceDemoTests\EndToEndTest.class
+Listener\ITestResultListener.class
+SauceDemoTests\CheckoutConfirmationPageTests.class
+DataDrivenTest\TestDataProvider.class
+SauceDemoTests\CheckoutPageTests.class
+Listener\IInvokedMethodResultListener.class
+SauceDemoTests\HomePageTest.class
+SauceDemoTests\CartPageTests.class
+SauceDemoTests\LoginPageTests.class
+SauceDemoTests\SortingFilterPageTest.class
