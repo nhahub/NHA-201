@@ -1,0 +1,129 @@
+07:55:43 INFO  [BotLogger] Browser is opened
+07:55:44 INFO  [BotLogger] Browser is opened
+07:55:45 INFO  [BotLogger] Test CasetestValidLogin  started
+07:55:45 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+07:55:45 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:55:46 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:55:46 INFO  [BotLogger] Test CasetestValidLogin  passed
+07:55:46 INFO  [BotLogger] Browser is opened
+07:55:46 INFO  [BotLogger] Browser closed
+07:55:48 INFO  [BotLogger] Browser is opened
+07:55:50 INFO  [BotLogger] Browser is opened
+07:55:50 INFO  [BotLogger] Test CasetestValidLogin  started
+07:55:50 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+07:55:50 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:55:50 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:55:51 INFO  [BotLogger] Test CasetestValidLogin  passed
+07:55:51 INFO  [BotLogger] Browser is opened
+07:55:51 INFO  [BotLogger] Browser closed
+07:55:53 INFO  [BotLogger] Browser is opened
+07:55:54 INFO  [BotLogger] Browser is opened
+07:55:54 INFO  [BotLogger] Test CasetestValidLogin  started
+07:55:54 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+07:55:55 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:00 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:00 INFO  [BotLogger] Test CasetestValidLogin  passed
+07:56:00 INFO  [BotLogger] Browser is opened
+07:56:00 INFO  [BotLogger] Browser closed
+07:56:02 INFO  [BotLogger] Browser is opened
+07:56:04 INFO  [BotLogger] Browser is opened
+07:56:04 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+07:56:05 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+07:56:05 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:05 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:05 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+07:56:05 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+07:56:05 INFO  [BotLogger] Browser is opened
+07:56:05 INFO  [BotLogger] Browser closed
+07:56:08 INFO  [BotLogger] Browser is opened
+07:56:09 INFO  [BotLogger] Browser is opened
+07:56:09 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+07:56:10 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+07:56:10 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:10 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:10 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+07:56:10 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+07:56:10 INFO  [BotLogger] Browser is opened
+07:56:11 INFO  [BotLogger] Browser closed
+07:56:13 INFO  [BotLogger] Browser is opened
+07:56:14 INFO  [BotLogger] Browser is opened
+07:56:14 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+07:56:15 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+07:56:15 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:20 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:20 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+07:56:20 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+07:56:20 INFO  [BotLogger] Browser is opened
+07:56:21 INFO  [BotLogger] Browser closed
+07:56:23 INFO  [BotLogger] Browser is opened
+07:56:24 INFO  [BotLogger] Browser is opened
+07:56:24 INFO  [BotLogger] Test CasetestInvalidLogin  started
+07:56:24 INFO  [BotLogger] Typed text: invalid_user into element with locator: By.id: user-name
+07:56:25 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:25 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:25 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+07:56:25 INFO  [BotLogger] Browser is opened
+07:56:26 INFO  [BotLogger] Browser closed
+07:56:28 INFO  [BotLogger] Browser is opened
+07:56:29 INFO  [BotLogger] Browser is opened
+07:56:29 INFO  [BotLogger] Test CasetestInvalidLogin  started
+07:56:29 INFO  [BotLogger] Typed text: wrong_user into element with locator: By.id: user-name
+07:56:29 INFO  [BotLogger] Typed text: wrong_password into element with locator: By.id: password
+07:56:29 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:30 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+07:56:30 INFO  [BotLogger] Browser is opened
+07:56:30 INFO  [BotLogger] Browser closed
+07:56:32 INFO  [BotLogger] Browser is opened
+07:56:35 INFO  [BotLogger] Browser is opened
+07:56:35 INFO  [BotLogger] Test CasetestInvalidLogin  started
+07:56:36 INFO  [BotLogger] Typed text: fake_user into element with locator: By.id: user-name
+07:56:36 INFO  [BotLogger] Typed text: fake_pass into element with locator: By.id: password
+07:56:36 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:36 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+07:56:36 INFO  [BotLogger] Browser is opened
+07:56:37 INFO  [BotLogger] Browser closed
+07:56:38 INFO  [BotLogger] Browser is opened
+07:56:40 INFO  [BotLogger] Browser is opened
+07:56:40 INFO  [BotLogger] Test CasetestEmptyFields  started
+07:56:40 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+07:56:40 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:41 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:41 INFO  [BotLogger] Test CasetestEmptyFields  passed
+07:56:41 INFO  [BotLogger] Browser is opened
+07:56:41 INFO  [BotLogger] Browser closed
+07:56:43 INFO  [BotLogger] Browser is opened
+07:56:43 INFO  [BotLogger] Browser is opened
+07:56:43 INFO  [BotLogger] Test CasetestEmptyFields  started
+07:56:44 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+07:56:45 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+07:56:45 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:45 INFO  [BotLogger] Test CasetestEmptyFields  passed
+07:56:45 INFO  [BotLogger] Browser is opened
+07:56:46 INFO  [BotLogger] Browser closed
+07:56:48 INFO  [BotLogger] Browser is opened
+07:56:49 INFO  [BotLogger] Browser is opened
+07:56:49 INFO  [BotLogger] Test CasetestEmptyFields  started
+07:56:49 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+07:56:49 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+07:56:50 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:50 INFO  [BotLogger] Test CasetestEmptyFields  passed
+07:56:50 INFO  [BotLogger] Browser is opened
+07:56:50 INFO  [BotLogger] Browser closed
+07:56:52 INFO  [BotLogger] Browser is opened
+07:56:54 INFO  [BotLogger] Browser is opened
+07:56:54 INFO  [BotLogger] Test CasetestLockedOutUser  started
+07:56:55 INFO  [BotLogger] Typed text: locked_out_user into element with locator: By.id: user-name
+07:56:55 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:56:55 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:56:55 INFO  [BotLogger] Test CasetestLockedOutUser  passed
+07:56:55 INFO  [BotLogger] Browser is opened
+07:56:56 INFO  [BotLogger] Browser closed
+07:56:58 INFO  [BotLogger] Browser is opened
+07:56:59 INFO  [BotLogger] Browser is opened
+07:56:59 INFO  [BotLogger] Test CasevalidLoginWithJasonData  started
+07:57:01 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+07:57:01 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+07:57:02 INFO  [BotLogger] Clicked on element: By.id: login-button
+07:57:02 INFO  [BotLogger] Test CasevalidLoginWithJasonData  passed
+07:57:02 INFO  [BotLogger] Browser is opened
+07:57:02 INFO  [BotLogger] Browser closed

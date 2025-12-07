@@ -44,14 +44,18 @@ public class LoginPage {
         return bot.getText(errorMessage);
     }
 
-    public boolean assertLoginTc(String expectedTitle) {
+    public boolean assertCurrentUrl(String expectedUrl) {
+        return bot.getCurrentUrl().equals(expectedUrl);
+    }
+    public boolean assertPageTitle(String expectedTitle) {
         return bot.getPageTitle().equals(expectedTitle);
     }
-    //TODO: login by user
-    public void loginAsStandardUser() {
+    //TODO: Navigate to HomePage
+    public HomePage loginAsStandardUser() {
                 enterUsername("standard_user")
                 .enterPassword("secret_sauce")
                 .clickLoginButton();
+        return new HomePage(bot);
     }
     //TODO: Navigate to HomePage
     public HomePage clickLoginButton() {

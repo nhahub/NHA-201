@@ -5,9 +5,8 @@ import org.openqa.selenium.By;
 
 public class HomePage {
 
-    private final Bot Bot;
+    private final Bot bot;
 
-    // Locators
     private final By cartBadge = By.xpath("//span[@class='shopping_cart_badge']");
     private final By addBackpackBtn = By.id("add-to-cart-sauce-labs-backpack");
     private final By addBikeLight = By.id("add-to-cart-sauce-labs-bike-light");
@@ -19,59 +18,65 @@ public class HomePage {
     private final By header = By.className("app_logo");
     private final By menuButton = By.xpath("//button[@id='react-burger-menu-btn']");
     private final By sideMenu = By.id("menu_button_container");
+    private final By cartIcon = By.id("shopping_cart_container");
 
     public HomePage(Bot bot) {
-        this.Bot = bot;
+        this.bot = bot;
     }
     public HomePage scrollToBottom() {
-        Bot.scrollToElement(footer);
+        bot.scrollToElement(footer);
         return this;
     }
 
     public void scrollToTop() {
-        Bot.scrollToElement(header);
+        bot.scrollToElement(header);
     }
 
     public HomePage addBackpackToCart() {
-        Bot.click(addBackpackBtn);
+        bot.click(addBackpackBtn);
         return this;
 
     }
     public HomePage addBikeLightToCart() {
-        Bot.click(addBikeLight);
+        bot.click(addBikeLight);
         return this;
     }
 
-    public void addBoltShirtToCart() {
-        Bot.click(addBoltShirt);
-
+    public HomePage addBoltShirtToCart() {
+        bot.click(addBoltShirt);
+        return this;
     }
     // Remove products
     public HomePage removeBackpack() {
-        Bot.click(removeBackpack);
+        bot.click(removeBackpack);
         return this;
     }
 
     public HomePage removeBikeLight() {
-        Bot.click(removeBikeLight);
+        bot.click(removeBikeLight);
         return this;
     }
 
     public void removeBoltShirt() {
-        Bot.click(removeBoltShirt);
+        bot.click(removeBoltShirt);
 
     }
     public void clickMenuButton() {
-        Bot.click(menuButton);
+        bot.click(menuButton);
     }
 
     public boolean isMenuOpen() {
-        return Bot.isElementDisplayed(sideMenu);
+        return bot.isElementDisplayed(sideMenu);
     }
     public String getCartBadgeCount() {
-        if (Bot.isPresent(cartBadge)) {
-            return Bot.getText(cartBadge);
+        if (bot.isPresent(cartBadge)) {
+            return bot.getText(cartBadge);
         }
         return "";
+    }
+    //TODO: Navigate to CartPage
+    public CartPage openCartIcon() {
+        bot.click(cartIcon);
+        return new CartPage(bot);
     }
 }

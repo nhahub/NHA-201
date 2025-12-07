@@ -16,7 +16,7 @@ public class LoginPageTests extends BaseTest {
             .enterUsername(username)
             .enterPassword(password)
             .clickLoginButton();
-        Assert.assertEquals(new LoginPage(bot).assertLoginTc("Swag Labs"), true);
+        Assert.assertEquals(new LoginPage(bot).assertPageTitle("Swag Labs"), true);
         Assert.assertTrue(new LoginPage(bot).getCurrentUrl().contains("/inventory.html")
         );
         }
@@ -27,7 +27,7 @@ public class LoginPageTests extends BaseTest {
                 .enterUsername(username)
                 .enterPassword(password)
                 .clickLoginButton();
-        Assert.assertEquals(new LoginPage(bot).assertLoginTc("Swag Labs"), true);
+        Assert.assertEquals(new LoginPage(bot).assertPageTitle("Swag Labs"), true);
         Assert.assertTrue(new LoginPage(bot).isProductsPageTitleDisplayed());
     }
 

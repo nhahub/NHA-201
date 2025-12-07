@@ -57,7 +57,7 @@ public class CheckoutPageTests extends BaseTest {
            .fillZipCode(zipCode)
            .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));

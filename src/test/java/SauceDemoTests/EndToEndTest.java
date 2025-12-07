@@ -12,70 +12,59 @@ public class EndToEndTest extends BaseTest {
     @Test
     //TODO: valid end to end purchase flow
     public void validEndToEndPurchaseFlow1() {
-        new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
-                .addBackpackToCart()
-                .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
-                .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
-                .fillFirstName("NHA")
-                .fillLastName("Testing")
-                .fillZipCode("201")
-                .clickContinue()
-                .clickFinish();
-        new CheckoutConfirmationPage(bot)
-                .getThankYouMessageText();
+                new LoginPage(bot)
+                        .loginAsStandardUser()
+                        .addBackpackToCart()
+                        .addBikeLightToCart()
+                        .addBoltShirtToCart()
+                        .openCartIcon()
+                        .clickCheckoutButton()
+                        .fillFirstName("NHA")
+                        .fillLastName("Testing")
+                        .fillZipCode("201")
+                        .clickContinue()
+                        .clickFinish()
+                        .getThankYouMessageText();
         Assert.assertEquals(
-                bot.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-complete.html");
+                new CheckoutConfirmationPage(bot).getThankYouMessageText(),
+                "Thank you for your order!");
     }
     //TODO: valid end to end purchase flow , back to home page
     @Test
     public void validEndToEndPurchaseFlow2() {
-        new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
-                .addBackpackToCart()
-                .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
-                .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
-                .fillFirstName("NHA")
-                .fillLastName("Testing")
-                .fillZipCode("201")
-                .clickContinue()
-                .clickFinish();
-        new CheckoutConfirmationPage(bot)
-                .clickBackHomeButton();
+            new LoginPage(bot)
+                    .loginAsStandardUser()
+                    .addBackpackToCart()
+                    .addBikeLightToCart()
+                    .addBoltShirtToCart()
+                    .openCartIcon()
+                    .clickCheckoutButton()
+                    .fillFirstName("NHA")
+                    .fillLastName("Testing")
+                    .fillZipCode("201")
+                    .clickContinue()
+                    .clickFinish()
+                    .clickBackHomeButton();
         Assert.assertEquals(
-                bot.getCurrentUrl(),
+                new CheckoutConfirmationPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/inventory.html");
     }
     //TODO: invalid, missing fields in checkout page
     @Test
     public void invalidEndToEndPurchaseFlow1() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("")
                 .fillLastName("Testing")
                 .fillZipCode("201")
                 .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
@@ -85,21 +74,18 @@ public class EndToEndTest extends BaseTest {
     @Test
     public void invalidEndToEndPurchaseFlow2() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("NHA")
                 .fillLastName("")
                 .fillZipCode("201")
                 .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
@@ -109,21 +95,18 @@ public class EndToEndTest extends BaseTest {
     @Test
     public void invalidEndToEndPurchaseFlow3() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("NHA")
                 .fillLastName("Testing")
                 .fillZipCode("")
                 .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
@@ -134,43 +117,36 @@ public class EndToEndTest extends BaseTest {
     @Test
     public void invalidEndToEndPurchaseFlow4() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("")
                 .fillLastName("Testing")
-                .fillZipCode("201")
+                .fillZipCode("")
                 .clickCancel();
-
         Assert.assertEquals(
-                bot.getCurrentUrl(),
+               new CartPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/cart.html");
     }
     //TODO: invalid, missing fields in checkout page
     @Test
     public void invalidEndToEndPurchaseFlow5() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("")
                 .fillLastName("")
                 .fillZipCode("201")
                 .clickContinue();
         Assert.assertNotEquals(
-                bot.getCurrentUrl(),
+                new CheckoutPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-two.html"
         );
         String errorMsg = bot.findAndGetText(By.xpath("//h3[@data-test='error']"));
@@ -180,15 +156,12 @@ public class EndToEndTest extends BaseTest {
     @Test
     public void invalidEndToEndPurchaseFlow6() {
         new LoginPage(bot)
-                .loginAsStandardUser();
-        new HomePage(bot)
+                .loginAsStandardUser()
                 .addBackpackToCart()
                 .addBikeLightToCart()
-                .addBoltShirtToCart();
-        new CartPage(bot)
+                .addBoltShirtToCart()
                 .openCartIcon()
-                .clickCheckoutButton();
-        new CheckoutPage(bot)
+                .clickCheckoutButton()
                 .fillFirstName("NHA")
                 .fillLastName("")
                 .fillZipCode("201")

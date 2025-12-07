@@ -39,10 +39,6 @@ public class CheckoutPage {
         bot.click(continueButton);
         return this;
     }
-    public CheckoutPage clickCancel(){
-        bot.click(cancelButton);
-        return this;
-    }
 
     public CheckoutPage completeCheckoutForm(String userFirstName, String userLastName, String userZipCode) {
         return fillFirstName(userFirstName)
@@ -52,6 +48,11 @@ public class CheckoutPage {
     }
     public String getCurrentUrl() {
         return bot.getCurrentUrl();
+    }
+    //TODO: Back to CartPage
+    public CartPage clickCancel() {
+        bot.click(cancelButton);
+        return new CartPage(bot);
     }
     //TODO: Navigate to CheckoutConfirmationPage
     public CheckoutConfirmationPage clickFinish(){
