@@ -155,63 +155,63 @@ The project was developed in phases:
 4.  **Filtering** (Ola Sabry Abbas)
 5.  **End-to-End** (Nada Khamis Mohamed)
 
-🧩 Key Components
+### 🧩 Key Components
 1️⃣ BotData (Engine folder)
 
-Handles reading and parsing JSON test data.
+* Handles reading and parsing JSON test data
 
-Centralized JSON reader
+* Centralized JSON reader
 
-Supports array and object extraction
+* Supports array and object extraction
 
-Ensures clean data-driven testing
+* Ensures clean data-driven testing
 
 2️⃣ BotLogger (Engine folder)
 
-Custom logger based on log4j2.
+* Custom logger based on log4j2
 
-Logs test execution steps
+* Logs test execution steps
 
-Creates structured logs for Allure
+* Creates structured logs for Allure
 
-Easy troubleshooting during failures
+* Easy troubleshooting during failures
 
 3️⃣ DriverFactory (Drivers folder)
 
-Manages all WebDriver setup & teardown.
+* Manages all WebDriver setup & teardown
 
-Supports multiple browsers
+* Supports multiple browsers
 
-Ensures thread safety when needed
+* Ensures thread safety when needed
 
-Reduces duplicated setup code in tests
+* Reduces duplicated setup code in tests
 
 🧱 Framework Design
-✔ Page Object Model (POM)
+### ✔ Page Object Model (POM)
 
-Each page has its own class and methods representing UI actions.
+* Each page has its own class and methods representing UI actions
 
-✔ TestNG
+### ✔ TestNG
 
 Used for:
 
-Test structure
+* Test structure
 
-Parallel execution
+* Parallel execution
 
-DataProviders
+* DataProviders
 
-Listeners
+* Listeners
 
-✔ Allure Reporting
+### ✔ Allure Reporting
 
 The project supports Allure with:
 
-Screenshots on failure
+* Screenshots on failure
 
-Logs attached to report
+* Logs attached to report
 
-Step-level reporting
+* Step-level reporting
 
 ### Driver Factory Implementation
 
@@ -225,10 +225,10 @@ WebDriver instances across different browsers:
 -   Logging for debugging
 -   Extensible design for adding new browsers
 
-✨ Future Enhancements
+### ✨ Future Enhancements
 
-Add more test suites
+* Add more test suites
 
-Integrate CI/CD (GitHub Actions)
+* Integrate CI/CD (GitHub Actions)
 
-Support for WebDriver Manager
+* Support for WebDriver Manager
