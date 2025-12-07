@@ -46,7 +46,7 @@ public class HomePage {
         bot.click(addBoltShirt);
         return this;
     }
-    // Remove products
+
     public HomePage removeBackpack() {
         bot.click(removeBackpack);
         return this;

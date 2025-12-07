@@ -1,0 +1,10 @@
+SauceDemoPages\CheckoutPage.class
+Engine\Bot.class
+SauceDemoPages\LoginPage.class
+Drivers\DriverFactory.class
+SauceDemoPages\CartPage.class
+SauceDemoPages\HomePage.class
+SauceDemoPages\SortingFilterPage.class
+Engine\BotLogger.class
+SauceDemoPages\CheckoutConfirmationPage.class
+Engine\BotData.class
