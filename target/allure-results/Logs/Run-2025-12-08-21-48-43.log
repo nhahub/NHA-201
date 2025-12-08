@@ -1,0 +1,10 @@
+21:48:43 INFO  [BotLogger] Browser is opened
+21:48:43 INFO  [BotLogger] TestCase  setUp  failed
+21:48:43 INFO  [BotLogger] Browser is opened
+21:48:43 INFO  [BotLogger] Screenshot taken: setUp
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  skipped
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  skipped
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
+21:48:43 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  skipped

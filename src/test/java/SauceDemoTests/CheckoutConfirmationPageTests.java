@@ -24,16 +24,12 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Step("Finish order with backpack item")
-    private CheckoutConfirmationPage finishOrderWithBackpack(String firstName,
-                                                             String lastName,
-                                                             String zipCode) {
+    private CheckoutConfirmationPage finishOrderWithBackpack(String firstName, String lastName, String zipCode) {
         new CartPage(bot)
                 .addBackpackAndGoToCheckout();
-
         new CheckoutPage(bot)
                 .completeCheckoutForm(firstName, lastName, zipCode)
                 .clickFinish();
-
         return new CheckoutConfirmationPage(bot);
     }
 
@@ -44,13 +40,10 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Step("Complete checkout form and click Finish")
-    private CheckoutConfirmationPage completeCheckoutAndFinish(String firstName,
-                                                               String lastName,
-                                                               String zipCode) {
+    private CheckoutConfirmationPage completeCheckoutAndFinish(String firstName, String lastName, String zipCode) {
         new CheckoutPage(bot)
                 .completeCheckoutForm(firstName, lastName, zipCode)
                 .clickFinish();
-
         return new CheckoutConfirmationPage(bot);
     }
 
@@ -63,9 +56,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
-    public void Confirmation_TC1_finishOrderWithItems(String firstName,
-                                                      String lastName,
-                                                      String zipCode) {
+    public void Confirmation_TC1_finishOrderWithItems(String firstName, String lastName, String zipCode) {
 
         confirmationPage = finishOrderWithBackpack(firstName, lastName, zipCode);
 
@@ -74,9 +65,7 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
-    public void Confirmation_TC2_finishEmptyCartOrder(String firstName,
-                                                      String lastName,
-                                                      String zipCode) {
+    public void Confirmation_TC2_finishEmptyCartOrder(String firstName, String lastName, String zipCode) {
 
         Allure.step("Navigate to checkout page with an empty cart");
         goToCheckoutWithEmptyCart();
@@ -89,14 +78,10 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     }
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
-    public void Confirmation_TC3_backToHomeAfterCompletion(String firstName,
-                                                           String lastName,
-                                                           String zipCode) {
+    public void Confirmation_TC3_backToHomeAfterCompletion(String firstName, String lastName, String zipCode) {
 
         confirmationPage = finishOrderWithBackpack(firstName, lastName, zipCode);
-
         confirmationPage.clickBackHomeButton();
-
         Assert.assertEquals(
                 confirmationPage.assertOnInventoryPage(),
                 true

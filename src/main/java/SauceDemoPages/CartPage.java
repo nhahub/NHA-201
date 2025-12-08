@@ -3,6 +3,10 @@ package SauceDemoPages;
 import Engine.Bot;
 import org.openqa.selenium.By;
 
+import java.io.IOException;
+
+import static Engine.BotData.getURL;
+
 public class CartPage {
 
     private final Bot bot;
@@ -98,7 +102,7 @@ public class CartPage {
         return getCartBadgeNumber() == expectedNumber;
     }
 
-    public boolean assertCheckoutStepOneUrl() {
+    public boolean assertCheckoutStepOneUrl() throws IOException {
         return getCurrentUrl().equals("https://www.saucedemo.com/checkout-step-one.html");
     }
 

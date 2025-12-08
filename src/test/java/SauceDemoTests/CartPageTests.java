@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class CartPageTests extends BaseTest {
     private CartPage cartPage;
 
@@ -42,7 +44,7 @@ public class CartPageTests extends BaseTest {
     }
 
     @Test
-    public void Cart_Tc3_checkoutWithOneItem() {
+    public void Cart_Tc3_checkoutWithOneItem() throws IOException {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
@@ -54,7 +56,7 @@ public class CartPageTests extends BaseTest {
     }
 
     @Test
-    public void Cart_Tc4_checkoutWithMultipleItems() {
+    public void Cart_Tc4_checkoutWithMultipleItems() throws IOException {
         new CartPage(bot)
                 .addMultipleItems()
                 .openCartIcon();

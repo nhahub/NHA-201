@@ -1,0 +1,49 @@
+22:16:36 INFO  [BotLogger] Browser is opened
+22:16:37 INFO  [BotLogger] Browser is opened
+22:16:37 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+22:16:37 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+22:16:37 INFO  [BotLogger] Clicked on: By.id: login-button
+22:16:37 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  started
+22:16:37 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+22:16:37 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+22:16:38 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  passed
+22:16:38 INFO  [BotLogger] Browser is opened
+22:16:38 INFO  [BotLogger] Browser closed
+22:16:39 INFO  [BotLogger] Browser is opened
+22:16:40 INFO  [BotLogger] Browser is opened
+22:16:40 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+22:16:40 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+22:16:40 INFO  [BotLogger] Clicked on: By.id: login-button
+22:16:40 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  started
+22:16:40 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+22:16:40 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+22:16:40 INFO  [BotLogger] Clicked on: By.xpath: (//button[@class='btn btn_secondary btn_small cart_button'])[1]
+22:16:40 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  passed
+22:16:40 INFO  [BotLogger] Browser is opened
+22:16:40 INFO  [BotLogger] Browser closed
+22:16:41 INFO  [BotLogger] Browser is opened
+22:16:43 INFO  [BotLogger] Browser is opened
+22:16:43 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+22:16:43 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+22:16:43 INFO  [BotLogger] Clicked on: By.id: login-button
+22:16:43 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  started
+22:16:43 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+22:16:43 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+22:16:43 INFO  [BotLogger] Clicked on: By.id: checkout
+22:16:43 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  passed
+22:16:43 INFO  [BotLogger] Browser is opened
+22:16:44 INFO  [BotLogger] Browser closed
+22:16:44 INFO  [BotLogger] Browser is opened
+22:16:45 INFO  [BotLogger] Browser is opened
+22:16:45 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+22:16:45 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+22:16:45 INFO  [BotLogger] Clicked on: By.id: login-button
+22:16:45 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  started
+22:16:45 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+22:16:45 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+22:16:45 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+22:16:45 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+22:16:46 INFO  [BotLogger] Clicked on: By.id: checkout
+22:16:46 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  passed
+22:16:46 INFO  [BotLogger] Browser is opened
+22:16:46 INFO  [BotLogger] Browser closed
