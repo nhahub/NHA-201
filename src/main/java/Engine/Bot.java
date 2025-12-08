@@ -17,7 +17,7 @@ import java.util.List;
 public class Bot {
     private final WebDriver driver;
     private final Wait<WebDriver> wait;
-    private static final String SCREENSHOTS_PATH = "target/allure-results/Screenshots/";
+    private static final String PATH = "target/allure-results/Screenshots/";
 
     //  Constructor
     public Bot(WebDriver driver) {
@@ -136,7 +136,7 @@ public class Bot {
     public static void takeScreenShot(WebDriver driver, String screenshotName) {
         try {
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            File screenshotFile = new File(SCREENSHOTS_PATH + screenshotName + "-" + getTimestamp() + ".png");
+            File screenshotFile = new File(PATH + screenshotName + "-" + getTimestamp() + ".png");
             FileUtils.copyFile(screenshotSrc, screenshotFile);
             //Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
             Allure.addAttachment(screenshotName, new FileInputStream(screenshotFile));

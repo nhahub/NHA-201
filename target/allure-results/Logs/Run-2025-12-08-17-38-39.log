@@ -1,0 +1,39 @@
+17:38:39 INFO  [BotLogger] Browser is opened
+17:38:40 INFO  [BotLogger] Browser is opened
+17:38:40 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  started
+17:38:40 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+17:38:40 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+17:38:40 INFO  [BotLogger] Clicked on: By.id: login-button
+17:38:40 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+17:38:40 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+17:38:40 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+17:38:40 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+17:38:41 INFO  [BotLogger] Clicked on: By.id: checkout
+17:38:41 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+17:38:41 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+17:38:41 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+17:38:41 INFO  [BotLogger] Clicked on: By.id: continue
+17:38:41 INFO  [BotLogger] Clicked on: By.id: finish
+17:38:41 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  passed
+17:38:41 INFO  [BotLogger] Browser is opened
+17:38:42 INFO  [BotLogger] Browser closed
+17:38:42 INFO  [BotLogger] Browser is opened
+17:38:42 INFO  [BotLogger] Browser is opened
+17:38:42 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  started
+17:38:43 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+17:38:43 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+17:38:43 INFO  [BotLogger] Clicked on: By.id: login-button
+17:38:43 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+17:38:43 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+17:38:43 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+17:38:43 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+17:38:44 INFO  [BotLogger] Clicked on: By.id: checkout
+17:38:44 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+17:38:44 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+17:38:44 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+17:38:44 INFO  [BotLogger] Clicked on: By.id: continue
+17:38:44 INFO  [BotLogger] Clicked on: By.id: finish
+17:38:44 INFO  [BotLogger] Clicked on: By.xpath: //button[text()='Back Home']
+17:38:44 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  passed
+17:38:44 INFO  [BotLogger] Browser is opened
+17:38:44 INFO  [BotLogger] Browser closed
