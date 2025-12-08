@@ -18,7 +18,6 @@ public class CartPage {
     private final By addBikeLightButton = By.id("add-to-cart-sauce-labs-bike-light");
     private final By addBoltTShirtButton = By.id("add-to-cart-sauce-labs-bolt-t-shirt");
 
-    // Constructor
     public CartPage(Bot bot) {
         this.bot = bot;
     }
@@ -57,7 +56,7 @@ public class CartPage {
         return this;
     }
 
-    // Checks for assertions
+    // Assertions
     public boolean isCartPageOpened() {
         return bot.getCurrentUrl().contains("cart.html");
     }
@@ -80,6 +79,27 @@ public class CartPage {
 
     public String getCurrentUrl() {
         return bot.getCurrentUrl();
+    }
+
+    // Assertions
+    public boolean assertIsCartPageOpened() {
+        return isCartPageOpened();
+    }
+
+    public boolean assertCartItemsCount(int expectedCount) {
+        return countCartItems() == expectedCount;
+    }
+
+    public boolean assertFirstItemName(String expectedName) {
+        return getFirstItemName().equals(expectedName);
+    }
+
+    public boolean assertCartBadgeNumber(int expectedNumber) {
+        return getCartBadgeNumber() == expectedNumber;
+    }
+
+    public boolean assertCheckoutStepOneUrl() {
+        return getCurrentUrl().equals("https://www.saucedemo.com/checkout-step-one.html");
     }
 
     // Navigation

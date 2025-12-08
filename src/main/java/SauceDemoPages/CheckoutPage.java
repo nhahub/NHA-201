@@ -16,7 +16,6 @@ public class CheckoutPage {
     private final By finishButton = By.id("finish");
     private final By errorMessage = By.xpath("//h3[@data-test='error']");
 
-    // Constructor
     public CheckoutPage(Bot bot) {
         this.bot = bot;
     }
@@ -49,13 +48,26 @@ public class CheckoutPage {
                 .clickContinue();
     }
 
-    // Checks for assertions
+    // Assertions
     public String getCurrentUrl() {
         return bot.getCurrentUrl();
     }
 
     public String getErrorMessageText() {
         return bot.getText(errorMessage);
+    }
+
+    public boolean assertOnStepTwoPage() {
+        return getCurrentUrl().equals("https://www.saucedemo.com/checkout-step-two.html");
+    }
+
+    public boolean assertNotOnStepTwoPage() {
+        return !getCurrentUrl().equals("https://www.saucedemo.com/checkout-step-two.html");
+    }
+
+    public boolean assertErrorContains(String text) {
+        String error = getErrorMessageText();
+        return error != null && error.contains(text);
     }
 
     // Navigation

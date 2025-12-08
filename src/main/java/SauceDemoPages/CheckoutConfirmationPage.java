@@ -11,7 +11,6 @@ public class CheckoutConfirmationPage {
     private final By thankYouMessage = By.xpath("//h2[@class='complete-header']");
     private final By backHomeButton = By.xpath("//button[text()='Back Home']");
 
-    // Constructor
     public CheckoutConfirmationPage(Bot bot) {
         this.bot = bot;
     }
@@ -22,12 +21,28 @@ public class CheckoutConfirmationPage {
         return new HomePage(bot);
     }
 
-    // Checks for assertions
+    // Assertions
     public String getThankYouMessageText() {
         return bot.getText(thankYouMessage);
     }
 
     public String getCurrentUrl() {
         return bot.getCurrentUrl();
+    }
+
+    public boolean assertOnCompletePage() {
+        return getCurrentUrl().equals("https://www.saucedemo.com/checkout-complete.html");
+    }
+
+    public boolean assertOnStepTwoPage() {
+        return getCurrentUrl().equals("https://www.saucedemo.com/checkout-step-two.html");
+    }
+
+    public boolean assertOnInventoryPage() {
+        return getCurrentUrl().equals("https://www.saucedemo.com/inventory.html");
+    }
+
+    public boolean assertThankYouMessage(String expectedText) {
+        return getThankYouMessageText().equals(expectedText);
     }
 }

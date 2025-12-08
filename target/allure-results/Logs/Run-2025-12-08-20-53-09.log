@@ -1,0 +1,54 @@
+20:53:09 INFO  [BotLogger] Browser is opened
+20:53:10 INFO  [BotLogger] Browser is opened
+20:53:10 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:53:11 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:53:11 INFO  [BotLogger] Clicked on: By.id: login-button
+20:53:11 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
+20:53:11 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+20:53:11 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+20:53:11 INFO  [BotLogger] Clicked on: By.id: checkout
+20:53:11 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+20:53:11 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+20:53:11 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+20:53:11 INFO  [BotLogger] Clicked on: By.id: continue
+20:53:11 INFO  [BotLogger] Clicked on: By.id: finish
+20:53:11 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  passed
+20:53:11 INFO  [BotLogger] Browser is opened
+20:53:12 INFO  [BotLogger] Browser closed
+20:53:12 INFO  [BotLogger] Browser is opened
+20:53:13 INFO  [BotLogger] Browser is opened
+20:53:13 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:53:13 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:53:13 INFO  [BotLogger] Clicked on: By.id: login-button
+20:53:13 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
+20:53:13 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+20:53:14 INFO  [BotLogger] Clicked on: By.id: checkout
+20:53:14 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+20:53:14 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+20:53:14 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+20:53:14 INFO  [BotLogger] Clicked on: By.id: continue
+20:53:14 INFO  [BotLogger] Clicked on: By.id: finish
+20:53:14 INFO  [BotLogger] TestCase  Confirmation_TC2_finishEmptyCartOrder  failed
+20:53:14 INFO  [BotLogger] Browser is opened
+20:53:14 INFO  [BotLogger] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
+20:53:14 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  failed
+20:53:14 INFO  [BotLogger] Browser is opened
+20:53:14 INFO  [BotLogger] Browser closed
+20:53:15 INFO  [BotLogger] Browser is opened
+20:53:16 INFO  [BotLogger] Browser is opened
+20:53:16 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+20:53:17 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+20:53:17 INFO  [BotLogger] Clicked on: By.id: login-button
+20:53:17 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
+20:53:17 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+20:53:17 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+20:53:17 INFO  [BotLogger] Clicked on: By.id: checkout
+20:53:17 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+20:53:17 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+20:53:17 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+20:53:17 INFO  [BotLogger] Clicked on: By.id: continue
+20:53:17 INFO  [BotLogger] Clicked on: By.id: finish
+20:53:17 INFO  [BotLogger] Clicked on: By.xpath: //button[text()='Back Home']
+20:53:17 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  passed
+20:53:17 INFO  [BotLogger] Browser is opened
+20:53:17 INFO  [BotLogger] Browser closed

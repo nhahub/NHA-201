@@ -1,4 +1,5 @@
 package SauceDemoTests;
+
 import Base.BaseTest;
 import DataDrivenTest.TestDataProvider;
 import SauceDemoPages.CartPage;
@@ -56,8 +57,8 @@ public class CheckoutConfirmationPageTests extends BaseTest {
     @Step("Verify user stays on checkout step-two page")
     private void verifyStaysOnCheckoutStepTwoPage() {
         Assert.assertEquals(
-                confirmationPage.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html"
+                confirmationPage.assertOnStepTwoPage(),
+                true
         );
     }
 
@@ -68,14 +69,8 @@ public class CheckoutConfirmationPageTests extends BaseTest {
 
         confirmationPage = finishOrderWithBackpack(firstName, lastName, zipCode);
 
-        Assert.assertEquals(
-                confirmationPage.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-complete.html"
-        );
-        Assert.assertEquals(
-                confirmationPage.getThankYouMessageText(),
-                "Thank you for your order!"
-        );
+        Assert.assertEquals(confirmationPage.assertOnCompletePage(), true);
+        Assert.assertEquals(confirmationPage.assertThankYouMessage("Thank you for your order!"), true);
     }
 
     @Test(dataProvider = "checkoutValidData", dataProviderClass = TestDataProvider.class)
@@ -103,8 +98,8 @@ public class CheckoutConfirmationPageTests extends BaseTest {
         confirmationPage.clickBackHomeButton();
 
         Assert.assertEquals(
-                confirmationPage.getCurrentUrl(),
-                "https://www.saucedemo.com/inventory.html"
+                confirmationPage.assertOnInventoryPage(),
+                true
         );
     }
 }
