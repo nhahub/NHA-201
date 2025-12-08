@@ -2,7 +2,7 @@
 Developed by Group 201 for the DEPI Software
 Testing Track.
 
-##📋 Project Overview
+## 📋 Project Overview
 
 This project is an End‑to‑End UI Automation Framework built using Java, Selenium WebDriver, TestNG, Maven, and Allure Reports. It follows modern automation best practices, including:
 
@@ -31,7 +31,7 @@ Support data-driven testing using JSON
 
 Generate detailed test execution reports using allure-report
 
-**Scope:**
+**🎯Scope:**
 
 -   Login functionality (valid, invalid, edge cases).
 -   Home page and product display.
@@ -53,7 +53,7 @@ Generate detailed test execution reports using allure-report
 | Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests, SmokeTest.xml, RegressionTest.xml                                                                                                            |
 | Nada Khamis Mohamed | End-to-End | Engine setup, Bot, Allure-Report, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot, testng.xml |
 
-### Tools & Technologies
+### 🛠️Tools & Technologies
 
 Design Patterns: Page Object Model + Fluent Pattern
 -   **Language:** Java (17+)
@@ -67,7 +67,7 @@ Design Patterns: Page Object Model + Fluent Pattern
 -   **Testing Website:** SauceDemo.com
 -   **Training Company:** Skills Dynamix
 
-### Project Structure
+### 📁Project Structure
 
 
 ```
@@ -133,7 +133,7 @@ tests/
 ```
 
 
-### Architecture & Design Patterns
+### 🚀Architecture & Design Patterns
 
 The framework utilizes several established design patterns to enhance
 maintainability and readability:
@@ -150,16 +150,6 @@ maintainability and readability:
 -   **Abstract Base Class:** Provides shared setup (`@BeforeMethod`)
     and teardown (`@AfterMethod`) logic for all test classes, along
     with common utility methods.
-
-
-### Implementation Flow
-The project was developed in phases:
-
-1.  **Login Module** (Ali Nabil Ali)
-2.  **Home & Add to Cart** (Mohamed Mahmoud Mohamed)
-3.  **Cart & Checkout** (Akram Hussen Ibraheem)
-4.  **Filtering** (Ola Sabry Abbas)
-5.  **End-to-End** (Nada Khamis Mohamed)
 
 ### 🧩 Key Components
 1️⃣ BotData (Engine folder)
@@ -224,7 +214,7 @@ The project supports Allure with:
 
 * Step-level reporting
 
-### Driver Factory Implementation
+### 🔍Driver Factory Implementation
 
 The DriverFactory class is responsible for creating and managing
 WebDriver instances across different browsers:
