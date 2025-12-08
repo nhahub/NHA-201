@@ -47,7 +47,7 @@ Generate detailed test execution reports using allure-report
 | Ali Nabil Ali | Login & Engine | Engine setup, Bot, LoginPage, Login Tests                                                                                                                               |
 | Mohamed Mahmoud Mohamed | Home & Add to Cart | Engine setup, Bot, HomePage, HomePageTests, DataBase                                                                                                                    |
 | Akram Hussen Ibraheem | Cart & Checkout | Engine setup, Bot, Allure-Report, CartPage, CheckoutPage, ConfirmationPage, Cart & Checkout Tests, Api Testing                                                          |
-| Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests                                                                                                              |
+| Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests, SmokeTest.xml, RegressionTest.xml                                                                                                            |
 | Nada Khamis Mohamed | End-to-End | Engine setup, Bot, Allure-Report, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot, testng.xml |
 
 ### Tools & Technologies
@@ -123,7 +123,10 @@ NHA-201 [Team201_SaucedemoTesting]/
 ├── test-output/                          # Test execution output
 ├── pom.xml                               # Maven configuration
 ├── README.md                             # Project documentation
-└── testing.xml                           # TestNG suite configuration
+tests/
+├── Smoke.xml                             # TestNG suite configuration for smoke tests
+└── Regression.xml                        # TestNG suite configuration for regression tests
+
 ```
 
 
@@ -202,6 +205,11 @@ Used for:
 * DataProviders
 
 * Listeners
+
+* Smoke.xml
+
+* Regression.xml
+
 
 ### ✔ Allure Reporting
 
