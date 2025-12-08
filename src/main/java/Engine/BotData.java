@@ -1,33 +1,28 @@
 package Engine;
 
 import com.google.gson.*;
-
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Properties;
 
 public class BotData {
+
+    public static String getURL(String fileName, String key) throws IOException {
+        Properties property = new Properties();
+        property.load(new FileInputStream(PATH + fileName + ".properties"));
+        return property.getProperty(key);
+    }
     public static final String PATH = "src/test/resources/TestData/";
-    //TODO: Read data from json file
     public static String getJsonData(String jsonFilename, String field) {
 
         try {
             FileReader reader = new FileReader(PATH + jsonFilename + ".json");
-            JsonElement jsonElement = JsonParser.parseReader(reader);
-            return jsonElement.getAsJsonObject().get(field).getAsString();
+            JsonElement json = JsonParser.parseReader(reader);
+            return json.getAsJsonObject().get(field).getAsString();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return "";
-    }
-    //TODO: get properties from any properties file
-    public static String getURL(String fileName, String key) throws IOException {
-        Properties properties = new Properties();
-        properties.load(new FileInputStream(PATH + fileName + ".properties"));
-        return properties.getProperty(key);
     }
 }

@@ -17,7 +17,7 @@ public class BaseTest {
     public void setUp() throws IOException {
         //open Browser
         setupDriver(getURL("environment", "Browser"));
-        getDriver().get(getURL("environment", "LOGIN_URL"));
+        getDriver().get(getURL("environment", "Login_URL"));
         WebDriver driver = DriverFactory.getDriver();
         bot = new Bot(driver);
     }

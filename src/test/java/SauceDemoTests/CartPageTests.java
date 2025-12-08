@@ -21,7 +21,6 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
         Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
         Assert.assertEquals(new CartPage(bot).assertCartItemsCount(1), true);
         Assert.assertEquals(new CartPage(bot).assertFirstItemName("Sauce Labs Backpack"), true);
@@ -33,15 +32,10 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
         int itemsBefore = new CartPage(bot).countCartItems();
-
         new CartPage(bot).removeFirstItemFromCart();
-
         int itemsAfter = new CartPage(bot).countCartItems();
-
         Assert.assertTrue(itemsAfter == itemsBefore - 1 || itemsAfter == 0);
-
         if (itemsAfter > 0) {
             Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(itemsAfter), true);
         }
@@ -52,13 +46,10 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
         Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
         Assert.assertEquals(new CartPage(bot).assertCartItemsCount(1), true);
         Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(1), true);
-
         new CartPage(bot).clickCheckoutButton();
-
         Assert.assertEquals(new CartPage(bot).assertCheckoutStepOneUrl(), true);
     }
 
@@ -67,13 +58,10 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addMultipleItems()
                 .openCartIcon();
-
         Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
         Assert.assertEquals(new CartPage(bot).assertCartItemsCount(3), true);
         Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(3), true);
-
         new CartPage(bot).clickCheckoutButton();
-
         Assert.assertEquals(new CartPage(bot).assertCheckoutStepOneUrl(), true);
     }
 }
