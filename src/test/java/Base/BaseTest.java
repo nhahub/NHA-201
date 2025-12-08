@@ -2,7 +2,7 @@ package Base;
 import java.io.IOException;
 import static Drivers.DriverFactory.getDriver;
 import static Drivers.DriverFactory.setupDriver;
-import static Engine.BotData.getProperty;
+import static Engine.BotData.getURL;
 import Drivers.DriverFactory;
 import Engine.Bot;
 import org.openqa.selenium.WebDriver;
@@ -16,8 +16,8 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() throws IOException {
         //open Browser
-        setupDriver(getProperty("environment", "Browser"));
-        getDriver().get(getProperty("environment", "LOGIN_URL"));
+        setupDriver(getURL("environment", "Browser"));
+        getDriver().get(getURL("environment", "LOGIN_URL"));
         WebDriver driver = DriverFactory.getDriver();
         bot = new Bot(driver);
     }

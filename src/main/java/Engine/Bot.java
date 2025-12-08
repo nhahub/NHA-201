@@ -138,7 +138,6 @@ public class Bot {
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File screenshotFile = new File(PATH + screenshotName + "-" + getTimestamp() + ".png");
             FileUtils.copyFile(screenshotSrc, screenshotFile);
-            //Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotFile.getPath())));
             Allure.addAttachment(screenshotName, new FileInputStream(screenshotFile));
             BotLogger.info("Screenshot taken: " + screenshotName);
         } catch (Exception e) {

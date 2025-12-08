@@ -25,7 +25,7 @@ public class BotData {
         return "";
     }
     //TODO: get properties from any properties file
-    public static String getProperty(String fileName, String key) throws IOException {
+    public static String getURL(String fileName, String key) throws IOException {
         Properties properties = new Properties();
         properties.load(new FileInputStream(PATH + fileName + ".properties"));
         return properties.getProperty(key);
