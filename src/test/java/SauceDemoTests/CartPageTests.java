@@ -21,10 +21,11 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
-        Assert.assertEquals(new CartPage(bot).countCartItems(), 1);
-        Assert.assertEquals(new CartPage(bot).getFirstItemName(), "Sauce Labs Backpack");
-        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 1);
+
+        Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
+        Assert.assertEquals(new CartPage(bot).assertCartItemsCount(1), true);
+        Assert.assertEquals(new CartPage(bot).assertFirstItemName("Sauce Labs Backpack"), true);
+        Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(1), true);
     }
 
     @Test
@@ -32,13 +33,17 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
+
         int itemsBefore = new CartPage(bot).countCartItems();
+
         new CartPage(bot).removeFirstItemFromCart();
+
         int itemsAfter = new CartPage(bot).countCartItems();
 
         Assert.assertTrue(itemsAfter == itemsBefore - 1 || itemsAfter == 0);
+
         if (itemsAfter > 0) {
-            Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), itemsAfter);
+            Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(itemsAfter), true);
         }
     }
 
@@ -47,14 +52,14 @@ public class CartPageTests extends BaseTest {
         new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
-        Assert.assertEquals(new CartPage(bot).countCartItems(), 1);
-        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 1);
+
+        Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
+        Assert.assertEquals(new CartPage(bot).assertCartItemsCount(1), true);
+        Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(1), true);
+
         new CartPage(bot).clickCheckoutButton();
-        Assert.assertEquals(
-                new CartPage(bot).getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-one.html"
-        );
+
+        Assert.assertEquals(new CartPage(bot).assertCheckoutStepOneUrl(), true);
     }
 
     @Test
@@ -63,14 +68,12 @@ public class CartPageTests extends BaseTest {
                 .addMultipleItems()
                 .openCartIcon();
 
-        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
-        Assert.assertEquals(new CartPage(bot).countCartItems(), 3);
-        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 3);
+        Assert.assertEquals(new CartPage(bot).assertIsCartPageOpened(), true);
+        Assert.assertEquals(new CartPage(bot).assertCartItemsCount(3), true);
+        Assert.assertEquals(new CartPage(bot).assertCartBadgeNumber(3), true);
 
         new CartPage(bot).clickCheckoutButton();
-        Assert.assertEquals(
-                new CartPage(bot).getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-one.html"
-        );
+
+        Assert.assertEquals(new CartPage(bot).assertCheckoutStepOneUrl(), true);
     }
 }

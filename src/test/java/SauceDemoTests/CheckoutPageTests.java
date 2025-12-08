@@ -31,10 +31,7 @@ public class CheckoutPageTests extends BaseTest {
                 .fillZipCode(zipCode)
                 .clickContinue();
 
-        Assert.assertEquals(
-                checkoutPage.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html"
-        );
+        Assert.assertEquals(checkoutPage.assertOnStepTwoPage(), true);
     }
 
     @Test(dataProvider = "checkoutEmptyFirstName", dataProviderClass = TestDataProvider.class)
@@ -45,13 +42,8 @@ public class CheckoutPageTests extends BaseTest {
                 .fillZipCode(zipCode)
                 .clickContinue();
 
-        Assert.assertNotEquals(
-                checkoutPage.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html"
-        );
-
-        String errorMsg = checkoutPage.getErrorMessageText();
-        Assert.assertTrue(errorMsg.contains("Error"));
+        Assert.assertEquals(checkoutPage.assertNotOnStepTwoPage(), true);
+        Assert.assertEquals(checkoutPage.assertErrorContains("Error"), true);
     }
 
     @Test(dataProvider = "checkoutEmptyZip", dataProviderClass = TestDataProvider.class)
@@ -62,12 +54,7 @@ public class CheckoutPageTests extends BaseTest {
                 .fillZipCode(zipCode)
                 .clickContinue();
 
-        Assert.assertNotEquals(
-                checkoutPage.getCurrentUrl(),
-                "https://www.saucedemo.com/checkout-step-two.html"
-        );
-
-        String errorMsg = checkoutPage.getErrorMessageText();
-        Assert.assertTrue(errorMsg.contains("Error"));
+        Assert.assertEquals(checkoutPage.assertNotOnStepTwoPage(), true);
+        Assert.assertEquals(checkoutPage.assertErrorContains("Error"), true);
     }
 }
