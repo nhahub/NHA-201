@@ -7,11 +7,17 @@ Testing Track.
 This project is an End‑to‑End UI Automation Framework built using Java, Selenium WebDriver, TestNG, Maven, and Allure Reports. It follows modern automation best practices, including:
 
 **Page Object Model (POM)**
+
 **Fluent Design Pattern**
+
 **Reusable Utilities & Custom Bot Wrapper**
+
 **Structured Test Suites via testng.xml**
+
 **Allure Reporting Integration**
+
 **Jenkins CI/CD Integration**
+
 
 The project automates the full purchase flow on the SauceDemo web application.
 
