@@ -1,4 +1,4 @@
-## Automation Testing Project - SauceDemo.com Graduation Project DEPI (Digital Egypt Pioneers Initiative)
+## Automation Testing Project - SauceDemo.com with Jenkins CI/CD Integration (DEPI – Digital Egypt Pioneers Initiative Graduation Project)
 Developed by Group 201 for the DEPI Software
 Testing Track.
 
@@ -18,7 +18,7 @@ Allure Reporting Integration
 
 The project automates the full purchase flow on the SauceDemo web application.
 
-## The framework is built to:
+### The framework is built to:
 
 Provide readable, maintainable test scripts
 
