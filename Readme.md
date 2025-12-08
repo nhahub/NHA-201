@@ -111,6 +111,7 @@ NHA-201 [Team201_SaucedemoTesting]/
 ├── resources/                            # Project resources
 ├── test-output/                          # Test execution output
 ├── pom.xml                               # Maven configuration
+├── Jenkinsfile                           # Jenkins Pipeline configuration
 ├── README.md                             # Project documentation
 tests/
 ├── Smoke.xml                             # TestNG suite configuration for smoke tests

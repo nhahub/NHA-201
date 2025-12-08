@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="40" passed="39" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-08T00:19:41 EET" name="Surefire suite" finished-at="2025-12-08T00:21:32 EET" duration-ms="110948">
+  <suite started-at="2025-12-09T01:02:28 EET" name="Surefire suite" finished-at="2025-12-09T01:05:37 EET" duration-ms="188977">
     <groups>
     </groups>
-    <test started-at="2025-12-08T00:19:41 EET" name="Surefire test" finished-at="2025-12-08T00:21:32 EET" duration-ms="110948">
+    <test started-at="2025-12-09T01:02:28 EET" name="Surefire test" finished-at="2025-12-09T01:05:37 EET" duration-ms="188977">
       <class name="SauceDemoTests.LoginPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:43 EET" name="setUp" finished-at="2025-12-08T00:20:45 EET" duration-ms="1664" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:17 EET" name="setUp" finished-at="2025-12-09T01:04:20 EET" duration-ms="2929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:45 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-08T00:20:45 EET" duration-ms="292" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:20 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-09T01:04:21 EET" duration-ms="456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:45 EET" name="tearDown" finished-at="2025-12-08T00:20:45 EET" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:21 EET" name="tearDown" finished-at="2025-12-09T01:04:21 EET" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:45 EET" name="setUp" finished-at="2025-12-08T00:20:46 EET" duration-ms="1458" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:21 EET" name="setUp" finished-at="2025-12-09T01:04:24 EET" duration-ms="3194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:46 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-08T00:20:47 EET" duration-ms="281" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:24 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-09T01:04:24 EET" duration-ms="493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:47 EET" name="tearDown" finished-at="2025-12-08T00:20:47 EET" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:24 EET" name="tearDown" finished-at="2025-12-09T01:04:25 EET" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:47 EET" name="setUp" finished-at="2025-12-08T00:20:48 EET" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:25 EET" name="setUp" finished-at="2025-12-09T01:04:28 EET" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:48 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-08T00:20:54 EET" duration-ms="5339" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:28 EET" name="testValidLogin" data-provider="validLoginData" finished-at="2025-12-09T01:04:33 EET" duration-ms="5524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:54 EET" name="tearDown" finished-at="2025-12-08T00:20:54 EET" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:33 EET" name="tearDown" finished-at="2025-12-09T01:04:33 EET" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:54 EET" name="setUp" finished-at="2025-12-08T00:20:55 EET" duration-ms="1596" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:33 EET" name="setUp" finished-at="2025-12-09T01:04:36 EET" duration-ms="3122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:55 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-08T00:20:56 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="305" status="PASS">
+        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:36 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-09T01:04:37 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,15 +99,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLoginVerifyProductsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:56 EET" name="tearDown" finished-at="2025-12-08T00:20:56 EET" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:37 EET" name="tearDown" finished-at="2025-12-09T01:04:37 EET" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:56 EET" name="setUp" finished-at="2025-12-08T00:20:57 EET" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:37 EET" name="setUp" finished-at="2025-12-09T01:04:40 EET" duration-ms="3007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:57 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-08T00:20:58 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="310" status="PASS">
+        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:40 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-09T01:04:41 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="463" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLoginVerifyProductsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:58 EET" name="tearDown" finished-at="2025-12-08T00:20:58 EET" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:41 EET" name="tearDown" finished-at="2025-12-09T01:04:41 EET" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:58 EET" name="setUp" finished-at="2025-12-08T00:20:59 EET" duration-ms="1576" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:41 EET" name="setUp" finished-at="2025-12-09T01:04:44 EET" duration-ms="2759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:20:59 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-08T00:21:05 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="5354" status="PASS">
+        <test-method signature="testSuccessfulLoginVerifyProductsPage(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:44 EET" name="testSuccessfulLoginVerifyProductsPage" data-provider="validLoginData" finished-at="2025-12-09T01:04:49 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testValidLogin" duration-ms="5481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,15 +147,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLoginVerifyProductsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:05 EET" name="tearDown" finished-at="2025-12-08T00:21:05 EET" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:49 EET" name="tearDown" finished-at="2025-12-09T01:04:49 EET" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:05 EET" name="setUp" finished-at="2025-12-08T00:21:06 EET" duration-ms="1550" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:49 EET" name="setUp" finished-at="2025-12-09T01:04:52 EET" duration-ms="3127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:06 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-08T00:21:07 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="567" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:52 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-09T01:04:53 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="885" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,15 +171,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:07 EET" name="tearDown" finished-at="2025-12-08T00:21:07 EET" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:53 EET" name="tearDown" finished-at="2025-12-09T01:04:54 EET" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:07 EET" name="setUp" finished-at="2025-12-08T00:21:09 EET" duration-ms="1631" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:54 EET" name="setUp" finished-at="2025-12-09T01:04:57 EET" duration-ms="2929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:09 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-08T00:21:09 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="574" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:57 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-09T01:04:57 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,15 +195,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:09 EET" name="tearDown" finished-at="2025-12-08T00:21:10 EET" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:57 EET" name="tearDown" finished-at="2025-12-09T01:04:58 EET" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:10 EET" name="setUp" finished-at="2025-12-08T00:21:11 EET" duration-ms="1528" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:04:58 EET" name="setUp" finished-at="2025-12-09T01:05:00 EET" duration-ms="2883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:11 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-08T00:21:12 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="553" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:00 EET" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-12-09T01:05:01 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testSuccessfulLoginVerifyProductsPage" duration-ms="765" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,15 +219,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:12 EET" name="tearDown" finished-at="2025-12-08T00:21:12 EET" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:01 EET" name="tearDown" finished-at="2025-12-09T01:05:01 EET" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:12 EET" name="setUp" finished-at="2025-12-08T00:21:13 EET" duration-ms="1480" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:01 EET" name="setUp" finished-at="2025-12-09T01:05:04 EET" duration-ms="2927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:13 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-08T00:21:14 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="554" status="PASS">
+        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:04 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-09T01:05:05 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="725" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,15 +243,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:14 EET" name="tearDown" finished-at="2025-12-08T00:21:14 EET" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:05 EET" name="tearDown" finished-at="2025-12-09T01:05:05 EET" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:14 EET" name="setUp" finished-at="2025-12-08T00:21:15 EET" duration-ms="1468" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:05 EET" name="setUp" finished-at="2025-12-09T01:05:08 EET" duration-ms="2988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:15 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-08T00:21:16 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="585" status="PASS">
+        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:08 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-09T01:05:09 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="725" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -267,15 +267,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:16 EET" name="tearDown" finished-at="2025-12-08T00:21:16 EET" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:09 EET" name="tearDown" finished-at="2025-12-09T01:05:09 EET" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:16 EET" name="setUp" finished-at="2025-12-08T00:21:18 EET" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:09 EET" name="setUp" finished-at="2025-12-09T01:05:12 EET" duration-ms="2887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:18 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-08T00:21:18 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="530" status="PASS">
+        <test-method signature="testEmptyFields(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:12 EET" name="testEmptyFields" data-provider="emptyFieldsData" finished-at="2025-12-09T01:05:13 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testInvalidLogin" duration-ms="742" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -291,15 +291,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:18 EET" name="tearDown" finished-at="2025-12-08T00:21:18 EET" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:13 EET" name="tearDown" finished-at="2025-12-09T01:05:13 EET" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:18 EET" name="setUp" finished-at="2025-12-08T00:21:20 EET" duration-ms="1483" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:13 EET" name="setUp" finished-at="2025-12-09T01:05:16 EET" duration-ms="3121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLockedOutUser(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:20 EET" name="testLockedOutUser" data-provider="lockedUserData" finished-at="2025-12-08T00:21:20 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testEmptyFields" duration-ms="572" status="PASS">
+        <test-method signature="testLockedOutUser(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:16 EET" name="testLockedOutUser" data-provider="lockedUserData" finished-at="2025-12-09T01:05:17 EET" depends-on-methods="SauceDemoTests.LoginPageTests.testEmptyFields" duration-ms="744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -315,131 +315,131 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLockedOutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:20 EET" name="tearDown" finished-at="2025-12-08T00:21:21 EET" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:17 EET" name="tearDown" finished-at="2025-12-09T01:05:17 EET" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:21 EET" name="setUp" finished-at="2025-12-08T00:21:22 EET" duration-ms="1522" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:17 EET" name="setUp" finished-at="2025-12-09T01:05:20 EET" duration-ms="3050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginWithJasonData()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:22 EET" name="validLoginWithJasonData" finished-at="2025-12-08T00:21:22 EET" duration-ms="350" status="PASS">
+        <test-method signature="validLoginWithJasonData()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:20 EET" name="validLoginWithJasonData" finished-at="2025-12-09T01:05:21 EET" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWithJasonData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@53045c6c]" started-at="2025-12-08T00:21:22 EET" name="tearDown" finished-at="2025-12-08T00:21:23 EET" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.LoginPageTests@795509d9]" started-at="2025-12-09T01:05:21 EET" name="tearDown" finished-at="2025-12-09T01:05:21 EET" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.LoginPageTests -->
       <class name="SauceDemoTests.EndToEndTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:12 EET" name="setUp" finished-at="2025-12-08T00:20:13 EET" duration-ms="1524" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:19 EET" name="setUp" finished-at="2025-12-09T01:03:22 EET" duration-ms="3112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow1()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:13 EET" name="invalidEndToEndPurchaseFlow1" finished-at="2025-12-08T00:20:14 EET" duration-ms="915" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow1()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:22 EET" name="invalidEndToEndPurchaseFlow1" finished-at="2025-12-09T01:03:23 EET" duration-ms="1344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:14 EET" name="tearDown" finished-at="2025-12-08T00:20:14 EET" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:23 EET" name="tearDown" finished-at="2025-12-09T01:03:24 EET" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:14 EET" name="setUp" finished-at="2025-12-08T00:20:16 EET" duration-ms="1617" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:24 EET" name="setUp" finished-at="2025-12-09T01:03:27 EET" duration-ms="3306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow2()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:16 EET" name="invalidEndToEndPurchaseFlow2" finished-at="2025-12-08T00:20:17 EET" duration-ms="884" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow2()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:27 EET" name="invalidEndToEndPurchaseFlow2" finished-at="2025-12-09T01:03:28 EET" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:17 EET" name="tearDown" finished-at="2025-12-08T00:20:17 EET" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:28 EET" name="tearDown" finished-at="2025-12-09T01:03:29 EET" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:17 EET" name="setUp" finished-at="2025-12-08T00:20:19 EET" duration-ms="1540" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:29 EET" name="setUp" finished-at="2025-12-09T01:03:32 EET" duration-ms="3243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow3()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:19 EET" name="invalidEndToEndPurchaseFlow3" finished-at="2025-12-08T00:20:19 EET" duration-ms="930" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow3()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:32 EET" name="invalidEndToEndPurchaseFlow3" finished-at="2025-12-09T01:03:33 EET" duration-ms="1489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:19 EET" name="tearDown" finished-at="2025-12-08T00:20:20 EET" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:33 EET" name="tearDown" finished-at="2025-12-09T01:03:34 EET" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:20 EET" name="setUp" finished-at="2025-12-08T00:20:21 EET" duration-ms="1537" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:34 EET" name="setUp" finished-at="2025-12-09T01:03:37 EET" duration-ms="3002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow4()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:21 EET" name="invalidEndToEndPurchaseFlow4" finished-at="2025-12-08T00:20:22 EET" duration-ms="863" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow4()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:37 EET" name="invalidEndToEndPurchaseFlow4" finished-at="2025-12-09T01:03:38 EET" duration-ms="1376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow4 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:22 EET" name="tearDown" finished-at="2025-12-08T00:20:22 EET" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:38 EET" name="tearDown" finished-at="2025-12-09T01:03:38 EET" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:22 EET" name="setUp" finished-at="2025-12-08T00:20:24 EET" duration-ms="1649" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:38 EET" name="setUp" finished-at="2025-12-09T01:03:41 EET" duration-ms="3168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow5()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:24 EET" name="invalidEndToEndPurchaseFlow5" finished-at="2025-12-08T00:20:25 EET" duration-ms="883" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow5()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:41 EET" name="invalidEndToEndPurchaseFlow5" finished-at="2025-12-09T01:03:43 EET" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow5 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:25 EET" name="tearDown" finished-at="2025-12-08T00:20:25 EET" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:43 EET" name="tearDown" finished-at="2025-12-09T01:03:43 EET" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:25 EET" name="setUp" finished-at="2025-12-08T00:20:26 EET" duration-ms="1470" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:43 EET" name="setUp" finished-at="2025-12-09T01:03:46 EET" duration-ms="3277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEndToEndPurchaseFlow6()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:26 EET" name="invalidEndToEndPurchaseFlow6" finished-at="2025-12-08T00:20:27 EET" duration-ms="928" status="PASS">
+        <test-method signature="invalidEndToEndPurchaseFlow6()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:46 EET" name="invalidEndToEndPurchaseFlow6" finished-at="2025-12-09T01:03:48 EET" duration-ms="1572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEndToEndPurchaseFlow6 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:27 EET" name="tearDown" finished-at="2025-12-08T00:20:27 EET" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:48 EET" name="tearDown" finished-at="2025-12-09T01:03:48 EET" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:27 EET" name="setUp" finished-at="2025-12-08T00:20:29 EET" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:48 EET" name="setUp" finished-at="2025-12-09T01:03:52 EET" duration-ms="4576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validEndToEndPurchaseFlow1()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:29 EET" name="validEndToEndPurchaseFlow1" finished-at="2025-12-08T00:20:30 EET" duration-ms="1510" status="PASS">
+        <test-method signature="validEndToEndPurchaseFlow1()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:52 EET" name="validEndToEndPurchaseFlow1" finished-at="2025-12-09T01:03:55 EET" duration-ms="2217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEndToEndPurchaseFlow1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:30 EET" name="tearDown" finished-at="2025-12-08T00:20:31 EET" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:55 EET" name="tearDown" finished-at="2025-12-09T01:03:55 EET" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:31 EET" name="setUp" finished-at="2025-12-08T00:20:32 EET" duration-ms="1535" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:55 EET" name="setUp" finished-at="2025-12-09T01:03:58 EET" duration-ms="3190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validEndToEndPurchaseFlow2()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:32 EET" name="validEndToEndPurchaseFlow2" finished-at="2025-12-08T00:20:33 EET" duration-ms="1012" status="PASS">
+        <test-method signature="validEndToEndPurchaseFlow2()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:03:58 EET" name="validEndToEndPurchaseFlow2" finished-at="2025-12-09T01:04:00 EET" duration-ms="1574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEndToEndPurchaseFlow2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@1cf6d1be]" started-at="2025-12-08T00:20:33 EET" name="tearDown" finished-at="2025-12-08T00:20:33 EET" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.EndToEndTest@74e28667]" started-at="2025-12-09T01:04:00 EET" name="tearDown" finished-at="2025-12-09T01:04:00 EET" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.EndToEndTest -->
       <class name="SauceDemoTests.SortingFilterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:23 EET" name="setUp" finished-at="2025-12-08T00:21:24 EET" duration-ms="1674" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:21 EET" name="setUp" finished-at="2025-12-09T01:05:24 EET" duration-ms="3326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:24 EET" name="setup" finished-at="2025-12-08T00:21:25 EET" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:24 EET" name="setup" finished-at="2025-12-09T01:05:25 EET" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:25 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-08T00:21:25 EET" duration-ms="217" status="PASS">
+        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:25 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-09T01:05:25 EET" duration-ms="351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -450,19 +450,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:25 EET" name="tearDown" finished-at="2025-12-08T00:21:25 EET" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:25 EET" name="tearDown" finished-at="2025-12-09T01:05:25 EET" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:25 EET" name="setUp" finished-at="2025-12-08T00:21:26 EET" duration-ms="1513" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:25 EET" name="setUp" finished-at="2025-12-09T01:05:28 EET" duration-ms="3114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:26 EET" name="setup" finished-at="2025-12-08T00:21:27 EET" duration-ms="304" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:28 EET" name="setup" finished-at="2025-12-09T01:05:29 EET" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:27 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-08T00:21:27 EET" duration-ms="261" status="PASS">
+        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:29 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-09T01:05:29 EET" duration-ms="346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -473,19 +473,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:27 EET" name="tearDown" finished-at="2025-12-08T00:21:27 EET" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:29 EET" name="tearDown" finished-at="2025-12-09T01:05:29 EET" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:27 EET" name="setUp" finished-at="2025-12-08T00:21:29 EET" duration-ms="1461" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:29 EET" name="setUp" finished-at="2025-12-09T01:05:32 EET" duration-ms="2853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:29 EET" name="setup" finished-at="2025-12-08T00:21:29 EET" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:32 EET" name="setup" finished-at="2025-12-09T01:05:33 EET" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:29 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-08T00:21:29 EET" duration-ms="231" status="PASS">
+        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:33 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-09T01:05:33 EET" duration-ms="351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -496,19 +496,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:29 EET" name="tearDown" finished-at="2025-12-08T00:21:29 EET" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:33 EET" name="tearDown" finished-at="2025-12-09T01:05:33 EET" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:29 EET" name="setUp" finished-at="2025-12-08T00:21:31 EET" duration-ms="1493" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:33 EET" name="setUp" finished-at="2025-12-09T01:05:36 EET" duration-ms="2847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:31 EET" name="setup" finished-at="2025-12-08T00:21:31 EET" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:36 EET" name="setup" finished-at="2025-12-09T01:05:37 EET" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:31 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-08T00:21:31 EET" duration-ms="246" status="PASS">
+        <test-method signature="sortingTest(java.lang.String)[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:37 EET" name="sortingTest" data-provider="sortOptions" finished-at="2025-12-09T01:05:37 EET" duration-ms="340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -519,87 +519,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@5149d738]" started-at="2025-12-08T00:21:31 EET" name="tearDown" finished-at="2025-12-08T00:21:32 EET" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.SortingFilterPageTest@53045c6c]" started-at="2025-12-09T01:05:37 EET" name="tearDown" finished-at="2025-12-09T01:05:37 EET" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.SortingFilterPageTest -->
       <class name="SauceDemoTests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:33 EET" name="setUp" finished-at="2025-12-08T00:20:35 EET" duration-ms="1578" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:00 EET" name="setUp" finished-at="2025-12-09T01:04:03 EET" duration-ms="3084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:35 EET" name="setUpHomePage" finished-at="2025-12-08T00:20:35 EET" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:03 EET" name="setUpHomePage" finished-at="2025-12-09T01:04:04 EET" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpHomePage -->
-        <test-method signature="Home_Tc1_scrollAndCheckBadge()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:35 EET" name="Home_Tc1_scrollAndCheckBadge" finished-at="2025-12-08T00:20:36 EET" duration-ms="580" status="PASS">
+        <test-method signature="Home_Tc1_scrollAndCheckBadge()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:04 EET" name="Home_Tc1_scrollAndCheckBadge" finished-at="2025-12-09T01:04:04 EET" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Tc1_scrollAndCheckBadge -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:36 EET" name="tearDown" finished-at="2025-12-08T00:20:36 EET" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:04 EET" name="tearDown" finished-at="2025-12-09T01:04:05 EET" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:36 EET" name="setUp" finished-at="2025-12-08T00:20:38 EET" duration-ms="1671" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:05 EET" name="setUp" finished-at="2025-12-09T01:04:08 EET" duration-ms="3198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:38 EET" name="setUpHomePage" finished-at="2025-12-08T00:20:38 EET" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:08 EET" name="setUpHomePage" finished-at="2025-12-09T01:04:08 EET" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpHomePage -->
-        <test-method signature="Home_Tc2_testOpenMenu()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:38 EET" name="Home_Tc2_testOpenMenu" finished-at="2025-12-08T00:20:38 EET" duration-ms="95" status="PASS">
+        <test-method signature="Home_Tc2_testOpenMenu()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:08 EET" name="Home_Tc2_testOpenMenu" finished-at="2025-12-09T01:04:08 EET" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Tc2_testOpenMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:38 EET" name="tearDown" finished-at="2025-12-08T00:20:38 EET" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:08 EET" name="tearDown" finished-at="2025-12-09T01:04:09 EET" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:38 EET" name="setUp" finished-at="2025-12-08T00:20:40 EET" duration-ms="1491" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:09 EET" name="setUp" finished-at="2025-12-09T01:04:11 EET" duration-ms="2934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:40 EET" name="setUpHomePage" finished-at="2025-12-08T00:20:40 EET" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:12 EET" name="setUpHomePage" finished-at="2025-12-09T01:04:12 EET" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpHomePage -->
-        <test-method signature="Home_Tc3_addMultipleProducts()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:40 EET" name="Home_Tc3_addMultipleProducts" finished-at="2025-12-08T00:20:40 EET" duration-ms="476" status="PASS">
+        <test-method signature="Home_Tc3_addMultipleProducts()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:12 EET" name="Home_Tc3_addMultipleProducts" finished-at="2025-12-09T01:04:13 EET" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Tc3_addMultipleProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:40 EET" name="tearDown" finished-at="2025-12-08T00:20:40 EET" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:13 EET" name="tearDown" finished-at="2025-12-09T01:04:13 EET" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:40 EET" name="setUp" finished-at="2025-12-08T00:20:42 EET" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:13 EET" name="setUp" finished-at="2025-12-09T01:04:16 EET" duration-ms="3114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:42 EET" name="setUpHomePage" finished-at="2025-12-08T00:20:42 EET" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="setUpHomePage()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:16 EET" name="setUpHomePage" finished-at="2025-12-09T01:04:17 EET" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpHomePage -->
-        <test-method signature="Home_Tc4_removeProducts()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:42 EET" name="Home_Tc4_removeProducts" finished-at="2025-12-08T00:20:43 EET" duration-ms="329" status="PASS">
+        <test-method signature="Home_Tc4_removeProducts()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:17 EET" name="Home_Tc4_removeProducts" finished-at="2025-12-09T01:04:17 EET" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Tc4_removeProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@663c9e7a]" started-at="2025-12-08T00:20:43 EET" name="tearDown" finished-at="2025-12-08T00:20:43 EET" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.HomePageTest@1cf6d1be]" started-at="2025-12-09T01:04:17 EET" name="tearDown" finished-at="2025-12-09T01:04:17 EET" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.HomePageTest -->
       <class name="SauceDemoTests.CheckoutPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:03 EET" name="setUp" finished-at="2025-12-08T00:20:05 EET" duration-ms="1585" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:05 EET" name="setUp" finished-at="2025-12-09T01:03:08 EET" duration-ms="3216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:05 EET" name="setUpCheckout" finished-at="2025-12-08T00:20:06 EET" duration-ms="497" status="PASS">
+        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:08 EET" name="setUpCheckout" finished-at="2025-12-09T01:03:09 EET" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCheckout -->
-        <test-method signature="testCheckoutWithEmptyFirstName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:06 EET" name="testCheckoutWithEmptyFirstName" data-provider="checkoutEmptyFirstName" finished-at="2025-12-08T00:20:06 EET" duration-ms="580" status="PASS">
+        <test-method signature="testCheckoutWithEmptyFirstName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:09 EET" name="testCheckoutWithEmptyFirstName" data-provider="checkoutEmptyFirstName" finished-at="2025-12-09T01:03:09 EET" duration-ms="805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -620,19 +620,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutWithEmptyFirstName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:06 EET" name="tearDown" finished-at="2025-12-08T00:20:06 EET" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:09 EET" name="tearDown" finished-at="2025-12-09T01:03:10 EET" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:06 EET" name="setUp" finished-at="2025-12-08T00:20:08 EET" duration-ms="1719" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:10 EET" name="setUp" finished-at="2025-12-09T01:03:13 EET" duration-ms="3003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:08 EET" name="setUpCheckout" finished-at="2025-12-08T00:20:08 EET" duration-ms="483" status="PASS">
+        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:13 EET" name="setUpCheckout" finished-at="2025-12-09T01:03:14 EET" duration-ms="841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCheckout -->
-        <test-method signature="testCheckoutWithEmptyZip(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:08 EET" name="testCheckoutWithEmptyZip" data-provider="checkoutEmptyZip" finished-at="2025-12-08T00:20:09 EET" duration-ms="599" status="PASS">
+        <test-method signature="testCheckoutWithEmptyZip(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:14 EET" name="testCheckoutWithEmptyZip" data-provider="checkoutEmptyZip" finished-at="2025-12-09T01:03:14 EET" duration-ms="802" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -653,19 +653,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutWithEmptyZip -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:09 EET" name="tearDown" finished-at="2025-12-08T00:20:09 EET" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:14 EET" name="tearDown" finished-at="2025-12-09T01:03:15 EET" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:09 EET" name="setUp" finished-at="2025-12-08T00:20:11 EET" duration-ms="1520" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:15 EET" name="setUp" finished-at="2025-12-09T01:03:18 EET" duration-ms="3053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:11 EET" name="setUpCheckout" finished-at="2025-12-08T00:20:11 EET" duration-ms="483" status="PASS">
+        <test-method is-config="true" signature="setUpCheckout()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:18 EET" name="setUpCheckout" finished-at="2025-12-09T01:03:18 EET" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCheckout -->
-        <test-method signature="testCheckoutWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:11 EET" name="testCheckoutWithValidData" data-provider="checkoutValidData" finished-at="2025-12-08T00:20:12 EET" duration-ms="308" status="PASS">
+        <test-method signature="testCheckoutWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:18 EET" name="testCheckoutWithValidData" data-provider="checkoutValidData" finished-at="2025-12-09T01:03:19 EET" duration-ms="457" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -686,21 +686,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutWithValidData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@74e28667]" started-at="2025-12-08T00:20:12 EET" name="tearDown" finished-at="2025-12-08T00:20:12 EET" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutPageTests@7161d8d1]" started-at="2025-12-09T01:03:19 EET" name="tearDown" finished-at="2025-12-09T01:03:19 EET" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.CheckoutPageTests -->
       <class name="SauceDemoTests.CheckoutConfirmationPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:19:56 EET" name="setUp" finished-at="2025-12-08T00:19:57 EET" duration-ms="1556" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:50 EET" name="setUp" finished-at="2025-12-09T01:02:53 EET" duration-ms="2796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:19:57 EET" name="setUpConfirmation" finished-at="2025-12-08T00:19:57 EET" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:53 EET" name="setUpConfirmation" finished-at="2025-12-09T01:02:54 EET" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfirmation -->
-        <test-method signature="Confirmation_TC1_finishOrderWithItems(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:19:57 EET" name="Confirmation_TC1_finishOrderWithItems" data-provider="checkoutValidData" finished-at="2025-12-08T00:19:58 EET" duration-ms="856" status="PASS">
+        <test-method signature="Confirmation_TC1_finishOrderWithItems(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:54 EET" name="Confirmation_TC1_finishOrderWithItems" data-provider="checkoutValidData" finished-at="2025-12-09T01:02:55 EET" duration-ms="1180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -721,19 +721,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Confirmation_TC1_finishOrderWithItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:19:58 EET" name="tearDown" finished-at="2025-12-08T00:19:58 EET" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:55 EET" name="tearDown" finished-at="2025-12-09T01:02:55 EET" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:19:58 EET" name="setUp" finished-at="2025-12-08T00:20:00 EET" duration-ms="1470" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:55 EET" name="setUp" finished-at="2025-12-09T01:02:59 EET" duration-ms="3409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:00 EET" name="setUpConfirmation" finished-at="2025-12-08T00:20:00 EET" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:59 EET" name="setUpConfirmation" finished-at="2025-12-09T01:02:59 EET" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfirmation -->
-        <test-method signature="Confirmation_TC2_finishEmptyCartOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:00 EET" name="Confirmation_TC2_finishEmptyCartOrder" data-provider="checkoutValidData" finished-at="2025-12-08T00:20:01 EET" duration-ms="501" status="FAIL">
+        <test-method signature="Confirmation_TC2_finishEmptyCartOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:02:59 EET" name="Confirmation_TC2_finishEmptyCartOrder" data-provider="checkoutValidData" finished-at="2025-12-09T01:03:00 EET" duration-ms="777" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -753,18 +753,19 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-complete.html]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-complete.html]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:60)
-at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:96)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:52)
+at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:77)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -802,19 +803,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Confirmation_TC2_finishEmptyCartOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:01 EET" name="tearDown" finished-at="2025-12-08T00:20:01 EET" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:03:00 EET" name="tearDown" finished-at="2025-12-09T01:03:00 EET" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:01 EET" name="setUp" finished-at="2025-12-08T00:20:02 EET" duration-ms="1425" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:03:00 EET" name="setUp" finished-at="2025-12-09T01:03:03 EET" duration-ms="2804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:02 EET" name="setUpConfirmation" finished-at="2025-12-08T00:20:03 EET" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="setUpConfirmation()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:03:03 EET" name="setUpConfirmation" finished-at="2025-12-09T01:03:04 EET" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfirmation -->
-        <test-method signature="Confirmation_TC3_backToHomeAfterCompletion(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:03 EET" name="Confirmation_TC3_backToHomeAfterCompletion" data-provider="checkoutValidData" finished-at="2025-12-08T00:20:03 EET" duration-ms="637" status="PASS">
+        <test-method signature="Confirmation_TC3_backToHomeAfterCompletion(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:03:04 EET" name="Confirmation_TC3_backToHomeAfterCompletion" data-provider="checkoutValidData" finished-at="2025-12-09T01:03:04 EET" duration-ms="916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -835,73 +836,73 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Confirmation_TC3_backToHomeAfterCompletion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@7161d8d1]" started-at="2025-12-08T00:20:03 EET" name="tearDown" finished-at="2025-12-08T00:20:03 EET" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CheckoutConfirmationPageTests@74d1dc36]" started-at="2025-12-09T01:03:04 EET" name="tearDown" finished-at="2025-12-09T01:03:05 EET" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SauceDemoTests.CheckoutConfirmationPageTests -->
       <class name="SauceDemoTests.CartPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:41 EET" name="setUp" finished-at="2025-12-08T00:19:47 EET" duration-ms="6035" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:28 EET" name="setUp" finished-at="2025-12-09T01:02:36 EET" duration-ms="7197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:47 EET" name="setUpCart" finished-at="2025-12-08T00:19:47 EET" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:36 EET" name="setUpCart" finished-at="2025-12-09T01:02:36 EET" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCart -->
-        <test-method signature="Cart_Tc1_openCartAfterAddingItems()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:47 EET" name="Cart_Tc1_openCartAfterAddingItems" finished-at="2025-12-08T00:19:48 EET" duration-ms="797" status="PASS">
+        <test-method signature="Cart_Tc1_openCartAfterAddingItems()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:36 EET" name="Cart_Tc1_openCartAfterAddingItems" finished-at="2025-12-09T01:02:37 EET" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cart_Tc1_openCartAfterAddingItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:48 EET" name="tearDown" finished-at="2025-12-08T00:19:48 EET" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:37 EET" name="tearDown" finished-at="2025-12-09T01:02:37 EET" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:48 EET" name="setUp" finished-at="2025-12-08T00:19:50 EET" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:37 EET" name="setUp" finished-at="2025-12-09T01:02:40 EET" duration-ms="2923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:50 EET" name="setUpCart" finished-at="2025-12-08T00:19:50 EET" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:40 EET" name="setUpCart" finished-at="2025-12-09T01:02:41 EET" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCart -->
-        <test-method signature="Cart_Tc2_removeItemFromCart()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:50 EET" name="Cart_Tc2_removeItemFromCart" finished-at="2025-12-08T00:19:50 EET" duration-ms="209" status="PASS">
+        <test-method signature="Cart_Tc2_removeItemFromCart()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:41 EET" name="Cart_Tc2_removeItemFromCart" finished-at="2025-12-09T01:02:41 EET" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cart_Tc2_removeItemFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:50 EET" name="tearDown" finished-at="2025-12-08T00:19:50 EET" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:41 EET" name="tearDown" finished-at="2025-12-09T01:02:41 EET" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:50 EET" name="setUp" finished-at="2025-12-08T00:19:52 EET" duration-ms="1498" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:41 EET" name="setUp" finished-at="2025-12-09T01:02:44 EET" duration-ms="2887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:52 EET" name="setUpCart" finished-at="2025-12-08T00:19:52 EET" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:44 EET" name="setUpCart" finished-at="2025-12-09T01:02:45 EET" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCart -->
-        <test-method signature="Cart_Tc3_checkoutWithOneItem()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:52 EET" name="Cart_Tc3_checkoutWithOneItem" finished-at="2025-12-08T00:19:53 EET" duration-ms="516" status="PASS">
+        <test-method signature="Cart_Tc3_checkoutWithOneItem()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:45 EET" name="Cart_Tc3_checkoutWithOneItem" finished-at="2025-12-09T01:02:46 EET" duration-ms="773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cart_Tc3_checkoutWithOneItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:53 EET" name="tearDown" finished-at="2025-12-08T00:19:53 EET" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:46 EET" name="tearDown" finished-at="2025-12-09T01:02:46 EET" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:53 EET" name="setUp" finished-at="2025-12-08T00:19:54 EET" duration-ms="1634" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:46 EET" name="setUp" finished-at="2025-12-09T01:02:49 EET" duration-ms="2950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:54 EET" name="setUpCart" finished-at="2025-12-08T00:19:55 EET" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="setUpCart()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:49 EET" name="setUpCart" finished-at="2025-12-09T01:02:49 EET" duration-ms="483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCart -->
-        <test-method signature="Cart_Tc4_checkoutWithMultipleItems()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:55 EET" name="Cart_Tc4_checkoutWithMultipleItems" finished-at="2025-12-08T00:19:55 EET" duration-ms="615" status="PASS">
+        <test-method signature="Cart_Tc4_checkoutWithMultipleItems()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:49 EET" name="Cart_Tc4_checkoutWithMultipleItems" finished-at="2025-12-09T01:02:50 EET" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cart_Tc4_checkoutWithMultipleItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@15bb5034]" started-at="2025-12-08T00:19:55 EET" name="tearDown" finished-at="2025-12-08T00:19:56 EET" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemoTests.CartPageTests@7d0b7e3c]" started-at="2025-12-09T01:02:50 EET" name="tearDown" finished-at="2025-12-09T01:02:50 EET" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

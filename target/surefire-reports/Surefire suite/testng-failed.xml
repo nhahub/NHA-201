@@ -7,8 +7,8 @@
         <methods>
           <include name="setUpConfirmation"/>
           <include name="tearDown"/>
-          <include name="Confirmation_TC2_finishEmptyCartOrder" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="Confirmation_TC2_finishEmptyCartOrder" invocation-numbers="0"/>
         </methods>
       </class> <!-- SauceDemoTests.CheckoutConfirmationPageTests -->
     </classes>

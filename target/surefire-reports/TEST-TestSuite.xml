@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="111.894" tests="40" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="190.261" tests="40" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\target\test-classes;D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\target\classes;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.37.0\selenium-java-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.37.0\selenium-api-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.37.0\selenium-chrome-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.37.0\selenium-chromium-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.37.0\selenium-json-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.37.0\selenium-manager-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.37.0\selenium-devtools-v139-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.37.0\selenium-devtools-v140-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.37.0\selenium-devtools-v141-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.37.0\selenium-edge-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.37.0\selenium-firefox-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.37.0\selenium-http-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.37.0\selenium-ie-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.37.0\selenium-remote-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\TheDe\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\TheDe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TheDe\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\TheDe\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\TheDe\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-os\4.37.0\selenium-os-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.37.0\selenium-safari-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.37.0\selenium-support-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\TheDe\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-testng\2.31.0\allure-testng-2.31.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-test-filter\2.31.0\allure-test-filter-2.31.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\TheDe\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\TheDe\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\TheDe\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\TheDe\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\TheDe\.m2\repository\org\jetbrains\annotations\26.0.2-1\annotations-26.0.2-1.jar;"/>
+    <property name="java.class.path" value="D:\ALI\IdeaProjects\NHA-201\NHA-201\target\test-classes;D:\ALI\IdeaProjects\NHA-201\NHA-201\target\classes;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-java\4.37.0\selenium-java-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-api\4.37.0\selenium-api-4.37.0.jar;C:\Users\Ali\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.37.0\selenium-chrome-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.37.0\selenium-chromium-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-json\4.37.0\selenium-json-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.37.0\selenium-manager-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.37.0\selenium-devtools-v139-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.37.0\selenium-devtools-v140-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.37.0\selenium-devtools-v141-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.37.0\selenium-edge-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.37.0\selenium-firefox-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-http\4.37.0\selenium-http-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.37.0\selenium-ie-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.37.0\selenium-remote-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\Ali\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Ali\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Ali\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\Ali\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-os\4.37.0\selenium-os-4.37.0.jar;C:\Users\Ali\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.37.0\selenium-safari-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-support\4.37.0\selenium-support-4.37.0.jar;C:\Users\Ali\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Ali\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Ali\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-testng\2.31.0\allure-testng-2.31.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-test-filter\2.31.0\allure-test-filter-2.31.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\Ali\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Ali\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\Ali\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\Ali\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ali\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\Ali\.m2\repository\org\jetbrains\annotations\26.0.2-1\annotations-26.0.2-1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,156 +15,157 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\TheDe\AppData\Local\Temp\surefire4386989173354228641\surefirebooter-20251208001939848_3.jar C:\Users\TheDe\AppData\Local\Temp\surefire4386989173354228641 2025-12-08T00-19-39_672-jvmRun1 surefire-20251208001939848_1tmp surefire_0-20251208001939848_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Ali\AppData\Local\Temp\surefire7258635027431345141\surefirebooter-20251209010227478_3.jar C:\Users\Ali\AppData\Local\Temp\surefire7258635027431345141 2025-12-09T01-02-27_272-jvmRun1 surefire-20251209010227478_1tmp surefire_0-20251209010227478_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\target\test-classes;D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\target\classes;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.37.0\selenium-java-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.37.0\selenium-api-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.37.0\selenium-chrome-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.37.0\selenium-chromium-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.37.0\selenium-json-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.37.0\selenium-manager-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.37.0\selenium-devtools-v139-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.37.0\selenium-devtools-v140-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.37.0\selenium-devtools-v141-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.37.0\selenium-edge-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.37.0\selenium-firefox-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.37.0\selenium-http-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.37.0\selenium-ie-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.37.0\selenium-remote-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\TheDe\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\TheDe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\TheDe\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\TheDe\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\TheDe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\TheDe\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-os\4.37.0\selenium-os-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.37.0\selenium-safari-driver-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.37.0\selenium-support-4.37.0.jar;C:\Users\TheDe\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\TheDe\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-testng\2.31.0\allure-testng-2.31.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-test-filter\2.31.0\allure-test-filter-2.31.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\TheDe\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\TheDe\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\TheDe\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\TheDe\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\TheDe\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\TheDe\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\TheDe\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\TheDe\.m2\repository\org\jetbrains\annotations\26.0.2-1\annotations-26.0.2-1.jar;"/>
-    <property name="allure.results.directory" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo\target/allure-results"/>
+    <property name="surefire.test.class.path" value="D:\ALI\IdeaProjects\NHA-201\NHA-201\target\test-classes;D:\ALI\IdeaProjects\NHA-201\NHA-201\target\classes;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-java\4.37.0\selenium-java-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-api\4.37.0\selenium-api-4.37.0.jar;C:\Users\Ali\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.37.0\selenium-chrome-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.37.0\selenium-chromium-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-json\4.37.0\selenium-json-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.37.0\selenium-manager-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.37.0\selenium-devtools-v139-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.37.0\selenium-devtools-v140-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.37.0\selenium-devtools-v141-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.37.0\selenium-edge-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.37.0\selenium-firefox-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-http\4.37.0\selenium-http-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.37.0\selenium-ie-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.37.0\selenium-remote-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\Ali\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Ali\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Ali\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\Ali\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\Ali\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-os\4.37.0\selenium-os-4.37.0.jar;C:\Users\Ali\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.37.0\selenium-safari-driver-4.37.0.jar;C:\Users\Ali\.m2\repository\org\seleniumhq\selenium\selenium-support\4.37.0\selenium-support-4.37.0.jar;C:\Users\Ali\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Ali\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Ali\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-testng\2.31.0\allure-testng-2.31.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-test-filter\2.31.0\allure-test-filter-2.31.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\Ali\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\Ali\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\Ali\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Ali\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\Ali\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\Ali\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ali\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\Ali\.m2\repository\org\jetbrains\annotations\26.0.2-1\annotations-26.0.2-1.jar;"/>
+    <property name="allure.results.directory" value="D:\ALI\IdeaProjects\NHA-201\NHA-201\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\TheDe"/>
+    <property name="user.home" value="C:\Users\Ali"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.version.date" value="2025-10-21"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo"/>
+    <property name="basedir" value="D:\ALI\IdeaProjects\NHA-201\NHA-201"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\TheDe\AppData\Local\Temp\surefire4386989173354228641\surefirebooter-20251208001939848_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ali\AppData\Local\Temp\surefire7258635027431345141\surefirebooter-20251209010227478_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
-    <property name="user.name" value="TheDe"/>
+    <property name="java.runtime.version" value="21.0.9+7-LTS-338"/>
+    <property name="user.name" value="Ali"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\TheDe\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Ali\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\TheDe\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.7"/>
-    <property name="user.dir" value="D:\Courses\Software testing\Misr rakamya\Technical\Graduation Project\Repo"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ali\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="D:\ALI\IdeaProjects\NHA-201\NHA-201"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\IronRuby 1.1\bin;C:\Program Files\Git\cmd;C:\allure\allure-2.35.1\bin;C:\Program Files\nodejs\;C:\apache-maven-3.9.11\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\TheDe\AppData\Local\Microsoft\WindowsApps;C:\Users\TheDe\AppData\Local\GitHubDesktop\bin;C:\Users\TheDe\AppData\Local\PowerToys\;C:\Users\TheDe\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;D:\ALI\course software tester\apache-maven-3.9.11\bin;D:\ALI\python\Scripts\;D:\ALI\python\;C:\Users\Ali\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Ali\AppData\Local\Programs\Python\Python312\;C:\Users\Ali\AppData\Local\Microsoft\WindowsApps;D:\ALI\VSCodeUserSetup-x64-1.91.1\Microsoft VS Code\bin;C:\Users\Ali\AppData\Roaming\npm;C:\Users\Ali\AppData\Local\GitHubDesktop\bin;D:\ALI\VSCodeUserSetup-x64-1.91.1\Git\cmd;C:\Users\Ali\AppData\Local\PowerToys\;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="21.0.7+8-LTS-245"/>
+    <property name="java.vm.version" value="21.0.9+7-LTS-338"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Cart_Tc1_openCartAfterAddingItems" classname="SauceDemoTests.CartPageTests" time="0.773">
-    <system-out><![CDATA[00:19:45 INFO  [BotLogger] Browser is opened
-00:19:47 INFO  [BotLogger] Browser is opened
-00:19:47 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:19:47 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:19:47 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:19:47 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  started
-00:19:47 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:19:47 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
+  <testcase name="Cart_Tc1_openCartAfterAddingItems" classname="SauceDemoTests.CartPageTests" time="0.982">
+    <system-out><![CDATA[01:02:34 INFO  [BotLogger] Browser is opened
+01:02:36 INFO  [BotLogger] Browser is opened
+01:02:36 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:36 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:36 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:36 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  started
+01:02:36 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:02:36 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
 ]]></system-out>
     <system-err><![CDATA[[main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
 [main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
 [main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-Dec 08, 2025 12:19:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Dec 09, 2025 1:02:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc2_removeItemFromCart" classname="SauceDemoTests.CartPageTests" time="0.209">
-    <system-out><![CDATA[00:19:48 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  passed
-00:19:48 INFO  [BotLogger] Browser is opened
-00:19:48 INFO  [BotLogger] Browser closed
-00:19:49 INFO  [BotLogger] Browser is opened
-00:19:50 INFO  [BotLogger] Browser is opened
-00:19:50 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:19:50 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:19:50 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:19:50 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  started
-00:19:50 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:19:50 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:19:50 INFO  [BotLogger] Clicked on element: By.xpath: (//button[@class='btn btn_secondary btn_small cart_button'])[1]
+  <testcase name="Cart_Tc2_removeItemFromCart" classname="SauceDemoTests.CartPageTests" time="0.306">
+    <system-out><![CDATA[01:02:37 INFO  [BotLogger] Test CaseCart_Tc1_openCartAfterAddingItems  passed
+01:02:37 INFO  [BotLogger] Browser is opened
+01:02:37 INFO  [BotLogger] Browser closed
+01:02:38 INFO  [BotLogger] Browser is opened
+01:02:40 INFO  [BotLogger] Browser is opened
+01:02:41 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:41 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:41 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:41 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  started
+01:02:41 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:02:41 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:02:41 INFO  [BotLogger] Clicked on: By.xpath: (//button[@class='btn btn_secondary btn_small cart_button'])[1]
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:19:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:02:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc3_checkoutWithOneItem" classname="SauceDemoTests.CartPageTests" time="0.513">
-    <system-out><![CDATA[00:19:50 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  passed
-00:19:50 INFO  [BotLogger] Browser is opened
-00:19:50 INFO  [BotLogger] Browser closed
-00:19:51 INFO  [BotLogger] Browser is opened
-00:19:52 INFO  [BotLogger] Browser is opened
-00:19:52 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:19:52 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:19:52 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:19:52 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  started
-00:19:52 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:19:52 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:19:53 INFO  [BotLogger] Clicked on element: By.id: checkout
+  <testcase name="Cart_Tc3_checkoutWithOneItem" classname="SauceDemoTests.CartPageTests" time="0.771">
+    <system-out><![CDATA[01:02:41 INFO  [BotLogger] Test CaseCart_Tc2_removeItemFromCart  passed
+01:02:41 INFO  [BotLogger] Browser is opened
+01:02:41 INFO  [BotLogger] Browser closed
+01:02:42 INFO  [BotLogger] Browser is opened
+01:02:44 INFO  [BotLogger] Browser is opened
+01:02:44 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:45 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:45 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:45 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  started
+01:02:45 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:02:45 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:02:46 INFO  [BotLogger] Clicked on: By.id: checkout
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:19:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:02:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Cart_Tc4_checkoutWithMultipleItems" classname="SauceDemoTests.CartPageTests" time="0.613">
-    <system-out><![CDATA[00:19:53 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  passed
-00:19:53 INFO  [BotLogger] Browser is opened
-00:19:53 INFO  [BotLogger] Browser closed
-00:19:54 INFO  [BotLogger] Browser is opened
-00:19:54 INFO  [BotLogger] Browser is opened
-00:19:55 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:19:55 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:19:55 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  started
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:19:55 INFO  [BotLogger] Clicked on element: By.id: checkout
+  <testcase name="Cart_Tc4_checkoutWithMultipleItems" classname="SauceDemoTests.CartPageTests" time="1.028">
+    <system-out><![CDATA[01:02:46 INFO  [BotLogger] Test CaseCart_Tc3_checkoutWithOneItem  passed
+01:02:46 INFO  [BotLogger] Browser is opened
+01:02:46 INFO  [BotLogger] Browser closed
+01:02:47 INFO  [BotLogger] Browser is opened
+01:02:49 INFO  [BotLogger] Browser is opened
+01:02:49 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:49 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:49 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:49 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  started
+01:02:49 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:02:49 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:02:49 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:02:50 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:02:50 INFO  [BotLogger] Clicked on: By.id: checkout
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:19:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:02:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC1_finishOrderWithItems[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="0.852">
-    <system-out><![CDATA[00:19:55 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  passed
-00:19:55 INFO  [BotLogger] Browser is opened
-00:19:56 INFO  [BotLogger] Browser closed
-00:19:56 INFO  [BotLogger] Browser is opened
-00:19:57 INFO  [BotLogger] Browser is opened
-00:19:57 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:19:57 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:19:57 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:19:57 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
-00:19:57 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:19:57 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:19:58 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:19:58 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
-00:19:58 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:19:58 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:19:58 INFO  [BotLogger] Clicked on element: By.id: continue
-00:19:58 INFO  [BotLogger] Clicked on element: By.id: finish
+  <testcase name="Confirmation_TC1_finishOrderWithItems[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="1.18">
+    <system-out><![CDATA[01:02:50 INFO  [BotLogger] Test CaseCart_Tc4_checkoutWithMultipleItems  passed
+01:02:50 INFO  [BotLogger] Browser is opened
+01:02:50 INFO  [BotLogger] Browser closed
+01:02:51 INFO  [BotLogger] Browser is opened
+01:02:53 INFO  [BotLogger] Browser is opened
+01:02:54 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:54 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:54 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:54 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  started
+01:02:54 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:02:54 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:02:54 INFO  [BotLogger] Clicked on: By.id: checkout
+01:02:54 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+01:02:54 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:02:54 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:02:55 INFO  [BotLogger] Clicked on: By.id: continue
+01:02:55 INFO  [BotLogger] Clicked on: By.id: finish
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:19:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:02:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC2_finishEmptyCartOrder[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="0.647">
-    <failure message="expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-complete.html]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-complete.html]
+  <testcase name="Confirmation_TC2_finishEmptyCartOrder[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="0.988">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:60)
-	at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:96)
+	at org.testng.Assert.assertEquals(Assert.java:1079)
+	at org.testng.Assert.assertEquals(Assert.java:1043)
+	at org.testng.Assert.assertEquals(Assert.java:1089)
+	at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:52)
+	at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:77)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -197,659 +198,659 @@ WARNING: Unable to find an exact match for CDP version 142, returning the closes
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[00:19:58 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  passed
-00:19:58 INFO  [BotLogger] Browser is opened
-00:19:58 INFO  [BotLogger] Browser closed
-00:19:59 INFO  [BotLogger] Browser is opened
-00:20:00 INFO  [BotLogger] Browser is opened
-00:20:00 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:00 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:00 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:00 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
-00:20:00 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:00 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:00 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
-00:20:00 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:20:00 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:01 INFO  [BotLogger] Clicked on element: By.id: continue
-00:20:01 INFO  [BotLogger] Clicked on element: By.id: finish
-00:20:01 INFO  [BotLogger] TestCase  Confirmation_TC2_finishEmptyCartOrder  failed
-00:20:01 INFO  [BotLogger] Browser is opened
-00:20:01 INFO  [BotLogger] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
+    <system-out><![CDATA[01:02:55 INFO  [BotLogger] Test CaseConfirmation_TC1_finishOrderWithItems  passed
+01:02:55 INFO  [BotLogger] Browser is opened
+01:02:55 INFO  [BotLogger] Browser closed
+01:02:56 INFO  [BotLogger] Browser is opened
+01:02:59 INFO  [BotLogger] Browser is opened
+01:02:59 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:02:59 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:02:59 INFO  [BotLogger] Clicked on: By.id: login-button
+01:02:59 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  started
+01:02:59 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:02:59 INFO  [BotLogger] Clicked on: By.id: checkout
+01:02:59 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+01:03:00 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:03:00 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:00 INFO  [BotLogger] Clicked on: By.id: continue
+01:03:00 INFO  [BotLogger] Clicked on: By.id: finish
+01:03:00 INFO  [BotLogger] TestCase  Confirmation_TC2_finishEmptyCartOrder  failed
+01:03:00 INFO  [BotLogger] Browser is opened
+01:03:00 INFO  [BotLogger] Screenshot taken: Confirmation_TC2_finishEmptyCartOrder
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:19:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:02:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Confirmation_TC3_backToHomeAfterCompletion[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="0.634">
-    <system-out><![CDATA[00:20:01 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  failed
-00:20:01 INFO  [BotLogger] Browser is opened
-00:20:01 INFO  [BotLogger] Browser closed
-00:20:02 INFO  [BotLogger] Browser is opened
-00:20:02 INFO  [BotLogger] Browser is opened
-00:20:02 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:03 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:03 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:03 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
-00:20:03 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:20:03 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: continue
-00:20:03 INFO  [BotLogger] Clicked on element: By.id: finish
-00:20:03 INFO  [BotLogger] Clicked on element: By.xpath: //button[text()='Back Home']
+  <testcase name="Confirmation_TC3_backToHomeAfterCompletion[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutConfirmationPageTests" time="0.915">
+    <system-out><![CDATA[01:03:00 INFO  [BotLogger] Test CaseConfirmation_TC2_finishEmptyCartOrder  failed
+01:03:00 INFO  [BotLogger] Browser is opened
+01:03:00 INFO  [BotLogger] Browser closed
+01:03:01 INFO  [BotLogger] Browser is opened
+01:03:03 INFO  [BotLogger] Browser is opened
+01:03:03 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:03 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:04 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:04 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  started
+01:03:04 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:04 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:04 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:04 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+01:03:04 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:03:04 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:04 INFO  [BotLogger] Clicked on: By.id: continue
+01:03:04 INFO  [BotLogger] Clicked on: By.id: finish
+01:03:04 INFO  [BotLogger] Clicked on: By.xpath: //button[text()='Back Home']
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testCheckoutWithEmptyFirstName[, Project, 201](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.578">
-    <system-out><![CDATA[00:20:03 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  passed
-00:20:03 INFO  [BotLogger] Browser is opened
-00:20:03 INFO  [BotLogger] Browser closed
-00:20:04 INFO  [BotLogger] Browser is opened
-00:20:05 INFO  [BotLogger] Browser is opened
-00:20:05 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:05 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:05 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:05 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:05 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:06 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:06 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  started
-00:20:06 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
-00:20:06 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:20:06 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:06 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="testCheckoutWithEmptyFirstName[, Project, 201](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.801">
+    <system-out><![CDATA[01:03:04 INFO  [BotLogger] Test CaseConfirmation_TC3_backToHomeAfterCompletion  passed
+01:03:04 INFO  [BotLogger] Browser is opened
+01:03:05 INFO  [BotLogger] Browser closed
+01:03:06 INFO  [BotLogger] Browser is opened
+01:03:08 INFO  [BotLogger] Browser is opened
+01:03:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:08 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:08 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:09 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:09 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:09 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  started
+01:03:09 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+01:03:09 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:03:09 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:09 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testCheckoutWithEmptyZip[Group, Project, ](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.596">
-    <system-out><![CDATA[00:20:06 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  passed
-00:20:06 INFO  [BotLogger] Browser is opened
-00:20:06 INFO  [BotLogger] Browser closed
-00:20:07 INFO  [BotLogger] Browser is opened
-00:20:08 INFO  [BotLogger] Browser is opened
-00:20:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:08 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:08 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:08 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:08 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:08 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  started
-00:20:09 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
-00:20:09 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:20:09 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
-00:20:09 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="testCheckoutWithEmptyZip[Group, Project, ](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.801">
+    <system-out><![CDATA[01:03:09 INFO  [BotLogger] Test CasetestCheckoutWithEmptyFirstName  passed
+01:03:09 INFO  [BotLogger] Browser is opened
+01:03:10 INFO  [BotLogger] Browser closed
+01:03:11 INFO  [BotLogger] Browser is opened
+01:03:13 INFO  [BotLogger] Browser is opened
+01:03:13 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:13 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:13 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:13 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:13 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:14 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:14 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  started
+01:03:14 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+01:03:14 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:03:14 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
+01:03:14 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testCheckoutWithValidData[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.308">
-    <system-out><![CDATA[00:20:09 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  passed
-00:20:09 INFO  [BotLogger] Browser is opened
-00:20:09 INFO  [BotLogger] Browser closed
-00:20:10 INFO  [BotLogger] Browser is opened
-00:20:11 INFO  [BotLogger] Browser is opened
-00:20:11 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:11 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:11 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:11 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:11 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:11 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:11 INFO  [BotLogger] Test CasetestCheckoutWithValidData  started
-00:20:11 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
-00:20:11 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
-00:20:11 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:12 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="testCheckoutWithValidData[Group, Project, 201](1)" classname="SauceDemoTests.CheckoutPageTests" time="0.454">
+    <system-out><![CDATA[01:03:14 INFO  [BotLogger] Test CasetestCheckoutWithEmptyZip  passed
+01:03:14 INFO  [BotLogger] Browser is opened
+01:03:15 INFO  [BotLogger] Browser closed
+01:03:16 INFO  [BotLogger] Browser is opened
+01:03:18 INFO  [BotLogger] Browser is opened
+01:03:18 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:18 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:18 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:18 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:18 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:18 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:18 INFO  [BotLogger] Test CasetestCheckoutWithValidData  started
+01:03:19 INFO  [BotLogger] Typed text: Group into element with locator: By.id: first-name
+01:03:19 INFO  [BotLogger] Typed text: Project into element with locator: By.id: last-name
+01:03:19 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:19 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow1" classname="SauceDemoTests.EndToEndTest" time="0.914">
-    <system-out><![CDATA[00:20:12 INFO  [BotLogger] Test CasetestCheckoutWithValidData  passed
-00:20:12 INFO  [BotLogger] Browser is opened
-00:20:12 INFO  [BotLogger] Browser closed
-00:20:13 INFO  [BotLogger] Browser is opened
-00:20:13 INFO  [BotLogger] Browser is opened
-00:20:13 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  started
-00:20:13 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:13 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:14 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
-00:20:14 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
-00:20:14 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:14 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="invalidEndToEndPurchaseFlow1" classname="SauceDemoTests.EndToEndTest" time="1.342">
+    <system-out><![CDATA[01:03:19 INFO  [BotLogger] Test CasetestCheckoutWithValidData  passed
+01:03:19 INFO  [BotLogger] Browser is opened
+01:03:19 INFO  [BotLogger] Browser closed
+01:03:20 INFO  [BotLogger] Browser is opened
+01:03:22 INFO  [BotLogger] Browser is opened
+01:03:22 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  started
+01:03:22 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:22 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:23 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:23 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:23 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:23 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:23 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:23 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:23 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+01:03:23 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+01:03:23 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:23 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow2" classname="SauceDemoTests.EndToEndTest" time="0.882">
-    <system-out><![CDATA[00:20:14 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  passed
-00:20:14 INFO  [BotLogger] Browser is opened
-00:20:14 INFO  [BotLogger] Browser closed
-00:20:15 INFO  [BotLogger] Browser is opened
-00:20:16 INFO  [BotLogger] Browser is opened
-00:20:16 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  started
-00:20:16 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:16 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:16 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:16 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:16 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:16 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:16 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:17 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:17 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
-00:20:17 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
-00:20:17 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:17 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="invalidEndToEndPurchaseFlow2" classname="SauceDemoTests.EndToEndTest" time="1.463">
+    <system-out><![CDATA[01:03:23 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow1  passed
+01:03:23 INFO  [BotLogger] Browser is opened
+01:03:24 INFO  [BotLogger] Browser closed
+01:03:25 INFO  [BotLogger] Browser is opened
+01:03:27 INFO  [BotLogger] Browser is opened
+01:03:27 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  started
+01:03:27 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:27 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:28 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:28 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:28 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:28 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:28 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:28 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:28 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+01:03:28 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
+01:03:28 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:28 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow3" classname="SauceDemoTests.EndToEndTest" time="0.929">
-    <system-out><![CDATA[00:20:17 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  passed
-00:20:17 INFO  [BotLogger] Browser is opened
-00:20:17 INFO  [BotLogger] Browser closed
-00:20:18 INFO  [BotLogger] Browser is opened
-00:20:19 INFO  [BotLogger] Browser is opened
-00:20:19 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  started
-00:20:19 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:19 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:19 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
-00:20:19 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
-00:20:19 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
-00:20:19 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="invalidEndToEndPurchaseFlow3" classname="SauceDemoTests.EndToEndTest" time="1.485">
+    <system-out><![CDATA[01:03:28 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow2  passed
+01:03:28 INFO  [BotLogger] Browser is opened
+01:03:29 INFO  [BotLogger] Browser closed
+01:03:30 INFO  [BotLogger] Browser is opened
+01:03:32 INFO  [BotLogger] Browser is opened
+01:03:32 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  started
+01:03:32 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:32 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:32 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:33 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:33 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:33 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:33 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:33 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:33 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+01:03:33 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+01:03:33 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
+01:03:33 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow4" classname="SauceDemoTests.EndToEndTest" time="0.862">
-    <system-out><![CDATA[00:20:19 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  passed
-00:20:19 INFO  [BotLogger] Browser is opened
-00:20:20 INFO  [BotLogger] Browser closed
-00:20:20 INFO  [BotLogger] Browser is opened
-00:20:21 INFO  [BotLogger] Browser is opened
-00:20:21 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  started
-00:20:21 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:21 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:21 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:21 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:22 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:22 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:22 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:22 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:22 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
-00:20:22 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
-00:20:22 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
-00:20:22 INFO  [BotLogger] Clicked on element: By.id: cancel
+  <testcase name="invalidEndToEndPurchaseFlow4" classname="SauceDemoTests.EndToEndTest" time="1.372">
+    <system-out><![CDATA[01:03:33 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow3  passed
+01:03:33 INFO  [BotLogger] Browser is opened
+01:03:34 INFO  [BotLogger] Browser closed
+01:03:34 INFO  [BotLogger] Browser is opened
+01:03:37 INFO  [BotLogger] Browser is opened
+01:03:37 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  started
+01:03:37 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:37 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:37 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:37 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:37 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:37 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:37 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:38 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:38 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+01:03:38 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+01:03:38 INFO  [BotLogger] Typed text:  into element with locator: By.id: postal-code
+01:03:38 INFO  [BotLogger] Clicked on: By.id: cancel
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow5" classname="SauceDemoTests.EndToEndTest" time="0.883">
-    <system-out><![CDATA[00:20:22 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  passed
-00:20:22 INFO  [BotLogger] Browser is opened
-00:20:22 INFO  [BotLogger] Browser closed
-00:20:23 INFO  [BotLogger] Browser is opened
-00:20:24 INFO  [BotLogger] Browser is opened
-00:20:24 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  started
-00:20:24 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:24 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:24 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:24 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
-00:20:25 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
-00:20:25 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:25 INFO  [BotLogger] Clicked on element: By.id: continue
+  <testcase name="invalidEndToEndPurchaseFlow5" classname="SauceDemoTests.EndToEndTest" time="1.374">
+    <system-out><![CDATA[01:03:38 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow4  passed
+01:03:38 INFO  [BotLogger] Browser is opened
+01:03:38 INFO  [BotLogger] Browser closed
+01:03:39 INFO  [BotLogger] Browser is opened
+01:03:41 INFO  [BotLogger] Browser is opened
+01:03:41 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  started
+01:03:42 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:42 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:42 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:42 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:42 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:42 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:42 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:42 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:42 INFO  [BotLogger] Typed text:  into element with locator: By.id: first-name
+01:03:42 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
+01:03:43 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:43 INFO  [BotLogger] Clicked on: By.id: continue
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="invalidEndToEndPurchaseFlow6" classname="SauceDemoTests.EndToEndTest" time="0.928">
-    <system-out><![CDATA[00:20:25 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  passed
-00:20:25 INFO  [BotLogger] Browser is opened
-00:20:25 INFO  [BotLogger] Browser closed
-00:20:26 INFO  [BotLogger] Browser is opened
-00:20:26 INFO  [BotLogger] Browser is opened
-00:20:26 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow6  started
-00:20:26 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:26 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:27 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
-00:20:27 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
-00:20:27 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: continue
-00:20:27 INFO  [BotLogger] Clicked on element: By.id: cancel
+  <testcase name="invalidEndToEndPurchaseFlow6" classname="SauceDemoTests.EndToEndTest" time="1.567">
+    <system-out><![CDATA[01:03:43 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow5  passed
+01:03:43 INFO  [BotLogger] Browser is opened
+01:03:43 INFO  [BotLogger] Browser closed
+01:03:44 INFO  [BotLogger] Browser is opened
+01:03:46 INFO  [BotLogger] Browser is opened
+01:03:46 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow6  started
+01:03:46 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:47 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:47 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:47 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:47 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:47 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:47 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:47 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:47 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+01:03:47 INFO  [BotLogger] Typed text:  into element with locator: By.id: last-name
+01:03:48 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:48 INFO  [BotLogger] Clicked on: By.id: continue
+01:03:48 INFO  [BotLogger] Clicked on: By.id: cancel
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="validEndToEndPurchaseFlow1" classname="SauceDemoTests.EndToEndTest" time="1.509">
-    <system-out><![CDATA[00:20:27 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow6  passed
-00:20:27 INFO  [BotLogger] Browser is opened
-00:20:27 INFO  [BotLogger] Browser closed
-00:20:28 INFO  [BotLogger] Browser is opened
-00:20:29 INFO  [BotLogger] Browser is opened
-00:20:29 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  started
-00:20:29 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:29 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:29 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:30 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
-00:20:30 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
-00:20:30 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:30 INFO  [BotLogger] Clicked on element: By.id: continue
-00:20:30 INFO  [BotLogger] Clicked on element: By.id: finish
+  <testcase name="validEndToEndPurchaseFlow1" classname="SauceDemoTests.EndToEndTest" time="2.21">
+    <system-out><![CDATA[01:03:48 INFO  [BotLogger] Test CaseinvalidEndToEndPurchaseFlow6  passed
+01:03:48 INFO  [BotLogger] Browser is opened
+01:03:48 INFO  [BotLogger] Browser closed
+01:03:49 INFO  [BotLogger] Browser is opened
+01:03:52 INFO  [BotLogger] Browser is opened
+01:03:52 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  started
+01:03:53 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:53 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:53 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:53 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:53 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:53 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:53 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:53 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:54 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+01:03:54 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+01:03:54 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:03:54 INFO  [BotLogger] Clicked on: By.id: continue
+01:03:54 INFO  [BotLogger] Clicked on: By.id: finish
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="validEndToEndPurchaseFlow2" classname="SauceDemoTests.EndToEndTest" time="1.012">
-    <system-out><![CDATA[00:20:30 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  passed
-00:20:30 INFO  [BotLogger] Browser is opened
-00:20:31 INFO  [BotLogger] Browser closed
-00:20:31 INFO  [BotLogger] Browser is opened
-00:20:32 INFO  [BotLogger] Browser is opened
-00:20:32 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  started
-00:20:32 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:32 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:32 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:32 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:32 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:33 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:33 INFO  [BotLogger] Clicked on element: By.id: shopping_cart_container
-00:20:33 INFO  [BotLogger] Clicked on element: By.id: checkout
-00:20:33 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
-00:20:33 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
-00:20:33 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
-00:20:33 INFO  [BotLogger] Clicked on element: By.id: continue
-00:20:33 INFO  [BotLogger] Clicked on element: By.id: finish
-00:20:33 INFO  [BotLogger] Clicked on element: By.xpath: //button[text()='Back Home']
+  <testcase name="validEndToEndPurchaseFlow2" classname="SauceDemoTests.EndToEndTest" time="1.57">
+    <system-out><![CDATA[01:03:55 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow1  passed
+01:03:55 INFO  [BotLogger] Browser is opened
+01:03:55 INFO  [BotLogger] Browser closed
+01:03:56 INFO  [BotLogger] Browser is opened
+01:03:58 INFO  [BotLogger] Browser is opened
+01:03:58 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  started
+01:03:58 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:03:59 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:03:59 INFO  [BotLogger] Clicked on: By.id: login-button
+01:03:59 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:03:59 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:03:59 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:03:59 INFO  [BotLogger] Clicked on: By.id: shopping_cart_container
+01:03:59 INFO  [BotLogger] Clicked on: By.id: checkout
+01:03:59 INFO  [BotLogger] Typed text: NHA into element with locator: By.id: first-name
+01:03:59 INFO  [BotLogger] Typed text: Testing into element with locator: By.id: last-name
+01:03:59 INFO  [BotLogger] Typed text: 201 into element with locator: By.id: postal-code
+01:04:00 INFO  [BotLogger] Clicked on: By.id: continue
+01:04:00 INFO  [BotLogger] Clicked on: By.id: finish
+01:04:00 INFO  [BotLogger] Clicked on: By.xpath: //button[text()='Back Home']
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:03:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Home_Tc1_scrollAndCheckBadge" classname="SauceDemoTests.HomePageTest" time="0.579">
-    <system-out><![CDATA[00:20:33 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  passed
-00:20:33 INFO  [BotLogger] Browser is opened
-00:20:33 INFO  [BotLogger] Browser closed
-00:20:34 INFO  [BotLogger] Browser is opened
-00:20:35 INFO  [BotLogger] Browser is opened
-00:20:35 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:35 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:35 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:35 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  started
-00:20:35 INFO  [BotLogger] Scrolled to element: By.className: footer
-00:20:36 INFO  [BotLogger] Scrolled to element: By.className: app_logo
+  <testcase name="Home_Tc1_scrollAndCheckBadge" classname="SauceDemoTests.HomePageTest" time="0.659">
+    <system-out><![CDATA[01:04:00 INFO  [BotLogger] Test CasevalidEndToEndPurchaseFlow2  passed
+01:04:00 INFO  [BotLogger] Browser is opened
+01:04:00 INFO  [BotLogger] Browser closed
+01:04:01 INFO  [BotLogger] Browser is opened
+01:04:03 INFO  [BotLogger] Browser is opened
+01:04:03 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:03 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:04 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:04 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  started
+01:04:04 INFO  [BotLogger] Scrolled to element: By.className: footer
+01:04:04 INFO  [BotLogger] Scrolled to element: By.className: app_logo
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Home_Tc2_testOpenMenu" classname="SauceDemoTests.HomePageTest" time="0.093">
-    <system-out><![CDATA[00:20:36 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  passed
-00:20:36 INFO  [BotLogger] Browser is opened
-00:20:36 INFO  [BotLogger] Browser closed
-00:20:37 INFO  [BotLogger] Browser is opened
-00:20:38 INFO  [BotLogger] Browser is opened
-00:20:38 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:38 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:38 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:38 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  started
-00:20:38 INFO  [BotLogger] Clicked on element: By.xpath: //button[@id='react-burger-menu-btn']
-00:20:38 INFO  [BotLogger] Element displayed status for locator By.id: menu_button_container: true
+  <testcase name="Home_Tc2_testOpenMenu" classname="SauceDemoTests.HomePageTest" time="0.135">
+    <system-out><![CDATA[01:04:04 INFO  [BotLogger] Test CaseHome_Tc1_scrollAndCheckBadge  passed
+01:04:04 INFO  [BotLogger] Browser is opened
+01:04:05 INFO  [BotLogger] Browser closed
+01:04:06 INFO  [BotLogger] Browser is opened
+01:04:08 INFO  [BotLogger] Browser is opened
+01:04:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:08 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:08 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:08 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  started
+01:04:08 INFO  [BotLogger] Clicked on: By.xpath: //button[@id='react-burger-menu-btn']
+01:04:08 INFO  [BotLogger] Element displayed status for locator By.id: menu_button_container: true
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Home_Tc3_addMultipleProducts" classname="SauceDemoTests.HomePageTest" time="0.475">
-    <system-out><![CDATA[00:20:38 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  passed
-00:20:38 INFO  [BotLogger] Browser is opened
-00:20:38 INFO  [BotLogger] Browser closed
-00:20:39 INFO  [BotLogger] Browser is opened
-00:20:40 INFO  [BotLogger] Browser is opened
-00:20:40 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:40 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:40 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:40 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  started
-00:20:40 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:40 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:40 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+  <testcase name="Home_Tc3_addMultipleProducts" classname="SauceDemoTests.HomePageTest" time="0.657">
+    <system-out><![CDATA[01:04:08 INFO  [BotLogger] Test CaseHome_Tc2_testOpenMenu  passed
+01:04:08 INFO  [BotLogger] Browser is opened
+01:04:09 INFO  [BotLogger] Browser closed
+01:04:09 INFO  [BotLogger] Browser is opened
+01:04:11 INFO  [BotLogger] Browser is opened
+01:04:12 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:12 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:12 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:12 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  started
+01:04:12 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:04:12 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:04:12 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="Home_Tc4_removeProducts" classname="SauceDemoTests.HomePageTest" time="0.328">
-    <system-out><![CDATA[00:20:40 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  passed
-00:20:40 INFO  [BotLogger] Browser is opened
-00:20:40 INFO  [BotLogger] Browser closed
-00:20:41 INFO  [BotLogger] Browser is opened
-00:20:42 INFO  [BotLogger] Browser is opened
-00:20:42 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:42 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:42 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:42 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  started
-00:20:42 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-backpack
-00:20:42 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bike-light
-00:20:43 INFO  [BotLogger] Clicked on element: By.id: add-to-cart-sauce-labs-bolt-t-shirt
-00:20:43 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-backpack
-00:20:43 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bike-light
-00:20:43 INFO  [BotLogger] Clicked on element: By.id: remove-sauce-labs-bolt-t-shirt
+  <testcase name="Home_Tc4_removeProducts" classname="SauceDemoTests.HomePageTest" time="0.509">
+    <system-out><![CDATA[01:04:13 INFO  [BotLogger] Test CaseHome_Tc3_addMultipleProducts  passed
+01:04:13 INFO  [BotLogger] Browser is opened
+01:04:13 INFO  [BotLogger] Browser closed
+01:04:14 INFO  [BotLogger] Browser is opened
+01:04:16 INFO  [BotLogger] Browser is opened
+01:04:16 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:16 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:17 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:17 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  started
+01:04:17 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-backpack
+01:04:17 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bike-light
+01:04:17 INFO  [BotLogger] Clicked on: By.id: add-to-cart-sauce-labs-bolt-t-shirt
+01:04:17 INFO  [BotLogger] Clicked on: By.id: remove-sauce-labs-backpack
+01:04:17 INFO  [BotLogger] Clicked on: By.id: remove-sauce-labs-bike-light
+01:04:17 INFO  [BotLogger] Clicked on: By.id: remove-sauce-labs-bolt-t-shirt
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testValidLogin[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.292">
-    <system-out><![CDATA[00:20:43 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  passed
-00:20:43 INFO  [BotLogger] Browser is opened
-00:20:43 INFO  [BotLogger] Browser closed
-00:20:44 INFO  [BotLogger] Browser is opened
-00:20:45 INFO  [BotLogger] Browser is opened
-00:20:45 INFO  [BotLogger] Test CasetestValidLogin  started
-00:20:45 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:45 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:45 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testValidLogin[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.447">
+    <system-out><![CDATA[01:04:17 INFO  [BotLogger] Test CaseHome_Tc4_removeProducts  passed
+01:04:17 INFO  [BotLogger] Browser is opened
+01:04:17 INFO  [BotLogger] Browser closed
+01:04:18 INFO  [BotLogger] Browser is opened
+01:04:20 INFO  [BotLogger] Browser is opened
+01:04:20 INFO  [BotLogger] Test CasetestValidLogin  started
+01:04:20 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:20 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:21 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testValidLogin[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="0.28">
-    <system-out><![CDATA[00:20:45 INFO  [BotLogger] Test CasetestValidLogin  passed
-00:20:45 INFO  [BotLogger] Browser is opened
-00:20:45 INFO  [BotLogger] Browser closed
-00:20:46 INFO  [BotLogger] Browser is opened
-00:20:46 INFO  [BotLogger] Browser is opened
-00:20:46 INFO  [BotLogger] Test CasetestValidLogin  started
-00:20:47 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
-00:20:47 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:47 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testValidLogin[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="0.488">
+    <system-out><![CDATA[01:04:21 INFO  [BotLogger] Test CasetestValidLogin  passed
+01:04:21 INFO  [BotLogger] Browser is opened
+01:04:21 INFO  [BotLogger] Browser closed
+01:04:22 INFO  [BotLogger] Browser is opened
+01:04:24 INFO  [BotLogger] Browser is opened
+01:04:24 INFO  [BotLogger] Test CasetestValidLogin  started
+01:04:24 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+01:04:24 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:24 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testValidLogin[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="5.339">
-    <system-out><![CDATA[00:20:47 INFO  [BotLogger] Test CasetestValidLogin  passed
-00:20:47 INFO  [BotLogger] Browser is opened
-00:20:47 INFO  [BotLogger] Browser closed
-00:20:48 INFO  [BotLogger] Browser is opened
-00:20:48 INFO  [BotLogger] Browser is opened
-00:20:48 INFO  [BotLogger] Test CasetestValidLogin  started
-00:20:48 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
-00:20:49 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:54 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testValidLogin[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="5.518">
+    <system-out><![CDATA[01:04:24 INFO  [BotLogger] Test CasetestValidLogin  passed
+01:04:24 INFO  [BotLogger] Browser is opened
+01:04:25 INFO  [BotLogger] Browser closed
+01:04:26 INFO  [BotLogger] Browser is opened
+01:04:28 INFO  [BotLogger] Browser is opened
+01:04:28 INFO  [BotLogger] Test CasetestValidLogin  started
+01:04:28 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+01:04:28 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:33 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testSuccessfulLoginVerifyProductsPage[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.303">
-    <system-out><![CDATA[00:20:54 INFO  [BotLogger] Test CasetestValidLogin  passed
-00:20:54 INFO  [BotLogger] Browser is opened
-00:20:54 INFO  [BotLogger] Browser closed
-00:20:55 INFO  [BotLogger] Browser is opened
-00:20:55 INFO  [BotLogger] Browser is opened
-00:20:55 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
-00:20:55 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:20:56 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:56 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:56 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+  <testcase name="testSuccessfulLoginVerifyProductsPage[standard_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.638">
+    <system-out><![CDATA[01:04:33 INFO  [BotLogger] Test CasetestValidLogin  passed
+01:04:33 INFO  [BotLogger] Browser is opened
+01:04:33 INFO  [BotLogger] Browser closed
+01:04:34 INFO  [BotLogger] Browser is opened
+01:04:36 INFO  [BotLogger] Browser is opened
+01:04:36 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+01:04:37 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:04:37 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:37 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:37 INFO  [BotLogger] Element displayed status for locator By.className: title: true
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testSuccessfulLoginVerifyProductsPage[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="0.309">
-    <system-out><![CDATA[00:20:56 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
-00:20:56 INFO  [BotLogger] Browser is opened
-00:20:56 INFO  [BotLogger] Browser closed
-00:20:57 INFO  [BotLogger] Browser is opened
-00:20:57 INFO  [BotLogger] Browser is opened
-00:20:57 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
-00:20:57 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
-00:20:57 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:20:58 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:20:58 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+  <testcase name="testSuccessfulLoginVerifyProductsPage[problem_user, secret_sauce](2)" classname="SauceDemoTests.LoginPageTests" time="0.462">
+    <system-out><![CDATA[01:04:37 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+01:04:37 INFO  [BotLogger] Browser is opened
+01:04:37 INFO  [BotLogger] Browser closed
+01:04:38 INFO  [BotLogger] Browser is opened
+01:04:40 INFO  [BotLogger] Browser is opened
+01:04:40 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+01:04:40 INFO  [BotLogger] Typed text: problem_user into element with locator: By.id: user-name
+01:04:41 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:41 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:41 INFO  [BotLogger] Element displayed status for locator By.className: title: true
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testSuccessfulLoginVerifyProductsPage[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="5.353">
-    <system-out><![CDATA[00:20:58 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
-00:20:58 INFO  [BotLogger] Browser is opened
-00:20:58 INFO  [BotLogger] Browser closed
-00:20:59 INFO  [BotLogger] Browser is opened
-00:20:59 INFO  [BotLogger] Browser is opened
-00:20:59 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
-00:20:59 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
-00:21:00 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:05 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:21:05 INFO  [BotLogger] Element displayed status for locator By.className: title: true
+  <testcase name="testSuccessfulLoginVerifyProductsPage[performance_glitch_user, secret_sauce](3)" classname="SauceDemoTests.LoginPageTests" time="5.474">
+    <system-out><![CDATA[01:04:41 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+01:04:41 INFO  [BotLogger] Browser is opened
+01:04:41 INFO  [BotLogger] Browser closed
+01:04:42 INFO  [BotLogger] Browser is opened
+01:04:44 INFO  [BotLogger] Browser is opened
+01:04:44 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  started
+01:04:44 INFO  [BotLogger] Typed text: performance_glitch_user into element with locator: By.id: user-name
+01:04:44 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:49 INFO  [BotLogger] Clicked on: By.id: login-button
+01:04:49 INFO  [BotLogger] Element displayed status for locator By.className: title: true
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:20:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidLogin[invalid_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.565">
-    <system-out><![CDATA[00:21:05 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
-00:21:05 INFO  [BotLogger] Browser is opened
-00:21:05 INFO  [BotLogger] Browser closed
-00:21:06 INFO  [BotLogger] Browser is opened
-00:21:06 INFO  [BotLogger] Browser is opened
-00:21:06 INFO  [BotLogger] Test CasetestInvalidLogin  started
-00:21:07 INFO  [BotLogger] Typed text: invalid_user into element with locator: By.id: user-name
-00:21:07 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:07 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testInvalidLogin[invalid_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.881">
+    <system-out><![CDATA[01:04:49 INFO  [BotLogger] Test CasetestSuccessfulLoginVerifyProductsPage  passed
+01:04:49 INFO  [BotLogger] Browser is opened
+01:04:49 INFO  [BotLogger] Browser closed
+01:04:50 INFO  [BotLogger] Browser is opened
+01:04:52 INFO  [BotLogger] Browser is opened
+01:04:52 INFO  [BotLogger] Test CasetestInvalidLogin  started
+01:04:53 INFO  [BotLogger] Typed text: invalid_user into element with locator: By.id: user-name
+01:04:53 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:04:53 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidLogin[wrong_user, wrong_password](2)" classname="SauceDemoTests.LoginPageTests" time="0.572">
-    <system-out><![CDATA[00:21:07 INFO  [BotLogger] Test CasetestInvalidLogin  passed
-00:21:07 INFO  [BotLogger] Browser is opened
-00:21:07 INFO  [BotLogger] Browser closed
-00:21:08 INFO  [BotLogger] Browser is opened
-00:21:09 INFO  [BotLogger] Browser is opened
-00:21:09 INFO  [BotLogger] Test CasetestInvalidLogin  started
-00:21:09 INFO  [BotLogger] Typed text: wrong_user into element with locator: By.id: user-name
-00:21:09 INFO  [BotLogger] Typed text: wrong_password into element with locator: By.id: password
-00:21:09 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testInvalidLogin[wrong_user, wrong_password](2)" classname="SauceDemoTests.LoginPageTests" time="0.759">
+    <system-out><![CDATA[01:04:53 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+01:04:53 INFO  [BotLogger] Browser is opened
+01:04:54 INFO  [BotLogger] Browser closed
+01:04:55 INFO  [BotLogger] Browser is opened
+01:04:57 INFO  [BotLogger] Browser is opened
+01:04:57 INFO  [BotLogger] Test CasetestInvalidLogin  started
+01:04:57 INFO  [BotLogger] Typed text: wrong_user into element with locator: By.id: user-name
+01:04:57 INFO  [BotLogger] Typed text: wrong_password into element with locator: By.id: password
+01:04:57 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidLogin[fake_user, fake_pass](3)" classname="SauceDemoTests.LoginPageTests" time="0.553">
-    <system-out><![CDATA[00:21:09 INFO  [BotLogger] Test CasetestInvalidLogin  passed
-00:21:09 INFO  [BotLogger] Browser is opened
-00:21:10 INFO  [BotLogger] Browser closed
-00:21:10 INFO  [BotLogger] Browser is opened
-00:21:11 INFO  [BotLogger] Browser is opened
-00:21:11 INFO  [BotLogger] Test CasetestInvalidLogin  started
-00:21:11 INFO  [BotLogger] Typed text: fake_user into element with locator: By.id: user-name
-00:21:11 INFO  [BotLogger] Typed text: fake_pass into element with locator: By.id: password
-00:21:11 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testInvalidLogin[fake_user, fake_pass](3)" classname="SauceDemoTests.LoginPageTests" time="0.762">
+    <system-out><![CDATA[01:04:57 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+01:04:57 INFO  [BotLogger] Browser is opened
+01:04:58 INFO  [BotLogger] Browser closed
+01:04:58 INFO  [BotLogger] Browser is opened
+01:05:00 INFO  [BotLogger] Browser is opened
+01:05:00 INFO  [BotLogger] Test CasetestInvalidLogin  started
+01:05:01 INFO  [BotLogger] Typed text: fake_user into element with locator: By.id: user-name
+01:05:01 INFO  [BotLogger] Typed text: fake_pass into element with locator: By.id: password
+01:05:01 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:04:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyFields[, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.552">
-    <system-out><![CDATA[00:21:12 INFO  [BotLogger] Test CasetestInvalidLogin  passed
-00:21:12 INFO  [BotLogger] Browser is opened
-00:21:12 INFO  [BotLogger] Browser closed
-00:21:13 INFO  [BotLogger] Browser is opened
-00:21:13 INFO  [BotLogger] Browser is opened
-00:21:13 INFO  [BotLogger] Test CasetestEmptyFields  started
-00:21:13 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
-00:21:13 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:14 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testEmptyFields[, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.723">
+    <system-out><![CDATA[01:05:01 INFO  [BotLogger] Test CasetestInvalidLogin  passed
+01:05:01 INFO  [BotLogger] Browser is opened
+01:05:01 INFO  [BotLogger] Browser closed
+01:05:02 INFO  [BotLogger] Browser is opened
+01:05:04 INFO  [BotLogger] Browser is opened
+01:05:04 INFO  [BotLogger] Test CasetestEmptyFields  started
+01:05:05 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+01:05:05 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:05 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyFields[standard_user, ](2)" classname="SauceDemoTests.LoginPageTests" time="0.585">
-    <system-out><![CDATA[00:21:14 INFO  [BotLogger] Test CasetestEmptyFields  passed
-00:21:14 INFO  [BotLogger] Browser is opened
-00:21:14 INFO  [BotLogger] Browser closed
-00:21:15 INFO  [BotLogger] Browser is opened
-00:21:15 INFO  [BotLogger] Browser is opened
-00:21:15 INFO  [BotLogger] Test CasetestEmptyFields  started
-00:21:16 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:16 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
-00:21:16 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testEmptyFields[standard_user, ](2)" classname="SauceDemoTests.LoginPageTests" time="0.723">
+    <system-out><![CDATA[01:05:05 INFO  [BotLogger] Test CasetestEmptyFields  passed
+01:05:05 INFO  [BotLogger] Browser is opened
+01:05:05 INFO  [BotLogger] Browser closed
+01:05:06 INFO  [BotLogger] Browser is opened
+01:05:08 INFO  [BotLogger] Browser is opened
+01:05:08 INFO  [BotLogger] Test CasetestEmptyFields  started
+01:05:08 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:09 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+01:05:09 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyFields[, ](3)" classname="SauceDemoTests.LoginPageTests" time="0.529">
-    <system-out><![CDATA[00:21:16 INFO  [BotLogger] Test CasetestEmptyFields  passed
-00:21:16 INFO  [BotLogger] Browser is opened
-00:21:16 INFO  [BotLogger] Browser closed
-00:21:17 INFO  [BotLogger] Browser is opened
-00:21:18 INFO  [BotLogger] Browser is opened
-00:21:18 INFO  [BotLogger] Test CasetestEmptyFields  started
-00:21:18 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
-00:21:18 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
-00:21:18 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testEmptyFields[, ](3)" classname="SauceDemoTests.LoginPageTests" time="0.74">
+    <system-out><![CDATA[01:05:09 INFO  [BotLogger] Test CasetestEmptyFields  passed
+01:05:09 INFO  [BotLogger] Browser is opened
+01:05:09 INFO  [BotLogger] Browser closed
+01:05:10 INFO  [BotLogger] Browser is opened
+01:05:12 INFO  [BotLogger] Browser is opened
+01:05:12 INFO  [BotLogger] Test CasetestEmptyFields  started
+01:05:12 INFO  [BotLogger] Typed text:  into element with locator: By.id: user-name
+01:05:12 INFO  [BotLogger] Typed text:  into element with locator: By.id: password
+01:05:13 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="testLockedOutUser[locked_out_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.571">
-    <system-out><![CDATA[00:21:18 INFO  [BotLogger] Test CasetestEmptyFields  passed
-00:21:18 INFO  [BotLogger] Browser is opened
-00:21:18 INFO  [BotLogger] Browser closed
-00:21:19 INFO  [BotLogger] Browser is opened
-00:21:20 INFO  [BotLogger] Browser is opened
-00:21:20 INFO  [BotLogger] Test CasetestLockedOutUser  started
-00:21:20 INFO  [BotLogger] Typed text: locked_out_user into element with locator: By.id: user-name
-00:21:20 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:20 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="testLockedOutUser[locked_out_user, secret_sauce](1)" classname="SauceDemoTests.LoginPageTests" time="0.742">
+    <system-out><![CDATA[01:05:13 INFO  [BotLogger] Test CasetestEmptyFields  passed
+01:05:13 INFO  [BotLogger] Browser is opened
+01:05:13 INFO  [BotLogger] Browser closed
+01:05:14 INFO  [BotLogger] Browser is opened
+01:05:16 INFO  [BotLogger] Browser is opened
+01:05:16 INFO  [BotLogger] Test CasetestLockedOutUser  started
+01:05:16 INFO  [BotLogger] Typed text: locked_out_user into element with locator: By.id: user-name
+01:05:17 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:17 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="validLoginWithJasonData" classname="SauceDemoTests.LoginPageTests" time="0.348">
-    <system-out><![CDATA[00:21:20 INFO  [BotLogger] Test CasetestLockedOutUser  passed
-00:21:20 INFO  [BotLogger] Browser is opened
-00:21:21 INFO  [BotLogger] Browser closed
-00:21:21 INFO  [BotLogger] Browser is opened
-00:21:22 INFO  [BotLogger] Browser is opened
-00:21:22 INFO  [BotLogger] Test CasevalidLoginWithJasonData  started
-00:21:22 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:22 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:22 INFO  [BotLogger] Clicked on element: By.id: login-button
+  <testcase name="validLoginWithJasonData" classname="SauceDemoTests.LoginPageTests" time="0.532">
+    <system-out><![CDATA[01:05:17 INFO  [BotLogger] Test CasetestLockedOutUser  passed
+01:05:17 INFO  [BotLogger] Browser is opened
+01:05:17 INFO  [BotLogger] Browser closed
+01:05:18 INFO  [BotLogger] Browser is opened
+01:05:20 INFO  [BotLogger] Browser is opened
+01:05:20 INFO  [BotLogger] Test CasevalidLoginWithJasonData  started
+01:05:21 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:21 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:21 INFO  [BotLogger] Clicked on: By.id: login-button
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="sortingTest[Name (A to Z)](1)" classname="SauceDemoTests.SortingFilterPageTest" time="0.216">
-    <system-out><![CDATA[00:21:22 INFO  [BotLogger] Test CasevalidLoginWithJasonData  passed
-00:21:22 INFO  [BotLogger] Browser is opened
-00:21:23 INFO  [BotLogger] Browser closed
-00:21:24 INFO  [BotLogger] Browser is opened
-00:21:24 INFO  [BotLogger] Browser is opened
-00:21:24 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:24 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:25 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:21:25 INFO  [BotLogger] Test CasesortingTest  started
+  <testcase name="sortingTest[Name (A to Z)](1)" classname="SauceDemoTests.SortingFilterPageTest" time="0.35">
+    <system-out><![CDATA[01:05:21 INFO  [BotLogger] Test CasevalidLoginWithJasonData  passed
+01:05:21 INFO  [BotLogger] Browser is opened
+01:05:21 INFO  [BotLogger] Browser closed
+01:05:22 INFO  [BotLogger] Browser is opened
+01:05:24 INFO  [BotLogger] Browser is opened
+01:05:25 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:25 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:25 INFO  [BotLogger] Clicked on: By.id: login-button
+01:05:25 INFO  [BotLogger] Test CasesortingTest  started
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="sortingTest[Name (Z to A)](2)" classname="SauceDemoTests.SortingFilterPageTest" time="0.259">
-    <system-out><![CDATA[00:21:25 INFO  [BotLogger] Test CasesortingTest  passed
-00:21:25 INFO  [BotLogger] Browser is opened
-00:21:25 INFO  [BotLogger] Browser closed
-00:21:26 INFO  [BotLogger] Browser is opened
-00:21:26 INFO  [BotLogger] Browser is opened
-00:21:27 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:27 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:27 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:21:27 INFO  [BotLogger] Test CasesortingTest  started
+  <testcase name="sortingTest[Name (Z to A)](2)" classname="SauceDemoTests.SortingFilterPageTest" time="0.343">
+    <system-out><![CDATA[01:05:25 INFO  [BotLogger] Test CasesortingTest  passed
+01:05:25 INFO  [BotLogger] Browser is opened
+01:05:25 INFO  [BotLogger] Browser closed
+01:05:26 INFO  [BotLogger] Browser is opened
+01:05:28 INFO  [BotLogger] Browser is opened
+01:05:29 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:29 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:29 INFO  [BotLogger] Clicked on: By.id: login-button
+01:05:29 INFO  [BotLogger] Test CasesortingTest  started
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="sortingTest[Price (low to high)](3)" classname="SauceDemoTests.SortingFilterPageTest" time="0.231">
-    <system-out><![CDATA[00:21:27 INFO  [BotLogger] Test CasesortingTest  passed
-00:21:27 INFO  [BotLogger] Browser is opened
-00:21:27 INFO  [BotLogger] Browser closed
-00:21:28 INFO  [BotLogger] Browser is opened
-00:21:29 INFO  [BotLogger] Browser is opened
-00:21:29 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:29 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:29 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:21:29 INFO  [BotLogger] Test CasesortingTest  started
+  <testcase name="sortingTest[Price (low to high)](3)" classname="SauceDemoTests.SortingFilterPageTest" time="0.348">
+    <system-out><![CDATA[01:05:29 INFO  [BotLogger] Test CasesortingTest  passed
+01:05:29 INFO  [BotLogger] Browser is opened
+01:05:29 INFO  [BotLogger] Browser closed
+01:05:30 INFO  [BotLogger] Browser is opened
+01:05:32 INFO  [BotLogger] Browser is opened
+01:05:33 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:33 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:33 INFO  [BotLogger] Clicked on: By.id: login-button
+01:05:33 INFO  [BotLogger] Test CasesortingTest  started
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>
-  <testcase name="sortingTest[Price (high to low)](4)" classname="SauceDemoTests.SortingFilterPageTest" time="0.247">
-    <system-out><![CDATA[00:21:29 INFO  [BotLogger] Test CasesortingTest  passed
-00:21:29 INFO  [BotLogger] Browser is opened
-00:21:29 INFO  [BotLogger] Browser closed
-00:21:30 INFO  [BotLogger] Browser is opened
-00:21:31 INFO  [BotLogger] Browser is opened
-00:21:31 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
-00:21:31 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
-00:21:31 INFO  [BotLogger] Clicked on element: By.id: login-button
-00:21:31 INFO  [BotLogger] Test CasesortingTest  started
+  <testcase name="sortingTest[Price (high to low)](4)" classname="SauceDemoTests.SortingFilterPageTest" time="0.339">
+    <system-out><![CDATA[01:05:33 INFO  [BotLogger] Test CasesortingTest  passed
+01:05:33 INFO  [BotLogger] Browser is opened
+01:05:33 INFO  [BotLogger] Browser closed
+01:05:34 INFO  [BotLogger] Browser is opened
+01:05:36 INFO  [BotLogger] Browser is opened
+01:05:37 INFO  [BotLogger] Typed text: standard_user into element with locator: By.id: user-name
+01:05:37 INFO  [BotLogger] Typed text: secret_sauce into element with locator: By.id: password
+01:05:37 INFO  [BotLogger] Clicked on: By.id: login-button
+01:05:37 INFO  [BotLogger] Test CasesortingTest  started
 ]]></system-out>
-    <system-err><![CDATA[Dec 08, 2025 12:21:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Dec 09, 2025 1:05:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 141; Please update to a Selenium version that supports CDP version 142
 ]]></system-err>
   </testcase>

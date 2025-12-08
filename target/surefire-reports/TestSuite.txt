@@ -1,17 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.9 s <<< FAILURE! -- in TestSuite
-SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder[Group, Project, 201](1) -- Time elapsed: 0.647 s <<< FAILURE!
-java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-complete.html]
+Tests run: 40, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 190.3 s <<< FAILURE! -- in TestSuite
+SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder[Group, Project, 201](1) -- Time elapsed: 0.988 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:60)
-	at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:96)
+	at org.testng.Assert.assertEquals(Assert.java:1079)
+	at org.testng.Assert.assertEquals(Assert.java:1043)
+	at org.testng.Assert.assertEquals(Assert.java:1089)
+	at SauceDemoTests.CheckoutConfirmationPageTests.verifyStaysOnCheckoutStepTwoPage(CheckoutConfirmationPageTests.java:52)
+	at SauceDemoTests.CheckoutConfirmationPageTests.Confirmation_TC2_finishEmptyCartOrder(CheckoutConfirmationPageTests.java:77)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
