@@ -75,8 +75,7 @@ NHA-201 [Team201_SaucedemoTesting]/
 │   │       ├── Engine/
 │   │       │   ├── Bot.java              # Bot pattern implementation
 │   │       │   ├── BotData.java          # Bot data handling
-│   │       │   ├── BotLogger.java        # Logging utility
-│   │       │   └── FluentBot.java        # Fluent for Bot pattern
+│   │       │   └── BotLogger.java        # Logging utility
 │   │       │
 │   │       └── SauceDemoPages/
 │   │           ├── CartPage.java         # Shopping cart page object
@@ -89,8 +88,7 @@ NHA-201 [Team201_SaucedemoTesting]/
 │   ├── test/
 │   │   └── java/
 │   │       ├── Base/
-│   │       │   ├── BaseTest.java         # Abstract base class with setup/teardown
-│   │       │   └── BaseTestFluent.java   # Fluent base test class
+│   │       │   └── BaseTest.java         # Abstract base class with setup/teardown
 │   │       │
 │   │       ├── DataDrivenTest/
 │   │       │   └── TestDataProvider.java # Data-driven test data provider
