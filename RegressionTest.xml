@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+
+<test name="validEndToEndPurchaseFlow1">
+    <classes>
+        <class name="SauceDemoTests.EndToEndTest">
+            <methods>
+                <include name="validEndToEndPurchaseFlow1"/>
+                <include name="validEndToEndPurchaseFlow2"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+
+</suite>

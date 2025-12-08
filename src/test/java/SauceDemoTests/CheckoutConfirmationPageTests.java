@@ -1,5 +1,4 @@
 package SauceDemoTests;
-
 import Base.BaseTest;
 import DataDrivenTest.TestDataProvider;
 import SauceDemoPages.CartPage;

@@ -18,7 +18,7 @@ public class SortingFilterPage {
     }
 
     public void selectSortingOption(String option) {
-        WebElement drop = bot.findElement(SortDropDown);
+        WebElement drop = bot.find(SortDropDown);
         new Select(drop).selectByVisibleText(option);
     }
 
