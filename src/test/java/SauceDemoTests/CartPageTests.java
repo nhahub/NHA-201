@@ -14,69 +14,62 @@ public class CartPageTests extends BaseTest {
     public void setUpCart() {
         new LoginPage(bot)
                 .loginAsStandardUser();
-        cartPage = new CartPage(bot);
     }
 
     @Test
     public void Cart_Tc1_openCartAfterAddingItems() {
-        cartPage
+        new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
-        Assert.assertTrue(cartPage.isCartPageOpened());
-        Assert.assertEquals(cartPage.countCartItems(), 1);
-        Assert.assertEquals(cartPage.getFirstItemName(), "Sauce Labs Backpack");
-        Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
+        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
+        Assert.assertEquals(new CartPage(bot).countCartItems(), 1);
+        Assert.assertEquals(new CartPage(bot).getFirstItemName(), "Sauce Labs Backpack");
+        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 1);
     }
 
     @Test
     public void Cart_Tc2_removeItemFromCart() {
-        cartPage
+        new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
-        int itemsBefore = cartPage.countCartItems();
-        cartPage.removeFirstItemFromCart();
-        int itemsAfter = cartPage.countCartItems();
+        int itemsBefore = new CartPage(bot).countCartItems();
+        new CartPage(bot).removeFirstItemFromCart();
+        int itemsAfter = new CartPage(bot).countCartItems();
 
         Assert.assertTrue(itemsAfter == itemsBefore - 1 || itemsAfter == 0);
         if (itemsAfter > 0) {
-            Assert.assertEquals(cartPage.getCartBadgeNumber(), itemsAfter);
+            Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), itemsAfter);
         }
     }
 
     @Test
     public void Cart_Tc3_checkoutWithOneItem() {
-        cartPage
+        new CartPage(bot)
                 .addBackpack()
                 .openCartIcon();
-
-        Assert.assertTrue(cartPage.isCartPageOpened());
-        Assert.assertEquals(cartPage.countCartItems(), 1);
-        Assert.assertEquals(cartPage.getCartBadgeNumber(), 1);
-
-        cartPage.clickCheckoutButton();
-
+        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
+        Assert.assertEquals(new CartPage(bot).countCartItems(), 1);
+        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 1);
+        new CartPage(bot).clickCheckoutButton();
         Assert.assertEquals(
-                cartPage.getCurrentUrl(),
+                new CartPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-one.html"
         );
     }
 
     @Test
     public void Cart_Tc4_checkoutWithMultipleItems() {
-        cartPage
+        new CartPage(bot)
                 .addMultipleItems()
                 .openCartIcon();
 
-        Assert.assertTrue(cartPage.isCartPageOpened());
-        Assert.assertEquals(cartPage.countCartItems(), 3);
-        Assert.assertEquals(cartPage.getCartBadgeNumber(), 3);
+        Assert.assertTrue(new CartPage(bot).isCartPageOpened());
+        Assert.assertEquals(new CartPage(bot).countCartItems(), 3);
+        Assert.assertEquals(new CartPage(bot).getCartBadgeNumber(), 3);
 
-        cartPage.clickCheckoutButton();
-
+        new CartPage(bot).clickCheckoutButton();
         Assert.assertEquals(
-                cartPage.getCurrentUrl(),
+                new CartPage(bot).getCurrentUrl(),
                 "https://www.saucedemo.com/checkout-step-one.html"
         );
     }

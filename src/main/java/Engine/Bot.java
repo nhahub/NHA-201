@@ -49,7 +49,7 @@ public class Bot {
             d.findElement(locator).click();
             return true;
         });
-        BotLogger.info("Clicked on element: " + locator);
+        BotLogger.info("Clicked on: " + locator);
     }
 
     public void findAndClick(By locator) {

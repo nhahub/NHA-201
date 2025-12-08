@@ -13,7 +13,6 @@ import java.util.Properties;
 public class BotData {
     public static final String TEST_DATA_PATH = "src/test/resources/TestData/";
     //TODO: Read data from json file
-
     public static String getJsonData(String jsonFilename, String field) {
 
         try {
