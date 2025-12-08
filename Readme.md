@@ -41,18 +41,6 @@ Generate detailed test execution reports using allure-report
 -   End-to-end user workflows.
 -   Product filtering and search.
 
-### Team Members & Responsibilities
-
-### Developed by Group 201 -- DEPI Software Testing Track.
-
-| Name | Primary Responsibility | Key Modules/Tasks                                                                                                                                                       |
-|------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ali Nabil Ali | Login & Engine | Engine setup, Bot, LoginPage, Login Tests                                                                                                                               |
-| Mohamed Mahmoud Mohamed | Home & Add to Cart | Engine setup, Bot, HomePage, HomePageTests, DataBase                                                                                                                    |
-| Akram Hussen Ibraheem | Cart & Checkout | Engine setup, Bot, Allure-Report, CartPage, CheckoutPage, ConfirmationPage, Cart & Checkout Tests, Api Testing                                                          |
-| Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests, SmokeTest.xml, RegressionTest.xml                                                                                                            |
-| Nada Khamis Mohamed | End-to-End | Engine setup, Bot, Allure-Report, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot, testng.xml |
-
 ### 🛠️Tools & Technologies
 
 Design Patterns: Page Object Model + Fluent Pattern
