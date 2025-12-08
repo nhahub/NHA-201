@@ -2,19 +2,22 @@
 Developed by Group 201 for the DEPI Software
 Testing Track.
 
-### Project Overview
+## 📋 Project Overview
 
 This project is an End‑to‑End UI Automation Framework built using Java, Selenium WebDriver, TestNG, Maven, and Allure Reports. It follows modern automation best practices, including:
 
-Page Object Model (POM)
+**Page Object Model (POM)**
 
-Fluent Design Pattern
+**Fluent Design Pattern**
 
-Reusable Utilities & Custom Bot Wrapper
+**Reusable Utilities & Custom Bot Wrapper**
 
-Structured Test Suites via testng.xml
+**Structured Test Suites via testng.xml**
 
-Allure Reporting Integration
+**Allure Reporting Integration**
+
+**Jenkins CI/CD Integration**
+
 
 The project automates the full purchase flow on the SauceDemo web application.
 
@@ -28,7 +31,7 @@ Support data-driven testing using JSON
 
 Generate detailed test execution reports using allure-report
 
-**Scope:**
+**🎯Scope:**
 
 -   Login functionality (valid, invalid, edge cases).
 -   Home page and product display.
@@ -38,19 +41,7 @@ Generate detailed test execution reports using allure-report
 -   End-to-end user workflows.
 -   Product filtering and search.
 
-### Team Members & Responsibilities
-
-### Developed by Group 201 -- DEPI Software Testing Track.
-
-| Name | Primary Responsibility | Key Modules/Tasks                                                                                                                                                       |
-|------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ali Nabil Ali | Login & Engine | Engine setup, Bot, LoginPage, Login Tests                                                                                                                               |
-| Mohamed Mahmoud Mohamed | Home & Add to Cart | Engine setup, Bot, HomePage, HomePageTests, DataBase                                                                                                                    |
-| Akram Hussen Ibraheem | Cart & Checkout | Engine setup, Bot, Allure-Report, CartPage, CheckoutPage, ConfirmationPage, Cart & Checkout Tests, Api Testing                                                          |
-| Ola Sabry Abbas | Filtering | Engine setup, Bot, Filtering functionality, FilteringTests, SmokeTest.xml, RegressionTest.xml                                                                                                            |
-| Nada Khamis Mohamed | End-to-End | Engine setup, Bot, Allure-Report, DriverFactory, BotData, FluentBot, EndToEndTests, integration testing, overall coordination, Listener, Logger, Screenshot, testng.xml |
-
-### Tools & Technologies
+### 🛠️Tools & Technologies
 
 Design Patterns: Page Object Model + Fluent Pattern
 -   **Language:** Java (17+)
@@ -64,7 +55,7 @@ Design Patterns: Page Object Model + Fluent Pattern
 -   **Testing Website:** SauceDemo.com
 -   **Training Company:** Skills Dynamix
 
-### Project Structure
+### 📁Project Structure
 
 
 ```
@@ -130,7 +121,7 @@ tests/
 ```
 
 
-### Architecture & Design Patterns
+### 🚀Architecture & Design Patterns
 
 The framework utilizes several established design patterns to enhance
 maintainability and readability:
@@ -147,16 +138,6 @@ maintainability and readability:
 -   **Abstract Base Class:** Provides shared setup (`@BeforeMethod`)
     and teardown (`@AfterMethod`) logic for all test classes, along
     with common utility methods.
-
-
-### Implementation Flow
-The project was developed in phases:
-
-1.  **Login Module** (Ali Nabil Ali)
-2.  **Home & Add to Cart** (Mohamed Mahmoud Mohamed)
-3.  **Cart & Checkout** (Akram Hussen Ibraheem)
-4.  **Filtering** (Ola Sabry Abbas)
-5.  **End-to-End** (Nada Khamis Mohamed)
 
 ### 🧩 Key Components
 1️⃣ BotData (Engine folder)
@@ -221,7 +202,7 @@ The project supports Allure with:
 
 * Step-level reporting
 
-### Driver Factory Implementation
+### 🔍Driver Factory Implementation
 
 The DriverFactory class is responsible for creating and managing
 WebDriver instances across different browsers:
