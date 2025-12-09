@@ -1,12 +1,6 @@
 pipeline {
 	agent any
 
-	// Define tools versions
-	tools {
-		maven 'Maven 3.9'
-		jdk 'Java 21'
-	}
-
 	// Environment variables
 	environment {
 		PROJECT_NAME = 'Team201_SaucedemoTesting'
