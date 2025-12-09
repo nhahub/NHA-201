@@ -62,11 +62,14 @@ pipeline {
 				echo "Stage: Generate Allure Report"
 				echo "Generating detailed Allure report..."
 
-				bat '''
-                    mvn allure:report -Dmaven.test.skip=true
-                '''
-
-				echo "Allure report generated successfully"
+				script {
+					try {
+						bat 'mvn allure:report -Dmaven.test.skip=true'
+						echo "Allure report generated successfully"
+					} catch (Exception e) {
+						echo "Warning: Allure report generation skipped"
+					}
+				}
 			}
 		}
 
@@ -98,6 +101,19 @@ pipeline {
 			junit testResults: 'target/surefire-reports/*.xml',
 			skipPublishingChecks: true,
 			allowEmptyResults: true
+
+			script {
+				try {
+					allure([
+						includeProperties: false,
+						jdk: '',
+						results: [[path: 'allure-results']]
+					])
+					echo "Allure report published successfully"
+				} catch (Exception e) {
+					echo "Warning: Allure report publishing skipped - ${e.message}"
+				}
+			}
 
 			echo "Test results recorded"
 		}
