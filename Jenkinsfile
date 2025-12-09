@@ -35,11 +35,8 @@ pipeline {
 				echo "Stage: Build Project"
 				echo "Building with Maven..."
 
-				sh '''
-                    mvn clean compile \
-                    -DskipTests \
-                    -T 4 \
-                    -U
+				bat '''
+                    mvn clean compile -DskipTests -T 4 -U
                 '''
 
 				echo "Build successful"
@@ -52,11 +49,8 @@ pipeline {
 				echo "Running 40+ test cases..."
 				echo "Using 4 parallel threads"
 
-				sh '''
-                    mvn test \
-                    -T 4 \
-                    -DskipITs=false \
-                    -Dtest=**/*Test.java
+				bat '''
+                    mvn test -T 4 -DskipITs=false -Dtest=**/*Test.java
                 '''
 
 				echo "Tests execution completed"
@@ -68,9 +62,8 @@ pipeline {
 				echo "Stage: Generate Allure Report"
 				echo "Generating detailed Allure report..."
 
-				sh '''
-                    mvn allure:report \
-                    -Dmaven.test.skip=true
+				bat '''
+                    mvn allure:report -Dmaven.test.skip=true
                 '''
 
 				echo "Allure report generated successfully"
@@ -81,12 +74,11 @@ pipeline {
 			steps {
 				echo "Stage: Archive Artifacts"
 
-				sh '''
-                    echo "Archiving test reports and screenshots..."
-                    mkdir -p build-artifacts
-                    cp -r target/surefire-reports build-artifacts/ || true
-                    cp -r allure-results build-artifacts/ || true
-                    cp -r allure-report build-artifacts/ || true
+				bat '''
+                    if not exist "build-artifacts" mkdir build-artifacts
+                    xcopy /E /Y target\\surefire-reports build-artifacts\\ 2>nul
+                    xcopy /E /Y allure-results build-artifacts\\ 2>nul
+                    xcopy /E /Y allure-report build-artifacts\\ 2>nul
                 '''
 
 				archiveArtifacts artifacts: 'build-artifacts/**',
