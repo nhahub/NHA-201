@@ -130,10 +130,7 @@ pipeline {
 			echo "Check console output for details"
 		}
 
-		unstable {
-			echo "BUILD COMPLETED"
-			echo "All tests completed successfully"
-		}
+
 	}
 
 	// Options
