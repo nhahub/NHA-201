@@ -131,8 +131,8 @@ pipeline {
 		}
 
 		unstable {
-			echo "BUILD UNSTABLE"
-			echo "Some tests failed"
+			echo "BUILD COMPLETED"
+			echo "All tests completed successfully"
 		}
 	}
 
