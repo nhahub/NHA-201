@@ -12,10 +12,7 @@ pipeline {
 
 	// Build triggers
 	triggers {
-		// Poll SCM every hour
 		pollSCM('H * * * *')
-
-		// Trigger on GitHub push (if webhook configured)
 		githubPush()
 	}
 
@@ -24,15 +21,11 @@ pipeline {
 		stage('Checkout Code') {
 			steps {
 				echo "Stage: Checkout Code"
-				echo "Repository: ${GIT_REPO}"
-				echo "Branch: ${BRANCH}"
-
 				checkout([
 					$class: 'GitSCM',
-					branches: [[name: '*/${BRANCH}']],
-					userRemoteConfigs: [[url: '${GIT_REPO}']]
+					branches: [[name: '*/main']],
+					userRemoteConfigs: [[url: 'https://github.com/nhahub/NHA-201.git']]
 				])
-
 				echo "Code checkout successful"
 			}
 		}
@@ -110,15 +103,9 @@ pipeline {
 		always {
 			echo "Post-Build: Recording Results"
 
-			// Publish JUnit test results
-			junit testResults: '${TEST_RESULTS_DIR}/*.xml',
+			junit testResults: 'target/surefire-reports/*.xml',
 			skipPublishingChecks: true,
 			allowEmptyResults: true
-
-			// Publish Allure report
-			publishAllure results: [
-				[path: '${ALLURE_RESULTS_DIR}']
-			]
 
 			echo "Test results recorded"
 		}
@@ -126,7 +113,6 @@ pipeline {
 		success {
 			echo "BUILD SUCCESSFUL"
 			echo "All stages completed successfully!"
-			echo "Allure Report available"
 			echo "Test Results: PASSED"
 		}
 
@@ -134,28 +120,19 @@ pipeline {
 			echo "BUILD FAILED"
 			echo "One or more stages failed"
 			echo "Check console output for details"
-			echo "Review test results and logs"
 		}
 
 		unstable {
 			echo "BUILD UNSTABLE"
 			echo "Some tests failed"
-			echo "Review Allure Report for details"
 		}
 	}
 
 	// Options
 	options {
-		// Keep last 30 builds
 		buildDiscarder(logRotator(numToKeepStr: '30'))
-
-		// Timeout after 1 hour
 		timeout(time: 1, unit: 'HOURS')
-
-		// Add timestamps to console output
 		timestamps()
-
-		// Disable concurrent builds
 		disableConcurrentBuilds()
 	}
 }
